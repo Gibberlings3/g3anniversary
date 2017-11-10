@@ -1,0 +1,60 @@
+IF
+  Global("G3MaheerMove","GLOBAL",0)
+  AreaCheck("AR0713")
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3MaheerMove","GLOBAL",1)
+    ActionOverride("Maheer",JumpToPoint([490.275]))
+    ActionOverride("Maheer",Face(6))
+END
+
+IF
+  Global("G3MaheerMove","GLOBAL",0)
+  AreaCheck("AR0713")
+  NumTimesTalkedToGT(0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3MaheerMove","GLOBAL",1)
+    SetGlobal("G3MaheerShop","GLOBAL",1)
+    ActionOverride("Maheer",JumpToPoint([490.275]))
+    ActionOverride("Maheer",Face(6))
+END
+
+IF
+  Global("G3MaheerTalk","GLOBAL",0)
+  Global("G3MaheerMove","GLOBAL",1)
+  AreaCheck("AR0713")
+  NumTimesTalkedToGT(0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3MaheerTalk","GLOBAL",1)
+END
+
+IF
+  Global("G3MaheerTalk","GLOBAL",0)
+  AreaCheck("AR0700")
+  NumTimesTalkedToGT(0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3MaheerTalk","GLOBAL",1)
+END
+
+IF
+  Global("G3MaheerTalk","GLOBAL",1)
+  Global("G3MaheerMove","GLOBAL",1)
+  AreaCheck("AR0713")
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    ActionOverride("Maheer",SetNumTimesTalkedTo(1))
+END
+
+IF
+  Global("G3MaheerTalk","GLOBAL",1)
+  AreaCheck("AR0700")
+  NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    ActionOverride("Maheer",SetNumTimesTalkedTo(1))
+END

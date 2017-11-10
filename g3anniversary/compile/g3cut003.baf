@@ -1,0 +1,53 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    CreateVisualEffect("SPGFLSH1",[2990.3050])
+    CreateVisualEffect("TRGOOYAA",[2940.3000])
+    CreateVisualEffect("WONDER",[3020.2950])
+    Wait(1)
+    DisplayStringHead("G3Drini",@119)
+    ActionOverride("G3Drini",EscapeAreaMove("g3g12a",361,678,3))
+    Wait(2)
+    CreateVisualEffect("SPPORTAL",[3136.2860]) // Mrs GTU
+    CreateVisualEffect("SPPORTAL",[3240.2990]) // Gibb 1
+    CreateVisualEffect("SPPORTAL",[3295.3014]) // Gibb 2
+    CreateVisualEffect("SPPORTAL",[3285.2963]) // Gibb 3
+    CreateVisualEffect("SPPORTAL",[3017.2938])
+    ActionOverride(Player2,CreateVisualEffect("SPPORTAL",[3034.2986]))
+    ActionOverride(Player3,CreateVisualEffect("SPPORTAL",[3036.2876]))
+    ActionOverride(Player4,CreateVisualEffect("SPPORTAL",[2956.2945]))
+    ActionOverride(Player5,CreateVisualEffect("SPPORTAL",[2949.2984]))
+    ActionOverride(Player6,CreateVisualEffect("SPPORTAL",[2940.2984]))
+    Wait(1)
+    FadeToColor([30.0],0)
+    Wait(2)
+    ActionOverride("G3MRSGTU",DestroySelf())
+    ActionOverride("G3GBBER1",DestroySelf())
+    ActionOverride("G3GBBER2",DestroySelf())
+    ActionOverride("G3GBBER3",DestroySelf())
+    Wait(1)
+    LeaveAreaLUA("G3G12B","",[700.513],10)
+    ActionOverride(Player2,LeaveAreaLUA("G3G12B","",[648.603],0))
+    ActionOverride(Player3,LeaveAreaLUA("G3G12B","",[596.513],6))
+    ActionOverride(Player4,LeaveAreaLUA("G3G12B","",[596.573],2))
+    ActionOverride(Player5,LeaveAreaLUA("G3G12B","",[648.603],8))
+    ActionOverride(Player6,LeaveAreaLUA("G3G12B","",[700.573],14))
+    CreateCreature("G3MRSGTU",[648.543],8)
+    CreateCreature("G3GBBER1",[648.465],8)
+    CreateCreature("G3GBBER2",[693.621],15)
+    CreateCreature("G3GBBER3",[603.621],3)
+    CreateCreature("G3G1201",[780.370],2)
+    CreateCreature("G3G1208",[648.743],8)
+    CreateCreature("G3G1203",[516.716],7)
+    CreateCreature("G3G1207",[410.443],14)
+    CreateCreature("G3G1211",[410.643],11)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    ActionOverride("G3G1201",StartDialogueNoSet("G3MRSGTU"))
+    EndCutSceneMode()
+END
+
+
+

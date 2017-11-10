@@ -1,0 +1,26 @@
+// this file contains all item descriptions, minus their usable/unusable blocks
+// translators can probably just copy over stuff from the main setup.tra and delete relevant bits
+
+@182 = ~Mage Boots of Self Preservation
+
+In ages past there lived a halfling named Worrelyn Nimbletoes, and like many of her kind she was known to be a little dishonest with the possessions of others. While not bad at her chosen profession, she was somewhat skittish and prone to run away at the first sign of trouble. This caution served her well, as by the time any real trouble arrived at the scene of the crime she was safely back at home in the warm embrace of a bowl of stew. Against a certain old wizard, though, not even her nimble feet could save her from an unfortunate fate.
+
+Dramauth the Deranged, the true identity of one of the feared cabal known as the Gibbering Twelve, was an intensely paranoid mage, and it was Worrelyn's misfortune to one day pay him a 'visit' during the night. She navigated past the many traps and wards, and escaped with several minor artifacts. As her own pair were slightly worse for wear, she picked up a pair of the wizard's boots she found in the hallway on her way out.
+
+There was no way she could have known that Dramauth had trapped all his possessions to guard against such theft. When she put the shoes on her soul was sucked into them and her body vanished, never to be seen again. Dramauth, in the morning, merely had to divine the location of his missing belongings and go and pick them up. Something of the halfling survives in those old boots to this day, manifesting itself in increasing the wearer's pace when confronted by danger.
+
+STATISTICS
+
++50% movement rate for one round when attacked
+~
+@190 = ~Tome of Arcane Recall
+
+This creaky, leather-bound tome was once the property of Jeremiah, a mage of minor repute from Waterdeep. Jeremiah crafted this tome for one of his less adept puils, hoping that it would aid the errant apprentice's woeful memory. While well-intenioned, the tome saw little use after Jeremiah's student had an unfortunate mishap and left his apprenticeship soon after.
+
+STATISTICS:
+
+Special ability: 
+  One time, permanent bonus of +10 lore upon its first use
+  Once per day, the tome enables the caster to bring back into memory two spells of fifth level or below that have been previously cast
+
+~

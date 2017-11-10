@@ -1,0 +1,57 @@
+IF
+  Global("G3CreateJavaHouse","GLOBAL",0)
+  AreaCheck("AR0713")
+THEN
+  RESPONSE #100
+    SetGlobal("G3CreateJavaHouse","GLOBAL",1)
+    CreateCreature("G3BEV",[385.590],6)
+    CreateCreature("G3JAVA01",[275.560],14)
+    CreateCreature("G3JAVA02",[325.505],12)
+    CreateCreature("G3JAVA03",[680.240],6)
+    CreateCreature("G3JAVA04",[510.505],6)
+    ActionOverride("Shelf 2",CreateItem("G3BOOK01",1,0,0))
+    ActionOverride("Shelf 3",CreateItem("G3BOOK02",1,0,0))
+    ActionOverride("Shelf 3",CreateItem("G3BOOK03",1,0,0))
+END
+
+IF
+  CheckStatGT(Player1,0,INTOXICATION)
+THEN
+  RESPONSE #100
+    ReallyForceSpellRES("G3JAVA1",Player1)
+END
+
+IF
+  CheckStatGT(Player2,0,INTOXICATION)
+THEN
+  RESPONSE #100
+    ReallyForceSpellRES("G3JAVA1",Player2)
+END
+
+IF
+  CheckStatGT(Player3,0,INTOXICATION)
+THEN
+  RESPONSE #100
+    ReallyForceSpellRES("G3JAVA1",Player3)
+END
+
+IF
+  CheckStatGT(Player4,0,INTOXICATION)
+THEN
+  RESPONSE #100
+    ReallyForceSpellRES("G3JAVA1",Player4)
+END
+
+IF
+  CheckStatGT(Player5,0,INTOXICATION)
+THEN
+  RESPONSE #100
+    ReallyForceSpellRES("G3JAVA1",Player5)
+END
+
+IF
+  CheckStatGT(Player6,0,INTOXICATION)
+THEN
+  RESPONSE #100
+    ReallyForceSpellRES("G3JAVA1",Player6)
+END

@@ -1,0 +1,23 @@
+IF
+  Dead("G3G1201")
+  Dead("G3G1202")
+  Dead("G3G1203")
+  Dead("G3G1204")
+  Dead("G3G1205")
+  Dead("G3G1206")
+  Dead("G3G1207")
+  Dead("G3G1208")
+  Dead("G3G1209")
+  Dead("G3G1210")
+  Dead("G3G1211")
+  Dead("G3G1212")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(2)
+    ReallyForceSpell(Myself,WIZARD_DISINTEGRATE_IGNORE_RESISTANCE)
+    Wait(1)
+    DestroySelf()
+END
+
+

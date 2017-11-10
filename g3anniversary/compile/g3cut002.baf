@@ -1,0 +1,21 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    CreateVisualEffect("SPPLANAR",[3240.2990])
+    CreateVisualEffect("SPPLANAR",[3295.3014])
+    CreateVisualEffect("SPPLANAR",[3285.2963])
+    Wait(2)
+    CreateCreature("G3GBBER1",[3240.2990],4)
+    CreateCreature("G3GBBER2",[3295.3014],4)
+    CreateCreature("G3GBBER3",[3285.2963],4)
+    Wait(2)
+    CreateVisualEffect("SPHOLYMT",[3240.2990])
+    CreateVisualEffect("SPHOLYMT",[3295.3014])
+    CreateVisualEffect("SPHOLYMT",[3285.2963])
+    Wait(2)
+    ActionOverride("G3DRINI",StartDialogueNoSet("G3MRSGTU"))
+    EndCutSceneMode()
+END
+

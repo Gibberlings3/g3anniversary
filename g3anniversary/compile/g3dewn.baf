@@ -1,0 +1,114 @@
+IF
+  Global("G3DewnPassOut","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ApplySpellRES("G3DRUNK",Myself)
+    SetGlobal("G3DewnPassOut","GLOBAL",2)
+    DisplayStringHead("G3DEWN",16193)
+END
+
+IF
+  Global("DewnyBeginsContest","LOCALS",1)
+  Range("FFWENCH",3)
+THEN
+  RESPONSE #100
+    SetGlobal("DewnyBeginsContest","LOCALS",2)
+    DisplayStringHead("FFWENCH",18413)
+    ActionOverride("FFWENCH",MoveToPointNoInterrupt([655.313]))
+    ActionOverride("FFWENCH",ChangeAIScript("WDRUNSGT",GENERAL))
+END
+
+IF
+  Global("DewnyBeginsContest","LOCALS",2)
+  !Range("FFWENCH",3)
+THEN
+  RESPONSE #100
+    SetGlobal("DewnyBeginsContest","LOCALS",3)
+    StartDialogueNoSet(Player1)
+END
+
+
+IF
+  Global("Whip","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("Whip","LOCALS",1)
+    ActionOverride("FFCOOK",MoveToPointNoInterrupt([825.287]))
+    EquipRanged()
+END
+
+// Begin the intro - talking to Samuel
+// added checks to make sure we don't fight with Keto
+IF
+  Global("G3DewnyQuest","GLOBAL",1)
+  InMyArea(Player1)
+  OR(2)
+    !InMyArea("keto")
+    GlobalGT("KetoTale","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3DewnyQuest","GLOBAL",2)
+    SetGlobal("G3DewnyIntro","GLOBAL",1)
+    SetInterrupt(FALSE)
+    StartDialogueNoSet("FFBART")
+END
+
+// Now moves to customer 3 and talks
+IF
+  Global("G3DewnyIntro","GLOBAL",2)
+  !Global("Customer3","LOCALS",1)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("Customer3","LOCALS",1)
+    MoveToPointNoInterrupt([585.451])
+    StartDialogueNoSet("G3FFCUS1")
+END
+
+// Then to customer 9
+IF
+  Global("G3DewnyIntro","GLOBAL",3)
+  Global("Customer9","LOCALS",0)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("Customer9","LOCALS",1)
+    MoveToPointNoInterrupt([499.536])
+    Dialog("G3FFCUS2")
+END
+
+// Then to Belle
+IF
+  Global("G3DewnyIntro","GLOBAL",4)
+  Global("Customer6","LOCALS",0)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("Customer6","LOCALS",1)
+    MoveToObjectNoInterrupt("belle")
+    Dialogue("belle")
+END
+
+// Then to Jerry Jamtoes & Hrothgar
+IF
+  Global("G3DewnyIntro","GLOBAL",5)
+  Global("Customer8","LOCALS",0)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("Customer8","LOCALS",1)
+    MoveToObjectNoInterrupt("jerry")
+    SetInterrupt(TRUE)
+    Dialogue("jerry")
+END
+
+// Samuel will say
+IF
+  Range("FFCOOK",2)
+  Global("NearUdaTrigger","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("NearUdaTrigger","LOCALS",1)
+    SetGlobal("G3DewnyGotCake","GLOBAL",1)
+    ActionOverride("FFBART",StartDialogueNoSet(Player1))
+END

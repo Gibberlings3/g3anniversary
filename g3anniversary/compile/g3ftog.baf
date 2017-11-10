@@ -1,0 +1,11 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("G3Fitz")
+		Wait(1)
+		MoveToObject("G3Grim")
+		Wait(1)
+		EndCutSceneMode()
+		Dialogue("G3Grim")
+END

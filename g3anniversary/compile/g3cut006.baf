@@ -1,0 +1,13 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    CreateCreature("G3LAUR",[146.521],0)
+    ActionOverride("G3LAUR",MoveToObject("G3Corr"))
+    Wait(4)
+    ActionOverride("G3Laur",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END
+

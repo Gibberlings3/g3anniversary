@@ -1,0 +1,8 @@
+IF
+  Global("G3AriQuest","AR0300",0)
+  Global("G3Corradun","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("G3AriQuest","AR0300",1)
+    CreateCreature("G3ARI",[2051.2213],11)
+END

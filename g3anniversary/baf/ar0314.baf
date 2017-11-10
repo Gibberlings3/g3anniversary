@@ -1,0 +1,22 @@
+IF
+  Global("G3CORRADUN","GLOBAL",1)
+  Global("G3CorrStuff","AR0314",0)
+THEN
+  RESPONSE #100
+    CreateCreature("G3CORR",[756.295],0)
+    CreateCreature("G3SAILR1",[677.295],0)
+    CreateCreature("G3SAILR2",[815.347],0)
+    CreateCreature("G3SAILR3",[727.374],0)
+    SetGlobal("G3CorrStuff","AR0314",1)
+END
+
+IF
+  GlobalTimerExpired("G3ClearOutTheDrunks","AR0314")
+  Global("G3CorrStuff","AR0314",4)
+THEN
+  RESPONSE #100
+    ActionOverride("G3SAILR1",DestroySelf())
+    ActionOverride("G3SAILR2",DestroySelf())
+    ActionOverride("G3SAILR3",DestroySelf())
+    SetGlobal("G3CorrStuff","AR0314",5)
+END

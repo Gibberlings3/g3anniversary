@@ -1,0 +1,16 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    ApplySpellRES("G3DRUNK","G3SAILR1")
+//    ApplySpell("G3SAILR1",SURE_SLEEP)
+    Wait(1)
+    ApplySpellRES("G3DRUNK","G3SAILR2")
+//    ApplySpell("G3SAILR2",SURE_SLEEP)
+    Wait(1)
+    ActionOverride("G3SAILR3",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END
+

@@ -1,0 +1,9 @@
+IF
+  Global("G3G12Hostile","G3G12B",1)
+  !Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+             Enemy()
+             Continue()
+END
+

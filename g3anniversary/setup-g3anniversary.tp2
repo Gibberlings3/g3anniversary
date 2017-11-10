@@ -1,0 +1,478 @@
+BACKUP ~G3Anniversary/backup~
+AUTHOR ~The Gibberlings Three - webmaster@gibberlings3.net~
+
+VERSION v9
+
+README ~g3anniversary/readme-g3anniversary.html~
+
+LANGUAGE ~English~ ~English~ ~G3Anniversary/english/setup.tra~ // language menu
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// G3 Anniversary Mod                               \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @100 // component 0
+
+ACTION_IF GAME_IS ~BG2EE~ BEGIN
+
+  LOAD_TRA ~G3Anniversary/%LANGUAGE%/setup_ee.tra~
+
+  // these don't execute on non-EE, but since I've already got an EE-only block, let's drop them here
+  ADD_JOURNAL TITLE (@19984) @19985 @19986 @19987 @19988 @19989 @19990 @19991 @19992 @19993 @19994 @19995 @19996 @19997 @19998 @19999
+
+END ELSE BEGIN
+
+  APPEND ~state.ids~ // adds custom IsValidForPartyDialogue state
+    ~0x80101FEF CD_STATE_NOTVALID~
+    UNLESS ~CD_STATE_NOTVALID~
+
+  // adds ToB scripting commands if SoA-only install
+  INCLUDE ~G3Anniversary/lib/tob2soa.tpa~
+
+  // force WeiDU to reload altered IDS files
+  CLEAR_IDS_MAP
+
+END
+
+APPEND ~mastarea.2da~ ~G3G12B  value~
+
+COPY_EXISTING ~worldmap.wmp~ ~override~
+  READ_LONG  0x30 "area_num"
+  READ_LONG  0x34 "area_off"
+  READ_LONG  0x38 "link_off"
+  READ_LONG  0x3c "link_num"
+  WRITE_LONG 0x30 ("%area_num%" + 1)
+  WRITE_LONG 0x38 ("%link_off%" + 0xf0)
+  WRITE_LONG 0x3c ("%link_num%" + 4)
+  READ_LONG ("%area_off%" + 0x128) "coord_x" // x coordinate of area 1 file, the slums
+  READ_LONG ("%area_off%" + 0x12c) "coord_y" // y coordinate of area 1 file, the slums
+  FOR (index = 0 ; index < 4 ; index = index + 1) BEGIN
+    INSERT_BYTES  ("%link_off%"        + (0xd8 * "%link_num%")) 0xd8     // inserting new link
+      WRITE_LONG  ("%link_off%"        + (0xd8 * "%link_num%")) 1        // target slums
+      WRITE_ASCII ("%link_off%" + 0x04 + (0xd8 * "%link_num%")) ~ExitSE~ // slums entry point
+      WRITE_LONG  ("%link_off%" + 0x28 + (0xd8 * "%link_num%")) 4        // unknown value--matching other links just in case
+  END
+  INSERT_BYTES ("%area_off%" + (0xf0 * "%area_num%")) 0xf0 // inserting new area to wmp
+    WRITE_ASCII ("%area_off%" +        (0xf0 * "%area_num%")) ~G3G12B~
+    WRITE_ASCII ("%area_off%" + 0x08 + (0xf0 * "%area_num%")) ~G3G12B~
+    WRITE_ASCII ("%area_off%" + 0x10 + (0xf0 * "%area_num%")) ~G3G12B~
+    WRITE_LONG  ("%area_off%" + 0x34 + (0xf0 * "%area_num%")) 27                 // mapicon number--set to invalid (no icon)
+    WRITE_LONG  ("%area_off%" + 0x38 + (0xf0 * "%area_num%")) ("%coord_x%" - 50) // coordinates set to be roughly midway
+    WRITE_LONG  ("%area_off%" + 0x3C + (0xf0 * "%area_num%")) ("%coord_y%" + 15) // between slums and promenade
+    WRITE_LONG  ("%area_off%" + 0x50 + (0xf0 * "%area_num%")) ("%link_num%")     // N link index
+    WRITE_LONG  ("%area_off%" + 0x54 + (0xf0 * "%area_num%")) 1                  // one link N
+    WRITE_LONG  ("%area_off%" + 0x58 + (0xf0 * "%area_num%")) ("%link_num%" + 3) // W link index
+    WRITE_LONG  ("%area_off%" + 0x5c + (0xf0 * "%area_num%")) 1                  // one link W
+    WRITE_LONG  ("%area_off%" + 0x60 + (0xf0 * "%area_num%")) ("%link_num%" + 2) // S link index
+    WRITE_LONG  ("%area_off%" + 0x64 + (0xf0 * "%area_num%")) 1                  // one link S
+    WRITE_LONG  ("%area_off%" + 0x68 + (0xf0 * "%area_num%")) ("%link_num%" + 1) // E link index
+    WRITE_LONG  ("%area_off%" + 0x6c + (0xf0 * "%area_num%")) 1                  // one link E
+
+COPY ~G3Anniversary/copy~ ~override~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~j#klsyj.dlg~ THEN BEGIN
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~cddelaij.dlg~ THEN BEGIN
+
+    COMPILE ~G3Anniversary/compile~
+            ~G3Anniversary/dlg/kelsey.d~
+            ~G3Anniversary/dlg/delainy.d~ // kelsey and delainy installed
+
+  END ELSE BEGIN
+
+    COMPILE ~G3Anniversary/compile~
+            ~G3Anniversary/dlg/kelsey.d~ // just kelsey installed
+
+  END
+
+END ELSE BEGIN
+
+  ACTION_IF FILE_EXISTS_IN_GAME ~cddelaij.dlg~ THEN BEGIN
+
+    COMPILE ~G3Anniversary/compile~
+            ~G3Anniversary/dlg/delainy.d~ // just delainy installed
+
+  END ELSE BEGIN
+
+    COMPILE ~G3Anniversary/compile~ // neither kelsey nor delainy installed
+
+  END
+
+END
+
+COPY_EXISTING ~ar0700.are~ ~override~ // Promenade Map Note
+  ADD_MAP_NOTE #1500 #1770 ~gray~ @160
+
+/////                                                  \\\\\
+///// scripting                                        \\\\\
+/////                                                  \\\\\
+
+EXTEND_BOTTOM ~ar0022.bcs~   ~G3Anniversary/baf/ar0022.baf~   // Moniq coding
+EXTEND_BOTTOM ~ar0300.bcs~   ~G3Anniversary/baf/ar0300.baf~   // spawns Ari
+EXTEND_BOTTOM ~ar0314.bcs~   ~G3Anniversary/baf/ar0314.baf~   // spawns corradun and friends
+EXTEND_BOTTOM ~ar0406.bcs~   ~G3Anniversary/baf/ar0406.baf~   // spawns Drini
+EXTEND_BOTTOM ~ar0500.bcs~   ~G3Anniversary/baf/ar0500.baf~   // adds scripting for Scam
+EXTEND_BOTTOM ~ar0509.bcs~   ~G3Anniversary/baf/ar0509.baf~   // spawns Dewny & co
+EXTEND_BOTTOM ~ar0513.bcs~   ~G3Anniversary/baf/ar0513.baf~   // spawns Robukin
+EXTEND_BOTTOM ~ar0522.bcs~   ~G3Anniversary/baf/ar0509.baf~   // spawns Dewny & co, post-bard stronghold
+EXTEND_BOTTOM ~ar0522.bcs~   ~G3Anniversary/baf/ar0522.baf~   // additional dewny spawn scripting for bard stronghold area change
+EXTEND_BOTTOM ~ar0704.bcs~   ~G3Anniversary/baf/ar0704.baf~   // spawns Ice & Ido
+EXTEND_BOTTOM ~ar0709.bcs~   ~G3Anniversary/baf/ar0709.baf~   // spawns Grim & Fitz
+EXTEND_BOTTOM ~ar0713.bcs~   ~G3Anniversary/baf/ar0713.baf~   // java house
+EXTEND_BOTTOM ~ar1000.bcs~   ~G3Anniversary/baf/ar1000.baf~   // spawns jps
+
+COPY_EXISTING ~ar0509.are~ ~override~ // assigns area script to Five Flagons
+              ~ar0713.are~ ~override~ // assigns area script to Promenade shop
+  WRITE_EVALUATED_ASCII 0x94 ~%SOURCE_RES%~ #8
+  BUT_ONLY_IF_IT_CHANGES
+
+/////                                                  \\\\\
+///// store                                            \\\\\
+/////                                                  \\\\\
+
+COPY ~G3Anniversary/sto/g3java.sto~   ~override~
+  SAY NAME2 @160
+  SAY 0xa4 @161
+  SAY 0xb8 @162
+  SAY 0xcc @163
+  SAY 0xe0 @164
+  SAY 0xf4 @165
+
+/////                                                  \\\\\
+///// items                                            \\\\\
+/////                                                  \\\\\
+
+COPY_EXISTING ~book10.itm~ ~override/g3book01.itm~
+  SAY NAME1 @138
+  SAY NAME2 @138
+  SAY UNIDENTIFIED_DESC @139
+
+COPY_EXISTING ~book10.itm~ ~override/g3book02.itm~
+  SAY NAME1 @140
+  SAY NAME2 @140
+  SAY UNIDENTIFIED_DESC @141
+
+COPY_EXISTING ~book10.itm~ ~override/g3book03.itm~
+  SAY NAME1 @142
+  SAY NAME2 @142
+  SAY UNIDENTIFIED_DESC @143
+
+COPY_EXISTING ~misc7o.itm~ ~override/g3brscrl.itm~
+  SAY NAME1 @155
+  SAY NAME2 @155
+  SAY UNIDENTIFIED_DESC @156
+  SAY DESC @156
+
+COPY ~G3Anniversary/itm/g3drink1.itm~ ~override~
+  SAY NAME1 @130
+  SAY NAME2 @130
+  SAY UNIDENTIFIED_DESC @131
+  SAY DESC @131
+
+COPY ~G3Anniversary/itm/g3drink2.itm~ ~override~
+  SAY NAME1 @121
+  SAY NAME2 @121
+  SAY UNIDENTIFIED_DESC @122
+  SAY DESC @122
+
+COPY ~G3Anniversary/itm/g3drink3.itm~ ~override~
+  SAY NAME1 @126
+  SAY NAME2 @126
+  SAY UNIDENTIFIED_DESC @127
+  SAY DESC @127
+
+COPY ~G3Anniversary/itm/g3drink4.itm~ ~override~
+  SAY NAME1 @169
+  SAY NAME2 @169
+  SAY UNIDENTIFIED_DESC @170
+  SAY DESC @170
+
+COPY ~G3Anniversary/itm/g3drink5.itm~ ~override~
+  SAY NAME1 @149
+  SAY NAME2 @149
+  SAY UNIDENTIFIED_DESC @150
+  SAY DESC @150
+
+COPY ~G3Anniversary/itm/g3drink6.itm~ ~override~
+  SAY NAME1 @173
+  SAY NAME2 @173
+  SAY UNIDENTIFIED_DESC @174
+  SAY DESC @174
+
+COPY ~G3Anniversary/itm/g3drink7.itm~ ~override~
+  SAY NAME1 @178
+  SAY NAME2 @178
+  SAY UNIDENTIFIED_DESC @179
+  SAY DESC @179
+
+COPY_EXISTING ~misc4n.itm~ ~override/g3java1.itm~
+  SAY NAME1 @136
+  SAY NAME2 @136
+  SAY UNIDENTIFIED_DESC @137
+
+COPY ~G3Anniversary/itm/g3java2.itm~  ~override~
+  SAY NAME1 @144
+  SAY NAME2 @144
+  SAY UNIDENTIFIED_DESC @145
+  SAY DESC @145
+
+COPY ~G3Anniversary/itm/g3key1.itm~ ~override~
+  SAY NAME1 @171
+  SAY NAME2 @171
+  SAY UNIDENTIFIED_DESC @172
+  SAY DESC @172
+
+COPY_EXISTING ~misc8i.itm~ ~override/g3list.itm~
+  SAY NAME1 @124
+  SAY NAME2 @124
+  SAY UNIDENTIFIED_DESC @125
+  SAY DESC @125
+
+COPY ~G3Anniversary/itm/g3oil.itm~ ~override~
+  SAY NAME1 @152
+  SAY NAME2 @152
+  SAY UNIDENTIFIED_DESC @153
+  SAY DESC @153
+
+COPY ~G3Anniversary/itm/cdmgboot.itm~ ~override~
+  SAY NAME1 #6339
+  SAY NAME2 @181
+  SAY UNIDENTIFIED_DESC #6824
+  SAY DESC @182
+
+COPY ~G3Anniversary/spl/cdmgboot.spl~ ~override~
+  SAY NAME1 #0
+  SAY NAME2 #0
+  SAY UNIDENTIFIED_DESC #0
+  SAY DESC #0
+  SAY 0xCE @187
+
+COPY ~G3Anniversary/itm/cdioun1.itm~ ~override~  // Deep Purple Ioun Stone
+  SAY NAME1 #8181
+  SAY NAME2 @183
+  SAY IDENTIFIED_DESC @184
+  SAY UNIDENTIFIED_DESC #5770
+
+COPY ~G3Anniversary/itm/cdioun2.itm~ ~override~ // Flickering White Ioun Stone
+  SAY NAME1 #8181
+  SAY NAME2 @185
+  SAY IDENTIFIED_DESC @186
+  SAY UNIDENTIFIED_DESC #5770
+
+COPY ~G3Anniversary/itm/g3wrtom1.itm~ ~override~ // tome of arcane recall
+     ~G3Anniversary/itm/g3wrtom2.itm~ ~override~ // tome of arcane recall
+  SAY NAME2 @189
+  SAY IDENTIFIED_DESC @190
+
+/////                                                  \\\\\
+///// creature files                                   \\\\\
+/////                                                  \\\\\
+
+COPY ~G3Anniversary/cre/g3ari.cre~ ~override~
+  SAY NAME1 @120
+  SAY NAME2 @120
+
+COPY ~G3Anniversary/cre/g3bev.cre~ ~override~
+  SAY NAME1 @147
+  SAY NAME2 @147
+
+COPY ~G3Anniversary/cre/g3bigrob.cre~ ~override~
+  SAY NAME1 @134
+  SAY NAME2 @134
+
+COPY ~G3Anniversary/cre/g3corr.cre~ ~override~
+  SAY NAME1 @159
+  SAY NAME2 @159
+
+COPY ~G3Anniversary/cre/g3dewn.cre~ ~override~
+  SAY NAME1 @129
+  SAY NAME2 @129
+
+COPY ~G3Anniversary/cre/g3drini.cre~ ~override~
+  SAY NAME1 @118
+  SAY NAME2 @118
+
+COPY ~G3Anniversary/cre/g3ffcus1.cre~ ~override~
+  SAY NAME1 @132
+  SAY NAME2 @132
+
+COPY ~G3Anniversary/cre/g3ffcus2.cre~ ~override~
+  SAY NAME1 @133
+  SAY NAME2 @133
+
+COPY_EXISTING ~ffcust07.cre~ ~override~
+  WRITE_ASCII ~0x280~ ~ffcust07~ #32
+
+COPY ~G3Anniversary/cre/g3fitz.cre~ ~override~
+  SAY NAME1 @167
+  SAY NAME2 @167
+
+COPY ~G3Anniversary/cre/g3g1201.cre~ ~override~
+  SAY NAME1 @101
+  SAY NAME2 @101
+
+COPY ~G3Anniversary/cre/g3g1202.cre~ ~override~
+  SAY NAME1 @102
+  SAY NAME2 @102
+
+COPY ~G3Anniversary/cre/g3g1203.cre~ ~override~
+  SAY NAME1 @103
+  SAY NAME2 @103
+
+COPY ~G3Anniversary/cre/g3g1204.cre~ ~override~
+  SAY NAME1 @104
+  SAY NAME2 @104
+
+COPY ~G3Anniversary/cre/g3g1205.cre~ ~override~
+  SAY NAME1 @105
+  SAY NAME2 @105
+
+ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN BEGIN// if ToB is installed
+
+  COPY ~G3Anniversary/cre/g3g1206w.cre~ ~override/g3g1206.cre~ //wild mage
+    SAY NAME1 @106
+    SAY NAME2 @106
+
+END ELSE BEGIN
+
+  COPY ~G3Anniversary/cre/g3g1206.cre~ ~override~ //transmuter
+    SAY NAME1 @106
+    SAY NAME2 @106
+
+END
+
+COPY ~G3Anniversary/cre/g3g1207.cre~ ~override~
+  SAY NAME1 @107
+  SAY NAME2 @107
+
+COPY ~G3Anniversary/cre/g3g1208.cre~ ~override~
+  SAY NAME1 @108
+  SAY NAME2 @108
+
+COPY ~G3Anniversary/cre/g3g1209.cre~ ~override~
+  SAY NAME1 @109
+  SAY NAME2 @109
+
+COPY ~G3Anniversary/cre/g3g1210.cre~ ~override~
+  SAY NAME1 @110
+  SAY NAME2 @110
+
+COPY ~G3Anniversary/cre/g3g1211.cre~ ~override~
+  SAY NAME1 @111
+  SAY NAME2 @111
+
+COPY ~G3Anniversary/cre/g3g1212.cre~ ~override~
+  SAY NAME1 @112
+  SAY NAME2 @112
+
+COPY ~G3Anniversary/cre/g3grim.cre~ ~override~
+  SAY NAME1 @166
+  SAY NAME2 @166
+
+COPY ~G3Anniversary/cre/g3java01.cre~ ~override~
+  SAY NAME1 @148
+  SAY NAME2 @148
+
+COPY ~G3Anniversary/cre/g3java02.cre~ ~override~
+  SAY NAME1 @151
+  SAY NAME2 @151
+
+COPY ~G3Anniversary/cre/g3java03.cre~ ~override~
+  SAY NAME1 @154
+  SAY NAME2 @154
+
+COPY ~G3Anniversary/cre/g3java04.cre~ ~override~
+  SAY NAME1 @157
+  SAY NAME2 @157
+
+COPY ~G3Anniversary/cre/g3jps.cre~ ~override~
+  SAY NAME1 @168
+  SAY NAME2 @168
+
+COPY ~G3Anniversary/cre/g3kebodi.cre~ ~override~
+  SAY NAME1 @176
+  SAY NAME2 @176
+
+COPY ~G3Anniversary/cre/g3laur.cre~ ~override~
+  SAY NAME1 @180
+  SAY NAME2 @180
+
+COPY ~G3Anniversary/cre/g3maid.cre~ ~override~
+  SAY NAME1 @123
+  SAY NAME2 @123
+
+COPY ~G3Anniversary/cre/g3moniq.cre~ ~override~
+  SAY NAME1 @128
+  SAY NAME2 @128
+
+COPY ~G3Anniversary/cre/g3mrsgtu.cre~ ~override~
+  SAY NAME1 @117
+  SAY NAME2 @117
+
+COPY_EXISTING ~barsail1.cre~ ~override/g3sailr1.cre~
+              ~barsail1.cre~ ~override/g3sailr2.cre~
+              ~barsail1.cre~ ~override/g3sailr3.cre~
+  WRITE_EVALUATED_ASCII 0x248 ~%DEST_RES%~ #8  // override script
+  WRITE_EVALUATED_ASCII 0x280 ~%DEST_RES%~ #32 // dv
+  WRITE_EVALUATED_ASCII 0x2CC ~%DEST_RES%~ #8  // dialogue
+
+COPY ~G3Anniversary/cre/g3scam.cre~ ~override~
+  SAY NAME1 @113
+  SAY NAME2 @113
+
+COPY ~G3Anniversary/cre/g3scamdg.cre~ ~override~
+  SAY NAME1 @116
+  SAY NAME2 @116
+
+// give maheer a custom script
+COPY_EXISTING ~shop03.cre~ ~override~
+  WRITE_ASCII 0x250 ~g3maheer~ #8
+  SAY NAME1 @135
+  SAY NAME2 @135
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY ~G3Anniversary/cre/g3suleci.cre~ ~override~
+  SAY NAME1 @175
+  SAY NAME2 @175
+
+/////                                                  \\\\\
+///// compat code for BP-BGT worldmap                  \\\\\
+/////                                                  \\\\\
+
+PRINT @2
+
+ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
+
+  COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+    APPEND_FILE ~G3Anniversary/Worldmap/areas.tbl~
+
+  COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+    APPEND_FILE ~G3Anniversary/Worldmap/links.tbl~
+
+  //preliminary step - making LANGUAGE temporary file until the new WeiDU
+  //COPY - ~G3Anniversary/Worldmap/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
+
+  COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+    APPEND_FILE ~G3Anniversary/Worldmap/%LANGUAGE%/worldmap.tra~
+    //APPEND_FILE ~tmp_worldmap.tra~
+
+END ELSE BEGIN
+
+  MKDIR ~Worldmap~
+  COPY ~G3Anniversary/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
+  COPY ~G3Anniversary/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
+  COPY ~G3Anniversary/Worldmap/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+
+END
+
+/////                                                  \\\\\
+///// final wrapup                                     \\\\\
+/////                                                  \\\\\
+
+LAF HANDLE_AUDIO STR_VAR audio_path = ~g3anniversary/audio~ oggdec_path = ~g3anniversary/audio~ sox_path = ~g3anniversary/audio~ END // this replaces all the junk below
+
+LAF HANDLE_TILESETS STR_VAR tiz_path = ~g3anniversary/tiz~ tizunpack_path = ~g3anniversary/tiz~ END

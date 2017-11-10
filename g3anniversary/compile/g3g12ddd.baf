@@ -1,0 +1,19 @@
+IF
+  Global("G3DDDelay","LOCALS",0)
+  Global("G3StartTimers","G3G12B",2)
+THEN
+  RESPONSE #100
+    SetGlobal("G3DDDelay","LOCALS",1)
+    SetGlobalTimer("G3DDDelayTimer","LOCALS",4)
+    Wait(4)
+    SetInterrupt(FALSE)
+END
+
+IF
+  Global("G3DDDelay","LOCALS",1)
+  GlobalTimerExpired("G3DDDelayTimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobal("G3DDDelay","LOCALS",2)
+    SetInterrupt(TRUE)
+END

@@ -1,0 +1,73 @@
+IF
+    Global("G3Scam","GLOBAL",0)
+    !Range([PC],3)
+THEN
+    RESPONSE #100
+             MoveToObject([PC])
+END
+
+IF
+    Global("G3Scam","GLOBAL",0)
+    Range([PC],3)
+THEN
+    RESPONSE #100
+             StartDialogueNoSet(PLAYER1)
+END
+
+IF
+    Global("G3Scam","GLOBAL",1)
+    HasItem("G3DRINK1",Myself)
+    GlobalTimerExpired("G3ScamTheftEscape","AR0500")
+THEN
+    RESPONSE #100
+      DestroySelf()
+END
+
+IF
+    Global("G3Scam","GLOBAL",1)
+    HasItem("G3DRINK1",Myself)
+    !GlobalTimerNotExpired("G3ScamTheftEscape","AR0500")
+THEN
+    RESPONSE #100
+      SetGlobalTimer("G3ScamTheftEscape","AR0500",3)
+      MoveToPointNoInterrupt([2604.2277])
+END
+
+IF
+    Global("G3ScamSaga","AR0500",3)
+    HasItem("G3DRINK1",Myself)
+THEN
+    RESPONSE #100
+             DisplayStringHead(Myself,@115)
+             DropItem("G3DRINK1",[-1.-1])
+             SetInterrupt(FALSE)
+             EscapeArea()
+END
+
+IF
+    Global("G3ScamSaga","AR0500",3)
+    !HasItem("G3DRINK1",Myself)
+THEN
+    RESPONSE #100
+             SetInterrupt(FALSE)
+             EscapeArea()
+END
+
+IF
+    !Global("G3Scam","GLOBAL",0)
+    Allegiance(Myself,NEUTRAL)
+    Dead("G3ScamDg")
+THEN
+    RESPONSE #100
+              Enemy()
+END
+
+IF
+    GlobalGT("G3Scam","GLOBAL",1)
+    AttackedBy([ANYONE],DEFAULT)
+    !Dead("G3ScamDg")
+THEN
+     RESPONSE #100
+              SetGlobal("G3ScamSaga","AR0500",3)
+              DisplayStringHead("G3Scam",@114)
+END

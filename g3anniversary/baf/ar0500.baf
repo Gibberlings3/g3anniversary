@@ -1,0 +1,21 @@
+IF
+  PartyHasItem("G3DRINK1")
+  Global("G3ScamSaga","AR0500",0)
+THEN
+  RESPONSE #100
+    CreateCreature("G3SCAM",[3112.2147],12)
+    SetGlobal("G3ScamSaga","AR0500",1)
+END
+
+IF
+  Global("G3Scam","GLOBAL",2)
+  Global("G3ScamSaga","AR0500",1)
+THEN
+  RESPONSE #100
+    CreateCreature("G3SCAM",[4109.2832],14)
+    CreateCreature("G3SCAMDG",[4155.2818],14)
+    GiveItemCreate("G3DRINK1","G3Scam",1,0,0)
+    ActionOverride("G3SCAM",DestroyItem("minhp1"))
+    SetGlobal("G3ScamSaga","AR0500",2)
+END
+

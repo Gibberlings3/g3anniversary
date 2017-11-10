@@ -1,0 +1,10 @@
+IF
+  Global("G3SpawnIceNIdo","AR0704",0)
+THEN
+  RESPONSE #100
+    CreateCreature("G3SULECI",[677.674],10)
+    CreateCreature("G3KEBODI",[617.697],6)
+    ActionOverride("G3Suleci",FaceObject("G3Kebodi"))
+    ActionOverride("G3Kebodi",FaceObject("G3Suleci"))
+    SetGlobal("G3SpawnIceNIdo","AR0704",1)
+END

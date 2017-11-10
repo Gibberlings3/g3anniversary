@@ -1,0 +1,13 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("G3Grim")
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		EndCutSceneMode()
+		Dialogue(Player1)
+END

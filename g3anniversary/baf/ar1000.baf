@@ -1,0 +1,7 @@
+IF
+  Global("G3JPSSpawn","AR1000",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3JPSSpawn","AR1000",1)
+    CreateCreature("G3JPS",[2954.1300],6)
+END

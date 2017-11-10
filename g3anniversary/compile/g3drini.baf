@@ -1,0 +1,26 @@
+IF
+  !Global("G3DriniFlees","G3G12A",1)
+  AreaCheck("g3g12a")
+  See([PC])
+  InMyArea("g3mrsgtu")
+THEN
+  RESPONSE #100
+    Dialogue("g3mrsgtu")
+END
+
+IF
+  Global("G3DriniFlees","G3G12A",1)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([475.944])
+    DestroySelf()
+END
+
+// in case Drini gets stranded in the slums
+IF
+  AreaCheck("ar0400")
+  Global("G3StartTimers","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

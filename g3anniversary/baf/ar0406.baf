@@ -1,0 +1,8 @@
+IF
+  Global("G3DriniSpawn","AR0406",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3DriniSpawn","AR0406",1)
+    CreateCreature("G3DRINI",[488.1330],14)
+    CreateCreature("G3MAID",[400.1250],14)
+END

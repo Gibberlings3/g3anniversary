@@ -1,0 +1,42 @@
+// three additional blocks to spawn dewny post-playhouse
+
+// if dewny et al spawned in ar0509 but didn't do anything
+IF
+  Global("G3DewnyExists","GLOBAL",1)
+  GlobalLT("G3DewnyQuest","GLOBAL",2)
+  Global("G3DewnyExistsLocal","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3DewnyExistsLocal","MYAREA",1)
+    CreateCreature("G3DEWN",[505.295],2) // original spawn location
+    CreateCreature("G3FFCUS1",[571.478],5)
+    CreateCreature("G3FFCUS2",[465.544],1)
+END
+
+// player got drink by distracting her with cake
+IF
+  Global("G3DewnyExists","GLOBAL",1)
+  Global("G3DewnyExistsLocal","MYAREA",0)
+  Global("G3DewnyWantsCake","GLOBAL",1)
+THEN 
+  RESPONSE #100
+    CreateCreature("G3DEWN",[796.261],2) // waiting by Uda
+    SetGlobal("G3DewnyExistsLocal","MYAREA",1)
+    CreateCreature("G3FFCUS1",[571.478],5)
+    CreateCreature("G3FFCUS2",[465.544],1)
+END
+
+// player got drink via drinking contest
+IF
+  Global("G3DewnyExists","GLOBAL",1)
+  Global("G3DewnPassOut","GLOBAL",2)
+  Global("G3DewnyExistsLocal","MYAREA",0)
+THEN 
+  RESPONSE #100
+    SetGlobal("G3DewnyExistsLocal","MYAREA",1)
+    CreateCreature("G3DEWN",[670.197],2) // her pass-out point
+    ActionOverride("g3dewn",ApplySpellRES("G3DRUNK",Myself))
+    CreateCreature("G3FFCUS1",[571.478],5)
+    CreateCreature("G3FFCUS2",[465.544],1)
+END
+

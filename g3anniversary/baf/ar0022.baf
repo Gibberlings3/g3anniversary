@@ -1,0 +1,48 @@
+/*
+G3MoniqQuest GLOBAL Notes:
+0 -> 1 from Suleci and Kebodi
+1 -> 2 from Crooked Crane barkeep
+2 -> 3 for Monique Spawn
+3 -> 4 in initial talk with Monique
+4 -> 5 to start suicide timer
+5 -> 6 when timer expires to initiate final dialogue
+6 -> 7 to end quest in Monique's farewell dialogue
+*/
+
+IF
+  Global("G3MoniqQuest","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("G3MoniqQuest","GLOBAL",3)
+    CreateCreature("G3MONIQ",[474.620],6)
+END
+
+IF
+  Global("G3MoniqQuest","GLOBAL",4)
+THEN
+  RESPONSE #100
+    SetGlobal("G3MoniqQuest","GLOBAL",5)
+    SetGlobalTimer("G3MoniqTimer","GLOBAL",10)
+END
+
+IF
+  GlobalTimerExpired("G3MoniqTimer","GLOBAL")
+  Global("G3MoniqQuest","GLOBAL",5)
+  !Dead("G3Moniq")
+  !StateCheck("G3Moniq",CD_STATE_NOTVALID)
+  Allegiance("G3Moniq",NEUTRAL)
+THEN
+  RESPONSE #100
+    SetGlobal("G3MoniqQuest","GLOBAL",6)
+    ActionOverride("G3Moniq",StartDialogueNoSet([PC]))
+END
+
+IF
+  PartyHasItem("G3Drink3")
+  Global("G3AddMoniqJournal","AR0022",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3AddMoniqJournal","AR0022",1)
+    AddJournalEntry(@19987,QUEST)
+END    
+

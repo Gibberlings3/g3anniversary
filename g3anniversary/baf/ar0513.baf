@@ -1,0 +1,7 @@
+IF
+  Global("G3RobukinSpawn","AR0513",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3RobukinSpawn","AR0513",1)
+    CreateCreature("G3BIGROB",[322.483],14)
+END

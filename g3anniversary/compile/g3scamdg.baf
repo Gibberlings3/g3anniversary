@@ -1,0 +1,23 @@
+IF
+    Global("G3ScamSaga","AR0500",3)
+THEN
+    RESPONSE #100
+             SetInterrupt(FALSE)
+             EscapeArea()
+END
+
+IF
+    Allegiance(Myself,NEUTRAL)
+    Dead("G3Scam")
+THEN
+    RESPONSE #100
+              Enemy()
+END
+
+IF
+    AttackedBy([ANYONE],DEFAULT)
+    !Dead("G3Scam")
+THEN
+     RESPONSE #100
+              SetGlobal("G3ScamSaga","AR0500",3)
+END

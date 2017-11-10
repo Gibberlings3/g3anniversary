@@ -1,0 +1,13 @@
+EXTEND_BOTTOM G3MRSGTU G3SummonAlready
+IF ~InParty("C!Delai")
+    See("C!Delai")
+    !Dead("C!Delai")
+    !StateCheck("C!Delai",CD_STATE_NOTVALID)~ EXTERN CDDELAIJ DelainyMrsGTU
+END
+
+CHAIN CDDELAIJ DelainyMrsGTU @11234
+== G3MRSGTU @11235
+== CDDELAIJ @11236
+== G3MRSGTU @11237
+== CDDELAIJ @11238
+END G3MRSGTU G3SummonAlreadyCont

@@ -1,0 +1,9 @@
+IF
+  Global("G3GrimAndDancer","GLOBAL",1)
+  Global("G3SpawnGrimNFitz","AR0709",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3SpawnGrimNFitz","AR0709",1)
+    CreateCreature("G3GRIM",[1080.333],10)
+    CreateCreature("G3FITZ",[516.677],6)
+END

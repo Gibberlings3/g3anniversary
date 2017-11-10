@@ -1,0 +1,23 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FadeToColor([30.0],0)
+    Wait(2)
+    ActionOverride("G3DRINI",MoveBetweenAreas("AR0400",[3107.2962],3))
+    LeaveAreaLUA("AR0400","",[3017.2938],12)
+    ActionOverride(Player2,LeaveAreaLUA("AR0400","",[3034.2986],12))
+    ActionOverride(Player3,LeaveAreaLUA("AR0400","",[3036.2876],12))
+    ActionOverride(Player4,LeaveAreaLUA("AR0400","",[2956.2945],12))
+    ActionOverride(Player5,LeaveAreaLUA("AR0400","",[2949.2984],12))
+    ActionOverride(Player6,LeaveAreaLUA("AR0400","",[2940.2984],12))
+    CreateCreature("G3MRSGTU",[3136.2860],14)
+    ActionOverride("G3MRSGTU",FaceObject("G3DRINI"))
+    ActionOverride("G3DRINI",FaceObject("G3MRSGTU"))
+    FadeFromColor([30.0],0)
+    Wait(2)
+    ActionOverride("G3MRSGTU",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END
+

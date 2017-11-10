@@ -1,0 +1,1568 @@
+// string gaps: 158, 353, 409, 523, 1140, 1190
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// setup/info strings                               \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+//@1    = ~Setup must decompress areas and audio files. Do not close this window until this is complete.~
+
+@2    = ~Worldmap for BP-BGT-Worldmap v6.3~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// creature/item strings                            \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@100  = ~The Gibberlings Three Anniversary Mod~
+@101  = ~Number One~
+@102  = ~Number Two~
+@103  = ~Number Three~
+@104  = ~Number Four~
+@105  = ~Number Five~
+@106  = ~Number Six~
+@107  = ~Number Seven~
+@108  = ~Number Eight~
+@109  = ~Number Nine~
+@110  = ~Number Ten~
+@111  = ~Number Eleven~
+@112  = ~Number Twelve~
+@113  = ~Scam~
+@114  = ~Aaah! Run for it, boy!~
+@115  = ~*drops Bubbling Brew*~
+@116  = ~Scam's Dog~
+@117  = ~Mrs. The Unmanned~
+@118  = ~Drini~
+@119  = ~I'm on a mission from the Gods! I've got to go and, uh, get the band back together!~
+@120  = ~Ari~
+@121  = ~Callabach's Chwisgi~
+@122  = ~Callabach's Chwisgi
+
+When opened, the aroma from this clear, potent beverage is enough to make flowers wilt. On the back is a small warning: 'The brewer of this concoction disavows any responsibility when imbibed. Drink at your own risk.'~
+@123  = ~Barmaid~
+@124  = ~Drini's note~
+@125  = ~This tattered note is scrawled on a piece of old paper which smells, unsurprisingly, of beer.
+
+On it, in poor writing which you have to squint to read properly, is the following:
+
+Drini's Drinks:
+
+Arabellan Dry
+Vibrissa
+Dwarven Whiskey
+Dalin's White Grappa
+Sailor's Ale
+
+The last line is particularly badly scrawled, but it seems to say "Something alcoholic I've never had before."~
+@126  = ~Flask of Poisoned Arabellan Dry~
+@127  = ~Flask of Poisoned Arabellan Dry
+
+This broad, flat-necked flask has seen extensive use. Some misshapen but angry beast is engraved on the shiny surface. Its leather casing is decorated with pebbles, feathers and the like. It was evidently designed to carry alcoholic beverages on the person. Wine with a fruity smell is twirling inside invitingly, but the sickly greenish shade that the bottle has taken over the course of the last five minutes should warn anyone knowledgeable in the ways of nature against drinking of it, for it is a sure sign that the beverage is impregnated with the deadly Chultan spice called Strangler.~
+@128  = ~Monique~
+@129  = ~Dewny~
+@130  = ~Bubbling Brew of Malocholis~
+@131  = ~Bubbling Brew of Malocholis
+
+Legend tells how Thylamon Malocholis, an inordinately wealthy landowner from the North, once challenged all the peasants in his town to a contest. The challenge was to brew an ale of a quality that equalled the worth all of the gold coins in his storage cellar, and the prize was that the brewer would be allowed to take home from the cellar, all the gold coins that he or she could carry.
+
+Dozens of doughty peasants immediately set to work, brewing strange and explosive concoctions late into the evenings, yet none were fit for Malocholis' tastebuds. Weeks of unsuccessful brewing passed, until one day, a wholly unremarkable dwarf stepped into Malocholis' presence. Bowing low, the dwarf announced that he knew the secret to the perfect brew, and would present it before Malocholis in three days. The dwarf, by the name of Rumblebum Hammerpicanax, bowed once again and left.
+
+True to his word, in three days a paler and thinner Hammerpicanax returned, and placed before Malocholis a single cup of frothing ale. Malocholis took a sip and immediately declared Hammerpicanax the winner of the contest, as indeed, here was an ale worth all the gold coins that were in his storage cellar. The dwarf was then shown to the cellar to claim his prize, where he discovered that Malocholis generally dealt with gems rather than coin, and therefore the worth of his three days of labor was equal to exactly 14 gold pieces. Later on, Malocholis discovered that a working set of kneecaps was worth far more than a nasty trick.
+
+The recipe for this fine ale has been lost to the ages and although many attempts have been made to reconstitute the exact taste, nobody has succeeded until now. A wandering alechemist would surely cut your throat to get his hands on this lucky brew.
+
+This would definitely qualify as something Drini has never had before.~
+@132  = ~Bary~
+@133  = ~Hersal~
+@134  = ~Robukin Rockskull~
+@135  = ~Merchant~
+@136  = ~Primo Java Beans~
+@137  = ~Primo Java Beans
+
+These beans rival any that have come from Kara-Tur. Fabled to have been grown by an old elven sorcerer, they are twice the size of a normal java bean and have a rich aroma. While they make an excellent cup of java, with enchantment by an elf, it is said these beans are part of a cure for over-celebration.~
+@138  = ~Volo's Guide to Candlekeep~
+@139  = ~Volo's Guide to Candlekeep
+
+This citadel of learning stands on a volcanic crag, overlooking the sea. It is a many-towered fortress, once the home of the famous seer Alaundo, and it preserves his predictions along with all the written records and learning of the Realms that can be assembled. Candlekeep is certainly no tourist resort, but there is a store, a temple, and a fair inn here. The price for most travelers to enter the Keep proper is a book. Those wishing to examine any writing in the Keep's library must gift Candlekeep with a new tome of no less than 10,000 gp value.
+
+The monks of Candlekeep (who claim to be non-denominational, and call themselves the Avowed) also purchase certain books brought to them and even commission agents in great secrecy to procure writings they desire. Those who wish to browse in the library must normally be sponsored by a known mage of power, so many books given to Candlekeep in payment are minor spellbooks.
+
+This community is ruled by the Keeper of the Tomes, assisted by the First Reader (the second in authority and traditionally the most learned sage of the monastery). There are up to eight Great Readers under these two offices, who are assisted by the Chanter, the Guide, and the Gatewarden. The Chanter leads the endless chant of Alaundo's prophecies, spelled in this duty by three assistants, the Voices of the North, South and East. The Guide is in charge of teaching acolytes, and the Gatewarden deals with visitors, the security of and supplies for the community, and with the clergy. The central, highest fortress of the Keep is surrounded by a terraced rock garden of many trees. There are rumours of vast dungeons beneath the keep, dating from ancient times, when they were used as burial chambers for the wisest scribes.
+
+Except in rare cases no visitor can remain in Candlekeep for more than 10 days at a time, or enter the monastery less than a month after leaving it. Order in the Keep is kept by the Gatewarden's five underofficers: four Watchers and the Keeper of the Portal, all five of whom have a force of armed monks as assistants.
+
+The Seekers are the lowest monks. They research and fetch and carry. Above them are the Scribes, who copy out works or compile books to sell from various sources in the library – the chief source of income for the community. Above the Scribes are the Chanter and the Readers. The current Keeper of the Tomes is Ulraunt, a proud and haughty minor mage. The current First Reader, Tethtoril, is often mistaken by visitors for the Keeper because of his intelligent, regal, and sensitive demeanour.
+
+Candlekeep has but one absolute rule: "Those who destroy knowledge, with ink, fire, or sword, are themselves destroyed." Here, books are more valuable than people.~
+@140  = ~Volo's Guide to Baldur's Gate~
+@141  = ~Volo's Guide to Baldur's Gate
+
+This port city is shelter and lifeline for the folk of the Coast. It offers the discerning shopper a wide selection of goods – there are a total of six major inns, six main taverns, seven general stores, six primary temples, and a full-service magic store, along with hundreds of lesser buildings. Baldur's Gate is a tolerant but well-policed city of merchants, and quiet trade and business are the general order of each day. The Flaming Fist Mercenary Company, over a thousand strong, is based in the city. Every tenth person or so is a member of the Fist or a watch agent (well, spy), skilled in battle and within a breath or two of numerous armed allies. The visitor can freely stroll and shop. The city has a system of magical lamps that provide light to its inhabitants in the evening and the night hours, which is one reason why the crime rate is so low (keeping the merchants and storekeepers happy!)
+
+The city is named for the legendary sea faring explorer Balduran, who long ago sailed past the elven homeland Evermeet in search of the rich, fabled isles of Anchoromé (pronounced "Ang-kor-OH-may"). Balduran returned with tales of strange, vast lands across the seas. He also brought back great wealth, and scattered it about his sparsely-settled home harbour, commanding that some of it be spent on a wall to protect against tribal orc and barbarian raids (still a problem in the area, in those long-ago days). Then he set sail again for the wondrous lands he had found. Balduran never returned.
+
+Whatever Balduran's true fate, his money was spent on a splendid city wall. Within its protection, building went on at a great pace, soon expanding beyond its confines. The wall was built by farmers who put it around their own holdings, excluding the actual harbour from its protection. This allowed them to tax all carts coming up from the docks to the protection of the walled city. The colleagues of Balduran, sea captains to whom the harbour was home, angrily insisted that the gate by which southern trade and the harbour traffic entered the city was "Baldur's Gate," and they refused to pay for entering. The strife ended in the overthrow of the enriched farmers and the seizure of the city (which came to be called Baldur's Gate) by the sea captains.
+
+The four oldest captains, their days at sea drawing to a close, turned over their ships to younger sailors, who in turn supported their installation as rulers of the fledgling city. The four called themselves "dukes" as a joke, but the titles proved useful when dealing with other rulers, and they were later glorified by the appellation "grand." Now called the Council of Four, elected by the populace for life (or until resignation), the present grand dukes are Entar Silvershield (a high level fighter), Liia Jannath (a powerful wizard), the adventurer known only as Belt (a strong fighter), and Eltan (the commander of the Flaming Fist mercenary company).
+
+Buildings in Baldur's Gate tend to be tall and narrow, with slit windows located high and covered with shutters to block out winter winds and nesting seabirds. Tall among them rises the grandlyspired ducal palace of the four ruling grand dukes, known as the High Hall – a place for feasts, court hearings, and administrative business. Not far from the palace stands the High House of Wonders, consecrated to the deity Gond. It is the by far the largest of the Gate's three temples. Its spreading eastern wings face the Hall of Wonders, also on Windspell Street, where the more successful of Gond's inventions are displayed to the public. Not far from the Hall of Wonders, near the Black Dragon Gate, is the Wide. This huge open space is the Gate's market. It bustles day and night, and is usually "open space" only in the sense that there are no buildings. Temporary stalls, bins, sale tables, and shoppers thronging to them usually crowd shoulder to shoulder. Outside the Wide, Baldur's Gate lacks colourful landmarks. The ever-present damp discourages the use of banners, open shops, and the like.
+
+Those wishing to overindulge in drink and in the company of the opposite sex are directed to the Undercellar, a little-known, damp, dark warren of linked cellars entered just off the Wide.~
+@142  = ~Volo's Guide to Beregost~
+@143  = ~Volo's Guide to Beregost
+
+Tired travelers on the Coast Way between Baldur's Gate and Amn often stop in Beregost. Beregost is located just off the road about a day's travel south of where the Way of the Lion branches off from the Coast Way. This town, while much smaller than Baldur's Gate, boasts three inns, two stores, a magic shop, a temple, and a decent tavern. It's within reach of the northern borders of Amn. Merchants of that land often use it as a rendezvous for caravan assembly before attempting the perilous overland runs north to Waterdeep or east to the Sea of Fallen Stars. As a result, this small town gets very crowded at unpredictable intervals.
+
+Begun as a farming village under the protection of a school of wizardry, Beregost is now dominated by the Song of the Morning, a major temple to Lathander. The other point of interest near Beregost is the ruin of Ulcaster's school. The mage Ulcaster, a conjurer of note, founded his school over 300 years ago – but grew too successful, attracting would-be wizards from all over the Sword Coast. Calishite mages came to fear the school's power and destroyed it in spell battle, though Ulcaster himself disappeared during the fray and was never found.
+
+The school burned to an empty shell, which still stands on a hill east of the town. Local fear of the ruin, which is said to be haunted by spell-casting phantoms, has caused Beregost to expand to the west of the Coast Way road, leaving the hills east to the sheep. On a related note, Beregost has only one tavern, called the Burning Wizard (of course!).
+
+The governor of Beregost is Kelddath Ormlyr. Although there is a five-person town council, the governor's word is law, and he is a tireless proponent of farming, business, and urban improvement. He is also Most Radiant of Lathander (high priest of the temple), and his temple troops police the town, keeping it safe. In this, he has two powerful allies: the wizard Thalantyr, a conjurer of great repute, and the smith Taerom "Thunderhammer" Fuiruim.~
+@144  = ~Vibrissa~
+@145  = ~Vibrissa
+
+This drink has a dark, murky color and faintly crackles with an electrical energy and has a fairly pleasing, eye-opening aroma. It is said this drink was made by an old elven sage looking for a way to cure her husband of over-celebration. The beans, used as the basis for the drink, were created by the elf herself, according to legend, and are rare and difficult to find. Only elves know the enchantment needed as the final ingredient.~
+@146  = ~Gulp!~
+@147  = ~Lady Bev~
+@148  = ~Haludak~
+@149  = ~Rockskull Dwarven Whiskey~
+@150  = ~Rockskull Dwarven Whiskey
+
+This bottle contains a measure of Dwarven Whiskey. Brewed by the Rockskull clan from mushrooms as well as wheat and other substances best left to the imagination, it is aged for centuries in huge stone vats. The Rockskulls know a batch is ready when the orc skull thrown into the vat has completely dissolved. Rare vintages like this one may be left for five skull's worth of time or more. Dwarves across Faerun praise Rockskull whiskey for its rich flavours, fiery aftertaste and fortifying effects. Most other races recommend Rockskull whiskey for its ability to start fires, dissolve paint and engender hangovers.~
+@151  = ~Barister~
+@152  = ~Quenching Oil~
+@153  = ~Quenching Oil
+
+This bottle contains the special oil that Cromwell the smith made for Robukin Rockskull. The odour of rancid grease emanates from the bottle and it feels both gritty and slippery in your hands. Perhaps its contents are best left unexplored.~
+@154  = ~Writer~
+@155  = ~Big's Scroll~
+@156  = ~Big's Scroll
+
+This is the sealed scroll that "Big" Robukin Rockskull gave you to take to Cromwell the smith. What secrets it contains you can only guess at, for opening it will dispel its magic and make it worthless to Cromwell.~
+@157  = ~Fred~
+
+
+
+@159  = ~Corradun~
+@160  = ~Haludak's Java House~
+@161  = ~Ardotian Java~
+@162  = ~Darelesh Caf~
+@163  = ~Nanleaf Tisane~
+@164  = ~Tanasi's Chai~
+@165  = ~Karlotan Coca~
+@166  = ~Kalen Grimm~
+@167  = ~Allanya Danc~
+@168  = ~Jacobus P. Sanderick~
+@169  = ~Dalin's White Grappa~
+@170  = ~Dalin's White Grappa
+
+A long-lived spirit of mostly mysterious origin, this drink has made rare appearances throughout the Sword Coast and beyond. The story of its creation goes that a half-elf by the name of Dalin Winthraven devoted his life to perfecting a fiery spirit, hoping in doing so to raise the productivity of his small tavern and earn his fortune and name. He toiled for years in his little town, selling horrid failed concoctions to customers in such quantity that some were driven to bars much further away, but at least of tolerable stock. Dalin saw he was risking his business, and with each large and terrible batch more customers, but the elusive recipe had grown into an obsession. In the end only the most loyal - and trapped by circumstance and lack of the ability to leave the small town - of his customers remained. Then one day, the very day Dalin was forced to foreclose on his tavern, he took all of his resources, all the leftover stems, skins and pits from making the few generic drinks he did, and anything else he could find that could possibly be distilled, and threw it all into a final batch. The result, as fate would have it, was the greatest clear, dry and fiery spirit any of that town had ever encountered.
+
+Rejuvenated, the half-elf packed up his things, bottled every last drop of the spirit and headed into the brave unknown to sell his creation and start anew. As ill luck would have it, he was attacked by opportunistic bandits before he had even reached the first city, and all his precious brew stolen or lost in the raid. Dalin might have tried again, but it was not to be. Instead, he suffered a mysterious fate, wandering alone in the wilderness, broken and penniless.
+
+Being the only man to know the true secrets of his incredible drink, it was never recreated. It was, however, highly praised, and what little there was circulated throughout the realm, always causing a stir, valued more so for its rare nature.~
+@171  = ~Cellar Key~
+@172  = ~This is the key to the the alcohol cellar of the Den of Seven Vales. Apparently, Allanya didn't return it when she was fired from the job of bartender.~
+@173  = ~Wilhelmus the Keg~
+@174  = ~This large and well-polished oaken keg bears a metal plate with the name 'WILHEMUS'; obviously, Corradun and his keg have seen many good times together...
+
+Inside you can hear some good, strong ale sloshing about. Odd for a half-elf like Corradun to drink ale, but then again you suppose sailors can be odd types. If Drini didn't urgently need it as a spell component, you'd be pretty tempted to have a swig or three yourself.
+
+WEIGHT: 20~
+@175 = ~Sir Suleci~
+@176 = ~Kebodi~
+@177 = ~Gulp!~
+@178  =~Flask of Arabellan Dry~
+@179  =~Flask of Arabellan Dry
+
+This broad, flat-necked flask has seen extensive use. Some misshapen but angry beast is engraved on the shiny surface. Its leather casing is decorated with pebbles, feathers and the like. It was evidently designed to carry alcoholic beverages on the person.
+
+The Chultan Strangler spice has apparently been neutralized by Sanderick the alchemist.~
+@180 = ~Laurlana~
+@181 = ~Mage Boots of Self Preservation~
+@182 = ~Mage Boots of Self Preservation
+
+In ages past there lived a halfling named Worrelyn Nimbletoes, and like many of her kind she was known to be a little dishonest with the possessions of others. While not bad at her chosen profession, she was somewhat skittish and prone to run away at the first sign of trouble. This caution served her well, as by the time any real trouble arrived at the scene of the crime she was safely back at home in the warm embrace of a bowl of stew. Against a certain old wizard, though, not even her nimble feet could save her from an unfortunate fate.
+
+Dramauth the Deranged, the true identity of one of the feared cabal known as the Gibbering Twelve, was an intensely paranoid mage, and it was Worrelyn's misfortune to one day pay him a 'visit' during the night. She navigated past the many traps and wards, and escaped with several minor artifacts. As her own pair were slightly worse for wear, she picked up a pair of the wizard's boots she found in the hallway on her way out.
+
+There was no way she could have known that Dramauth had trapped all his possessions to guard against such theft. When she put the shoes on her soul was sucked into them and her body vanished, never to be seen again. Dramauth, in the morning, merely had to divine the location of his missing belongings and go and pick them up. Something of the halfling survives in those old boots to this day, manifesting itself in increasing the wearer's pace when confronted by danger.
+
+STATISTICS
+
++50% movement rate for one round when attacked
+Usable by: 
+ Mages~
+@183  = ~Deep Purple Ioun Stone~
+@184  = ~Deep Purple Ioun Stone
+
+This stone, deep purple in hue, allows the bearer to see into the shadows of darkness.
+
+STATISTICS:
+
+Special ability: 60' infravision
+Weight: 2~
+@185  = ~Flickering White Ioun Stone~
+@186  = ~Flickering White Ioun Stone
+
+This stone is cool to the touch and radiates energy.
+
+STATISTICS:
+
+Bonus: +10% cold resistance
+Weight: 2~
+@187 = ~Movement Rate Increased~
+@188 = ~I'm not done with you yet! Get back here, you spineless cretin!~
+@189 = ~Tome of Arcane Recall~
+@190 = ~Tome of Arcane Recall
+
+This creaky, leather-bound tome was once the property of Jeremiah, a mage of minor repute from Waterdeep. Jeremiah crafted this tome for one of his less adept puils, hoping that it would aid the errant apprentice's woeful memory. While well-intenioned, the tome saw little use after Jeremiah's student had an unfortunate mishap and left his apprenticeship soon after.
+
+STATISTICS:
+
+Special ability: 
+  One time, permanent bonus of +10 lore upon its first use
+  Once per day, the tome enables the caster to bring back into memory two spells of fifth level or below that have been previously cast
+
+Usable by:
+ Mages
+ Bards~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// dialogue strings                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@10001 = ~Ha HA!~ [G3SCAMHA]
+@10002 = ~The great Scam's nimble fingers and swift feet claim another victim.~
+@10003 = ~Wh--where's th'door gone?~
+@10004 = ~Who gave me this thing t'carry?~
+@10005 = ~Forgeddoor... where'm'bed? Mzxnzmzn?~
+@10006 = ~Vibrissa is a type of coffee. Try the Java House here on the Promenade.~
+@10007 = ~Anything else I can help with?~
+@10008 = ~As I said before, the Java House here on the Promenade is your best bet.~
+@10009 = ~Arabellan Dry is an imported wine. Try either the Sea's Bounty in the Docks, or that place at the city gates.~
+@10010 = ~That's the Crooked Crane, that is. Sammy Thunderburp may have a spot at the Five Flagons.~
+@10011 = ~That's true, he does have a very good selection. He may worth a visit as well.~
+@10012 = ~It's likely going to be found where there's shipping and imports, so try the Crooked Crane or the Sea's Bounty. Samuel Thunderburp may have some at the Five Flagons as well.~
+@10013 = ~We found some Arabellan Dry, but it's been poisoned with Chultan Strangler spice.~
+@10014 = ~Poisoned, eh? Should be a simple spell to detoxify it then.~
+@10015 = ~'Scuse me, sir, but not with Chultan Strangler. I think you'll need your alchemist friend.~
+@10016 = ~How do you know these things?~
+@10017 = ~That's the bloke.~
+@10018 = ~Take this to the mage Sanderick in the Government district. He should be able to help.~
+@10019 = ~Actually, never mind. Do you mean Sanderick?~
+@10020 = ~There are a number of dwarves who frequent Delosar's Inn. Try giving it a shot.~
+@10021 = ~Delosar's Inn at the bridge district has a number of dwarven patrons. Try there.~
+@10022 = ~The illustrious Scam is busy. What do you want?~
+@10023 = ~I seek the ale you stole from me.~
+@10024 = ~How about you cut the act and give me back the ale. While you still can, that is.~
+@10025 = ~The magnificent Scam does not return items fairly pilfered from gawking tourists.~
+@10026 = ~The item is of utmost importance and I must have it back. Name your price.~
+@10027 = ~The magnanimous <CHARNAME>'s patience wears thin. Hand over the item or draw steel!~
+@10028 = ~This is a waste of time. Here are ten gold pieces, now hand over the ale.~
+@10029 = ~Nooo! Aaaaiiiieee!~
+@10030 = ~Laddie, give us the item before I bury me axe in your gullet!~
+@10031 = ~The lordly Scam demands 100 gold pieces, and not a coin less.~
+@10032 = ~That's outrageous! You'll hand it over for free. Now.~
+@10033 = ~Very well, here's your gold.~
+@10034 = ~I'll not pay you a copper over 10. What say you?~
+@10035 = ~'Tis not worth more than 50, and that's what I offer.~
+@10036 = ~A hundred golders! That's more than--~
+@10037 = ~I mean, the most humble Scam accepts your offer. Good day.~
+@10038 = ~Come on boy, we eat tonight!~
+@10039 = ~Ten golders! That's more than--~
+@10040 = ~Fifty golders! That's more than--~
+@10041 = ~There you are! Die, thief!~
+@10042 = ~And... it seems... the glorious Scam has misplaced the ale. Now where did it go, I wonder?~
+@10043 = ~Come on boy, we must go look for it.~
+@10044 = ~The madness overtook him and he slaughtered half the village before I thrust my sword into his back. He turned and looked at me... and I saw a glimpse of my beloved in that last glance and the tip of my blade coming out of his chest colored crimson. I cried right there, on the great pile of bodies.~
+@10045 = ~Let me just make sure this ale is up to par before I fetch my benefactor.~
+@10046 = ~Oh, yesh, that'll do nicely. And thish wine ain't too bad eith-- *hic* either.~
+@10047 = ~You drunken lout! Where's our reward?~
+@10048 = ~I share your concern over the quality of the components--pass the wine, will ya?~
+@10049 = ~I thought you said you were going to get your benefactor?~
+@10050 = ~I thought you said these were for the spell?~
+@10051 = ~Another wretch consumed by the bottle.~
+@10052 = ~Huh? Whuzzat?~
+@10053 = ~Enough of this. We haven't the time to sit around and watch you drink yourself into oblivion. Go and fetch your mistress.~
+@10054 = ~Sheesheesh, keep yer pantaloons on. Head on outside while I getsh my client.~
+@10055 = ~Sorry pal, it takesh a fine, dishtinguishin' eye to enjoy fine winesh like thish.~
+@10056 = ~Theshe are fer me, so's I can casht the shpellsh right. *hic*~
+@10057 = ~You no-good cur! I hired you to summon magical guardians for me, not to drink like come common laborer.~
+@10058 = ~Can you even cast magic in this state?~
+@10059 = ~Lady, I can cast any-- *hic*~
+@10060 = ~I can cast any-- *hic*~
+@10061 = ~I am ready t' go.~
+@10062 = ~And who might this be?~
+@10063 = ~You in particular look familiar, gnome.~
+@10064 = ~I spent a lot of time with your wonderful dog Fluffy, if you'll remember. Couldn't hold his imp very well, and not terribly fond of turnips either.~
+@10065 = ~Oh yes, now I remember our previous contract. In a way that's connected to my current troubles.~
+@10066 = ~Thish is <CHARNAME>. <PRO_HESHE> helped me proc-- *hic* proc-- *hic* get theshe fine beverages.~
+@10067 = ~Mercenaries, eh? Then perhaps I should explain what we're doing.~
+@10068 = ~This problem stems from my ex-husband, Golodon the Unmanned. In his youth, he and a partner stole magical artifacts from a group known as the Gibbering Twelve.~
+@10069 = ~His partner, Dradeel, disappeared for years until he came back one day, raving about doggies. He killed Golodon and was captured by the Cowled Wizards. I know no more about his fate.~
+@10070 = ~The Gibbering Twelve, however, are still to this day seeking the return of their stolen items. Golodon is dead and Dradeel beyond their reach, so they have taken to hunting me instead.~
+@10071 = ~The Cowled Wizards are the ones who took Imoen and the mage Irenicus. Any clue about Dradeel's whereabouts could help our own cause greatly.~
+@10072 = ~We have been to Spellhold and met the crazy husk once known as Dradeel. He helped us battle Irenicus but seems capable of little else.~
+@10073 = ~We crossed paths with Dradeel before. We were stranded on an island full of lycanthropes and he helped us escape.~
+@10074 = ~How can we help you?~
+@10075 = ~Your man promised us a reward.~
+@10076 = ~Who are the Gibbering Twelve?~
+@10077 = ~The Cowled Wizards are very secretive and the disposition of their prisoners is a closely guarded secret.~
+@10078 = ~This is why the Gibbering Twelve have decided to focus on me instead.~
+@10079 = ~We'll just take our reward and go.~
+@10080 = ~A fitting end, though it does not help my immediate problems.~
+@10081 = ~Well that would explain his ravings about 'bad doggies' though it does not help my immediate problems.~
+@10082 = ~I hired Drini to summon magical guardians for my protection. Given his current state, I'm not sure how much help that will be.~
+@10083 = ~Oi!~
+@10084 = ~As such, I would like to employ you for my protection. Just for a short while, until I can find a mage who prefers spellbooks over tankards.~
+@10085 = ~What say you to 1,000 gold and a rogue stone, paid in advance, above and beyond what Drini has already offered?~
+@10086 = ~Very well, your offer is accepted.~
+@10087 = ~Nay. We will take what is our due for service to Drini and be on our way.~
+@10088 = ~You will have your reward. However there may be a greater reward, if you're interested.~
+@10089 = ~You have my ear.~
+@10090 = ~I know little of the Gibbering Twelve, save what I learned from Golodon and the little information I have gathered on my own.~
+@10091 = ~They are a fledgling organization of mages who seek power for themselves. They are not nearly as large or influential as the Zhentarim or the Harpers, but they are more than enough to threaten me.~
+@10092 = ~So be it. Here is the gold promised you by Drini.~
+@10093 = ~I shall be forced to seek other resources. Come, Drini, let's get you sobered up.~
+@10094 = ~Excellent! In the meantime let's see what you can do, Drini.~
+@10095 = ~Whash that?~
+@10096 = ~The summoning, you rum-soaked sod!~
+@10097 = ~Oh, right. Schtand back everybody. *hic* Here goesh.~
+@10098 = ~Woo, pretty colors!~
+@10099 = ~I preshent The Gibberlingsh Three.~
+@10100 = ~Gibberlings.~
+@10101 = ~I paid all that gold and you summon... gibberlings.~
+@10102 = ~Not jusht gibberlings. The Gibberlingsh Three. As merry a--~
+@10103 = ~GIBBERLINGS! Unacceptable!~
+@10104 = ~But, you shee, them're not jusht... the thing ish, what I wanted... I mean, itsh jusht that--~
+@10105 = ~Hey, I don't remember thish part of the shpell.~
+@10106 = ~This better be good.~
+@10107 = ~Here they are now. Excellent work, Number Three.~
+@10108 = ~Thank you Number One.~
+@10109 = ~Who are you? Where am I?~
+@10110 = ~Welcome to our secret underground lair. As for who we are, I think you know the answer to that already.~
+@10111 = ~The Gibbering Twelve. How did you find me?~
+@10112 = ~Your friends are unexpected, but no matter. You will tell us where to find what we seek.~
+@10113 = ~I don't know what you mean.~
+@10114 = ~Still you persist in feigning ignorance. Enough of this!~
+@10115 = ~Hold your tongue, Number Seven.~
+@10116 = ~What, pray tell, are these creatures?~
+@10117 = ~They are--they are The Gibberlings Three. Fierce creatures of legend, possessed of the strength of giants, wisdom of the ancients, and intelligence of the sages.~
+@10118 = ~Dragons cower in fear before them! Beholders blink in the face of their onslaught! Tarrasques get crushed underfoot before the might--~
+@10119 = ~They look like normal gibberlings to me.~
+@10120 = ~Umm.~
+@10121 = ~Do not be fooled by their appearance. They are bloodthirsty, vicious--~
+@10122 = ~Stop wasting our time. Who are the others?~
+@10123 = ~I shall let Number Three fill you in, since it was her plan.~
+@10124 = ~You have proved most elusive, and we were unable to track you directly. However, your man Drini was not as discreet.~
+@10125 = ~It was a simple matter of contacting the Cowled Wizards to redirect you here if he tried any magic in your presence.~
+@10126 = ~I am <CHARNAME>, under contract to protect this woman. Stand down.~
+@10127 = ~My name is not your concern.~
+@10128 = ~I am <CHARNAME>. I happened to be walking by when I was teleported here somehow.~
+@10129 = ~What do you seek? Why are you harassing this woman?~
+@10130 = ~You are free to leave, after our artifacts are returned to us.~
+@10131 = ~I told you I don't know where they are.~
+@10132 = ~Then you die here. Number Eight, go and fetch the others.~
+@10133 = ~It is very much my concern. Name or no, you will not stop us.~
+@10134 = ~I'll give you one final opportunity: where are the items Golodon stole from us?~
+@10135 = ~A likely story.~
+@10136 = ~You lying bastard!~
+@10137 = ~No matter. One final chance: where are the items Golodon stole from us?~
+@10138 = ~We seek the return of that which was stolen form us. Beyond that is not your concern.~
+@10139 = ~This woman is our last connection to the thieves and our only chance to retrieve them. However, our patience has run out.~
+@10140 = ~Alms, alms for the poor. Please <SIRMAAM>, can you help a fellow adventurer who has fallen on hard times and is down on her luck? Any change you can spare would be a boon. Every little bit brings me closer to my cure.~
+@10141 = ~My god, just what is that stench? It smells like something died here.~
+@10142 = ~Certainly, here's a gold piece.~
+@10143 = ~Is something wrong? Perhaps I could help you with whatever problem is affecting you.~
+@10144 = ~Get out of my way, already. I don't know why they let such filth like you on the street anyways.~
+@10145 = ~Actually, we were sent to find you. We heard tell that you had knowledge of rare drink.~
+@10146 = ~It's hard to say. I think it was an opossum. Then again, it might have been a magpie.~
+@10147 = ~Opossum? That's disgusting.~
+@10148 = ~The question was rhetorical, you know. What is wrong with you anyway?~
+@10149 = ~You are crazy, you know that? Just stay away from me if you know what's good for you.~
+@10150 = ~Thank you, your largess is greatly appreciated. For your generosity, let me give you a piece of advice. A horse without a nose will not win close races.~
+@10151 = ~I will remember that. Especially if I come across a noseless horse.~
+@10152 = ~Um... thank you for that advice. Is there more I can do for you?~
+@10153 = ~Lady, you need more help than I could give you. You might want to try an asylum.~
+@10154 = ~I need to be on my way.~
+@10155 = ~Let me tell you my story--a sad and lonely tale. I was not always as you see me now; I was an adventurer much like you. Maybe you have even heard of me. I'm called Ariariannanaomillicent... Ari for short.~
+@10156 = ~You better not call me Millie.~
+@10157 = ~I was a young mage intent on making her mark in Faerun and my first adventures initially brought me much renown. One day, though, after burning out a tribe of orcs, I decided to take a bath. Do you know how hard it is to get the soot out of one's hair? Well, how was I supposed to know that it was a sacred pool?~
+@10158 = ~For such sacrilege, I was cursed. I would not benefit from the taste of water, nor the touch of water. I could take a bath, but it would do no good. I could sip of a spring, and I still thirsted. Fortunately, if you care to look at it that way, I could still drink liquor since it wasn't pure water. And baths? Forget it. I don't smell this way by choice, you know.~
+@10159 = ~It's hard to have someone talk to you when they can't even stand to be in the same room with you. And trust me, perfume only goes so far in masking the odor.~
+@10160 = ~There is a cure for my curse, though. I had a friend who went all the way to Candlekeep to research my condition. She told me I had to find a special drink called Chwisgi.~
+@10161 = ~It's a rare Matzican import, so I've been living on the streets near the docks waiting for the right ship. One finally arrived, but the Chwisgi is heading straight for some drunken sailor's retirement party here at the Sea's Bounty.~
+@10162 = ~The barkeep and the party-goers will have nothing to do with me. The cure for my ailment can be found through those doors, and yet they are barred to me. Oh, if only the gods had seen fit to provide me with a bartender without a sense of smell.~
+@10163 = ~Chwisgi? Where would I get that?~
+@10164 = ~I will help you.~
+@10165 = ~Enough. I've had enough. Just shut up, and leave me alone.~
+@10166 = ~I don't think there is anything I can do to help you.~
+@10167 = ~Pardon me good sir, I didn't mean to impede your journey.~
+@10168 = ~Thank you for your acute observation of my living conditions.~
+@10169 = ~Before we go further astray, was there something I can do to help you?~
+@10170 = ~I will help you if you just get to the point.~
+@10171 = ~You're trying to drive me crazy, aren't you? I leave you to your insanity.~
+@10172 = ~I wouldn't make light of it, if I were you. I once traveled with a knight who had an anosmic horse. Sir Thufir was a bit of a skinflint, but this was one time he should have paid the extra gold pieces.~
+@10173 = ~Thufir might be here today if his steed had been able to smell that patch of retch plant. Instead, the poor beast blundered clear into the cluster of it when it released its spores. The gods must have had it in for Thufir, for the man was asthmatic. He died busting a gut.~
+@10174 = ~Good advice indeed. So was there some aid I could give you?~
+@10175 = ~Umm, fascinating. I think it is time I got going.~
+@10176 = ~Help? Well thank you for your concern, good <SIRMAAM>. I have the feeling someday you may find yourself... and wish you hadn't.~
+@10177 = ~Very well and thank you for your time. Godspeed and may the forces arrayed against you be confounded by misdirection and obfuscation in your travels.~
+@10178 = ~I just told you that. Through those doors. Ask for Chwisgi.~
+@10179 = ~Oh, right.~
+@10180 = ~No.~
+@10181 = ~Oh, thank you, thank you! I already see the end of my affliction in sight! You have given me great hope. Just thinking of your kindness warms my heart. Though that could be the cat from yesterday.~
+@10182 = ~Very well, I will leave you be, good <SIRMAAM>. For your caring display of kindness I hope you suffer the ultimate rejection in romance--I hope your hand falls asleep.~
+@10183 = ~What, it's you again? Just like rats returning to a sinking ship. What do you want now? Don't you have something you have to do?~
+@10184 = ~What am I supposed to find again?~
+@10185 = ~Don't take that tone of voice with me.~
+@10186 = ~Just passing through. Pay me no mind.~
+@10187 = ~I'm pleased to see you once more. Have you been sniffing tanning fumes again?~
+@10188 = ~If I said it once, I said it a thousand times. You need to find a beverage called Chwisgi. You should be able to find some around here.~
+@10189 = ~And what tone should I take? Falsetto? So, what did you want from me anyways?~
+@10190 = ~What am I supposed to do?~
+@10191 = ~I'm just passing through.~
+@10192 = ~That tears it. You die now.~
+@10193 = ~Well then, get a move on. The shadows lengthen the more time you waste.~
+@10194 = ~Fools!~
+@10195 = ~Nah, I don't dare. They swear my reek gets into their leather. Learn from the mistakes of others as you can not live long enough to make them all yourself. So what brings you back here?~
+@10196 = ~What did I need to find for you?~
+@10197 = ~Just passing through.~
+@10198 = ~Here, we have procured the Chwisgi for you.~
+@10199 = ~Calloo, callay! What a frabjous day! You did it! Soon, I shall be rid of this abominable curse! You know how frustrating it is when even zombies give you a wide berth? I hate feeling like a barbarian's hand-me down loincloth.~
+@10200 = ~Many thanks, fearless hero. You have saved me from a fate worse than death. It's strong enough to remove paint. And that's the unvarnished truth.~
+@10201 = ~We have already gone inside and gotten some Chwisgi. Here, you can have it.~
+@10202 = ~Ah, you return.~
+@10203 = ~Who are you again?~
+@10204 = ~I have no time for you.~
+@10205 = ~Ah, friends! I've just finished my pint--uh, I mean, preparation. Do you have the beverages for the, ah, spell, yet?~
+@10206 = ~It took a while, but we have them all now.~
+@10207 = ~Not quite yet.~
+@10208 = ~All present and correct!~
+@10209 = ~I'm not a barmaid, you know...~
+@10210 = ~...everything I need, almost. But, heh, she wasn't having any of that.~
+@10211 = ~Well, hop to it then! My employer's life is in danger!~
+@10212 = ~Heh, hop, as in hops, as in brewing...~
+@10213 = ~Ah, never mind. Come back when you're done.~
+@10214 = ~Please, <SIRMAAM>, I have an exciting proposition for you. You look tired, so pull up a chair and sit down!~
+@10215 = ~You've piqued my interest...~
+@10216 = ~I said no, and I mean it. Good day to you.~
+@10217 = ~As long as it's not some scam to get my money...~
+@10218 = ~How many times does someone have to say no to you before you get it into your thick skull? Actually, don't answer that.~
+@10219 = ~I suppose I could sit and listen for a few minutes. But I'm not promising anything.~
+@10220 = ~Excellent, <GABBER>! Sitting comfortably? Then I'll begin...~
+@10221 = ~As you wish. I'll, uh, get to the point...~
+@10222 = ~I can see from the looks in your eyes that your recent lives have been filled with mindless fetch and carry tasks, acting as stooges for some idiot master. Well not this day! For I offer you the questing opportunity of a lifetime, which many bards and historians - such as myself, I'll have you know - will surely speak of for many years to come!~
+@10223 = ~If you'll, ah, do me the small honor of paying off our bar tab. I seem to have been somehow, uh, separated from my money pouch.~
+@10224 = ~I'll say no more now. Let the suspense build, and all that. So, what do you think?~
+@10225 = ~I think it *is* a scam to get my money.~
+@10226 = ~After all those theatrics, I'm not interested. Go bother someone else.~
+@10227 = ~How big is this tab?~
+@10228 = ~Ah... Is that a yes?~
+@10229 = ~Well, how much is it?~
+@10230 = ~Not quite. The threat posed by these mages is one that not even you could stand against. Fortunately, on my travels I have acquired the knowledge of how to summon some beings who should prove equal to even this dread task.~
+@10231 = ~So, what I need you to do is fetch me some components for the spell, while I sit here and... coordinate. Yes, coordinate! It's very taxing, you know.~
+@10232 = ~Sounds to me like one of those mindless fetch and carry tasks you were just telling us that it wasn't.~
+@10233 = ~They must be fearsome opponents indeed if we cannot deal with them.~
+@10234 = ~Wow! This truly is a tale of adventure and intrigue. What do you need?~
+@10235 = ~What are you going to summon to help this woman?~
+@10236 = ~Who's your employer, and what did she do to rouse the anger of these wizards?~
+@10237 = ~I suppose I've done more menial tasks before... What exactly do you need?~
+@10238 = ~Uh... Appearances can be deceiving? I ensure you, you won't regret this!~
+@10239 = ~Yes, a cabal of mages steeped in the darkest sorceries! Surely, not even the Cowled Wizards could stand against them... Though I am, ah, confident that those I will summon will be equal to the task.~
+@10240 = ~I won't reveal my secrets just like that! Anyhow you'll probably not have heard of them, as they're a very secretive, uh, bunch. I'd prefer not to say any more... Any questions?~
+@10241 = ~She prefers to keep her identity secret, as we never know when her enemies will be listening in. But when the, uh, spell components are ready, you'll meet her.~
+@10242 = ~As for her crimes, who knows what reasons such a sinister group of wizards have for persecuting an innocent woman?~
+@10243 = ~The beverages I need are quite rare - I have prepared this list, here.~
+@10244 = ~You might want to look for an, uh, acquaintance of mine, Sir Suleci, in the Mithrest over in the Promenade. Don't think much of the place compared to here, mind, but Suleci seems to like it. He knows about rare drinks, and owes me a favor...~
+@10245 = ~Once you've got them, come and bring them to me here and we'll move on to the summoning.~
+@10246 = ~If he owes you a favor, why don't you ask him to get them yourself?~
+@10247 = ~Ok, we'll see you back here when we've got the stuff.~
+@10248 = ~I've got to stay here and, uh...~
+@10249 = ~Well...~
+@10250 = ~Prepare myself for the, ah, spell? Coordinate activities from my barroom command post here?~
+@10251 = ~Um...~
+@10252 = ~Anyway, it's very important.~
+@10253 = ~Excellent news! I'll inform my employer immediately...~
+@10254 = ~Now where's that barmaid got off to?~
+@10255 = ~Oh. In that case...~
+@10256 = ~Look over there! What an amazing distraction!~
+@10257 = ~Bah. That's the last time I fall for that...~
+@10258 = ~Well, I'm not actually sure.~
+@10259 = ~Your ale - fuelled antics have cost the pair of you 32 gold pieces.~
+@10260 = ~That's not actually *that* bad...~
+@10261 = ~Plus another 10 for the stool and glasses you broke.~
+@10262 = ~Oops. So, that's 42? A pittance for such illustrious adventurers as they.~
+@10263 = ~Well, at least your sums are right...~
+@10264 = ~So, 42 gold. A tiny price for the privilege of being part of doubtless one of the most exciting adventures of modern times. What do you say?~
+@10265 = ~I fear I'm just as poor as you actually. Sorry!~
+@10266 = ~A small price, indeed. I'll pay.~
+@10267 = ~Why, I would pay ten times as much for an opportunity like this!~
+@10268 = ~I don't want to waste my money on your beer habit. Farewell.~
+@10269 = ~At least some customers have cash in this establishment. Drini, Salvanas, you're off the hook this time.~
+@10270 = ~Excellent!~
+@10271 = ~Naturally... Anyway, on to the details. I'm in the employ of a wizard who is in fear for her life! A perfectly lovely lady, she has fallen foul of a group of evil mages through no fault of her own.~
+@10272 = ~So, you want us to sort out these mages for you?~
+@10273 = ~Please allow me to introduce myself: I am Drini, bard, wit, raconteur. Considered a man of wealth and taste by some, a fool and a knave by others, I prefer to think of myself as a free - spirited individual. Like my pal Salvanas here.~
+@10274 = ~Pleased to meet you.~
+@10275 = ~I don't have all day, you know...~
+@10276 = ~Yes. May I have the pleasure of your name? I find the personal touch makes business so less, ah, dry and businesslike.~
+@10277 = ~I agree. My name is <GABBER>.~
+@10278 = ~I don't like your tone, and don't think I want to talk to you any more. Farewell.~
+@10279 = ~I'd prefer to leave names out of it, if you don't mind.~
+@10280 = ~Excuse me, Sirs.~
+@10281 = ~That's priceless! Ooh, hello.~
+@10282 = ~I've come for your bill.~
+@10283 = ~How about a hot tip, instead?~
+@10284 = ~Excuse me! I was, uh, in the middle of a story. Yes.~
+@10285 = ~You've been here for hours and frankly with your history, Mr. Drini, we'd like to see some payment now.~
+@10286 = ~Anyway, as I was saying, we had quite a time. I'm sure you know how it goes. Say, how about a hot tip instead?~
+@10287 = ~That was my line!~
+@10288 = ~Gah!~
+@10289 = ~Or I could give you a little something in the morning...~
+@10290 = ~If you don't give me some money now for these drinks, gentlemen, you'll be having a chat with the bouncers.~
+@10291 = ~Are they female?~
+@10292 = ~I've been, uh, acquainted with them before, and it's not an experience I'd care to repeat soon...~
+@10293 = ~Time for a new tactic?~
+@10294 = ~I'm the love pirate, and I'm here for your booty... Yarr!~
+@10295 = ~Whaddaya say?~
+@10296 = ~It's your booty that's going to get worked over if I don't see some coins.~
+@10297 = ~If I said you had a beautiful body, would you hold it against me?~
+@10298 = ~That's it...~
+@10299 = ~Wait! I've got a plan. Plus I guess I should, uh, actually get some work done... Excuse me a second.~
+@10300 = ~Hey, you there! You look like adventuring types...~
+@10301 = ~I'm not getting involved in this.~
+@10302 = ~Who, me?~
+@10303 = ~Nope, definitely not.~
+@10304 = ~You could say that.~
+@10305 = ~What? Why won't you leave me alone? I am enjoying a final drink before I end it all. See this flask? I have a spoonful of the strangler dissolved in it... the moment I gulp it down I will be gone.~
+@10306 = ~Well, lady, I won't be bothering you then.~
+@10307 = ~Can I help you somehow?~
+@10308 = ~Stop being a ninny! I am a Bhaalspawn with many grievances, but still I live and fight!~
+@10309 = ~Why on Toril would you want to finish yourself off?~
+@10310 = ~You look like a warrior. If you want to die, why not die honorably on the battlefield?~
+@10311 = ~Yes. By LEAVING ME BE!~
+@10312 = ~Bhaalspawn, huh? I was in love with one of your kind once. But the taint was strong in him. We were on a romantic sojourn in a little village near Silverymoon.~
+@10313 = ~But why on Toril you'd want to finish yourself off?~
+@10314 = ~Whoa. I better leave you to your drinking.~
+@10315 = ~I am in love--not the kind of puppy love that silly girl Aulava has for Tiiro, but the passion of a hot-blooded woman.~
+@10316 = ~So, what's so bad about it?~
+@10317 = ~Ah, I see. Kivan, eh?~
+@10318 = ~Sorry, Monique. I'll leave you to your brooding.~
+@10319 = ~So who is he this time?~
+@10320 = ~Ye gods, I tried! I challenged every known monster in the hopes of finding the fitting death! Xvarts, taslois, orcs, trolls, green slimes, even dragons. I fought them all with reckless abandon!~
+@10321 = ~How about you fight my buddies and me? We'd be tougher than some wyrm!~
+@10322 = ~Woman, you are worse than Xan! I shall leave you be.~
+@10323 = ~Part of the problem is that I always fall for the strong, silent type. That would not be too bad, but for the fact that said type does not fall for my kind. In the rare cases they do, they have a predilection to a speedy, tragic end.~
+@10324 = ~I can not say that I understand you, but if you want to die, why not die honorably, on the battlefield?~
+@10325 = ~(Sighs) Have we met before or am I a subject of mockery in these parts?~
+@10326 = ~Call it a hunch. Well, I'll leave you alone then.~
+@10327 = ~A ranger with a dark and tragic past, whom else?~
+@10328 = ~Please, leave me alone with my sorrow.~
+@10329 = ~If you wish to die today, so be it.~
+@10330 = ~The first time I was in love, I was but a slip of a girl and he was a famous hero. So I told myself to earn his love I will put my life into adventure!~
+@10331 = ~Three years later, fame trailing after me like a mantle, I came to see him--and found him married to a girl who could not have killed a fly if it assailed her, but made the best cherry pie in the whole of Cormyr.~
+@10332 = ~"Luck is always on the side of the romantic." What fool said that? Ah, that elven rogue, just before he dumped me for a girl that robbed him blind…~
+@10333 = ~I was wed once to a man of my dreams. Well, not really married, it was just a farce. It was near perfect, except for him reminding me at every opportunity that it was all pretence and apologizing for having to kiss me or hold my hand in public. All I could do is to smile, pat him on the back and assure that it will soon end and we will be free.~
+@10334 = ~My heart was first smashed, then broken into finer pieces, then crumbled, then ground into thin dust. I let it run through my fingers and thought – finally, I have no heart. How I was mistaken!~
+@10335 = ~We were scouts together in Moonshaes. My job was to penetrate the besieged city to bring the tidings of the coming reinforcements, and that they would be ready to make a sortie to distract the enemy at the appointed time. His assignment was to guide the coming army.~
+@10336 = ~My chance of success was small, so I told him that I loved him before I went. He embraced me and said, "Watch for me. I shall be the first to enter the city, with you waiting for me there."~
+@10337 = ~And so he was, almost. The trapped enemy elite made their last stand by the gate. A stray fireball got him as he was cutting his way through--I saw him burn from the walls… ~
+@10338 = ~I am decided now.~
+@10339 = ~For the loved ones!~
+@10340 = ~By the Twelve Winds! It's just disappeared! (Sighs) Back to adventuring, I guess.~
+@10341 = ~I'm actually looking for a specific wine. Do you have any Arabellan Dry?~
+@10342 = ~Aye, I did until a few hours ago. A lady ranger bought the bottle, took a glass and went upstairs. I haven't seen her since.~
+@10343 = ~Can't says I've heard o' it. Try ole Samuel at the Five Flagons or the Crooked Crane.~
+@10344 = ~Of all the luck! I just sold my last bit of Arabellan Dry a few days ago and won't be getting a new order for a few tendays.~
+@10345 = ~Try The Thumb down at the Sea's Bounty--they get imports off the ships once in a while--or the Crooked Crane.~
+@10346 = ~Thank you.~
+@10347 = ~How about you fight me? I'd be tougher than some wyrm!~
+@10348 = ~I'm in the process of drinkin' meself to death an' I'd prefer it if ya didn't disturb me.~
+@10349 = ~This is my favorite seat!~
+@10350 = ~Pray leave my presence. It's bad enough having to mix with the locals.~
+@10351 = ~I prefer to bring in my own form of seating. Who knows what I might catch from the commons?~
+@10352 = ~I'll go, then you go.~
+
+
+//@10353 = ~(Glug glug glug glug.)~
+
+
+@10354 = ~(Smack!) That went down a treat! Shame about the taste. Now it's your turn.~
+@10355 = ~(Scull it.)~
+@10356 = ~(Toss it back.)~
+@10357 = ~(Sip in a genteel manner.)~
+@10358 = ~Move along. Nothing to see here. Wet your whistle if you must.~
+@10359 = ~(Dewny stares intently at Uda and ignores you completely.)~
+@10360 = ~(She appears to be sleeping it off. Dewny appears to take low ale tolerance to new depths.)~
+@10361 = ~And you can stay out there! And let's see if your thick skull can shield your tiny little brain from this keg! I'm going home!~
+@10362 = ~This is great cooking. Even the look on Uda's face couldn't sour this icing.~
+@10363 = ~So you're pretty fond of cake?~
+@10364 = ~What do you have against people drinking?~
+@10365 = ~I couldn't help noticing that you created some sort of legendary drink a moment ago.~
+@10366 = ~If you don't want the drink, can I have it?~
+@10367 = ~How's the weather down there?~
+@10368 = ~Nice feet.~
+@10369 = ~So... what's a nice halfling like you doing in a place like this?~
+@10370 = ~Uda's cakes, yes, indeed! She doesn't appreciate it when I come in here asking for a cut, though. Had to dash out to avoid the skillet more'n once before.~
+@10371 = ~May I help ye?~
+@10372 = ~You're the bouncer here?~
+@10373 = ~Nothing much - except that they become an incoherent, slobbering, lumbering, staggering and above all, dead heavy weight for me to carry home! I'm only a halfling, y'know!~
+@10374 = ~Samuel, bless his heart, lets 'em get away with drinking more than he should. Well, *he's* fine. He's not the bouncer!~
+@10375 = ~I may look weak, but I have the strength of TWO kobolds!~
+@10376 = ~Very... impressive.~
+@10377 = ~Two whole kobolds! Oh my!~
+@10378 = ~Yep! My mum is proud as punch. Punch being my dad.~
+@10379 = ~Yep. Some sort of bubbling brew? Bubbling demon drink from the hells, I say! What happened to innocent forms of wetting your whistle, such as a long tall glass of milk?~
+@10380 = ~Look, ale really isn't that bad. Have a sip, and you'll see.~
+@10381 = ~Have you even tried ale before?~
+@10382 = ~Can I have the drink you're carrying? You don't want it anyway.~
+@10383 = ~How about I take that heavy cask off your hands?~
+@10384 = ~Hey, Dewny... I think Uda's calling you over for more cake!~
+@10385 = ~You'll just chug it down, and that'll be another senseless body I'll have to carry out tonight. I don't know what you all see in it.~
+@10386 = ~Look here, pipsqueak. Give me the ale, or I'll boot you off to Maztica.~
+@10387 = ~I've tasted ale before... not this brew, I'll grant, but it can't be much better. Besides, this one's been made of all and sundry stranger's dregs.~
+@10388 = ~You just can't hold your ale.~
+@10389 = ~I bet you're just too scared to try it.~
+@10390 = ~Did I just hear you call me pipsqueak?! NOBODY gets away with that!~
+@10391 = ~What did you say?! Dewny is not some simpering halfling lass from the countryside! I can hold my drink with the best of 'em! I just don't choose to.~
+@10392 = ~I don't think you're telling the truth.~
+@10393 = ~Chicken.~
+@10394 = ~Coward.~
+@10395 = ~Wuss.~
+@10396 = ~You're a yellow-bellied, trembling, weak-kneed, girlie-girl. It's a wonder the hairs on your feet haven't fallen out for shame.~
+@10397 = ~You're saying I'm a liar?!~
+@10398 = ~THAT'S IT! I challenge you to a drinking contest!~
+@10399 = ~Whoever's left standing can have the ale. What's more, they can be responsible for taking out the bodies of the drunken sods tonight!~
+@10400 = ~Felma! Two tankards!~
+@10401 = ~Next round..~
+@10402 = ~(Glug... glug... glug... glug.)~
+@10403 = ~(Gulp!) Hey now... this stuff ain't so bad...~
+@10404 = ~(Drink with gusto.)~
+@10405 = ~(Quaff it.)~
+@10406 = ~(Drink as a connoisseur would.)~
+@10407 = ~Heheheh! Well done! Bit too much spinnin' around though..~
+@10408 = ~Wha...'m I supposed to do again? That's right! It's my round, isnit?~
+
+
+//@10409 = ~(Glug... glug... glug...)~
+
+
+@10410 = ~Why's everythin' upsidedown? ..I sh'... I sh'get back t'work...~
+@10411 = ~More cake? Here, mind this for me, will ye?~
+@10412 = ~Har har har. I'll have you know that short folk take in less energy, produce less waste, fit into tight spots, and above all, are NOT to be used as armrests!~
+@10413 = ~Thankye. I just brushed 'em this morning.~
+@10414 = ~Sorry <SIRMAAM>, my heart already belongs to Pippin.~
+@10415 = ~Works every time.~
+@10416 = ~That lush is in here all the time. Of course I know him.~
+@10417 = ~Zzzz-(Snort!)-zzzz.~
+@10418 = ~Do you know the bard Drini?~
+@10419 = ~So what do you say, Samuel?~
+@10420 = ~I'm awfully sorry, Dewny, but it's still a no. The Five Flagons playhouse is just that - a playhouse, and not a singin' parlor. Athkatlan Avatar? The strangeness of it makes the mind boggle, it does.~
+@10421 = ~But Biff the Understudy has already put his hand up for the auditions!~
+@10422 = ~Biff the Understudy wants to take part? Bless my boots, now it's a definite no!~
+@10423 = ~Oh now, don't look so gloomy. Here, have an Evermead! It'll cheer you right up!~
+@10424 = ~Blech. You know better than to offer me any of that stuff.~
+@10425 = ~Heh. It's why I offered it. A barkeep owin' you a favor would never be short of drinks to serve his customers. I can't for the life of me understand your aversion to the odd drop, but it takes all sorts, I guess.~
+@10426 = ~It tastes awful, that's why! That reminds me...~
+@10427 = ~Have you tried that new low spirit-content Black Ale I brewed for you? How'd it go over with the customers?~
+@10428 = ~Well, how about we just say you gave it the perfect name? Low in spirits, they was last night! Never saw a gloomier bunch in my life! Had to take it off the menu. I've got the rest of the barrel somewhere...~
+@10429 = ~Here, have it back and have another go. You'll hit on a winnin' recipe one day, to be sure!~
+@10430 = ~Samuel! Did yer just give her a container o' some sort?~
+@10431 = ~I certainly did, my good madam!~
+@10432 = ~Noooooooo... do you know what you've just done?!~
+@10433 = ~All right, you horrible, drunken, sozzled lot! You've all had enough. I'll be taking your glasses now, quicksmart!~
+@10434 = ~Into the barrel it goes.~
+@10435 = ~Hey! But that was half-full!~
+@10436 = ~Glad to see we've an optimist here! Look, it might be painful now, but your liver will thank me for it.~
+@10437 = ~Who cares fer me liver? Me tongue is what counts, and me tongue wants me ale back!~
+@10438 = ~I'll just take that.~
+@10439 = ~What in the world? Do you realize that you just tipped a quality vintage into that rather common barrel of yours?~
+@10440 = ~Yoink!~
+@10441 = ~I suppose I should thank you. Overindulgence can only diminish my skill.~
+@10442 = ~Thankye both.~
+@10443 = ~What are you takin' my ale for, eh? You got something against short folk, eh, eh? Oh wait - you're halfling too.~
+@10444 = ~OI! Give it 'ere, ye hairyfooted good fer nothin'! Ye not to be pourin' it in there--NOOO! ME ALE!~
+@10445 = ~Ye give me that barrel this moment lest ye want to lose yer life!~
+@10446 = ~Why would you still want it? It's all mixed up with the low spirit-content Black Ale, and the dregs from all these people-~
+@10447 = ~Hang on, the barrel's feeling warm all of a sudden...~
+@10448 = ~Well I'm always open t' new sensations. Let me 'ave a taste..~
+@10449 = ~(Glug glug) A fine bouquet... Light on t'nose, w'hints o' spice n' goodberry n' a dash o' nutmeg... wit'a crisp, dry finish. An' what's this aftertaste?~
+@10450 = ~By--by me biggest hammer! 'Tis t' stuff o' legend! Ye've managed t'make none other'n the bubbling brew o' Malocholis, the drink named after that rum, ale-stealin', o'ertall, bastard o' legend-~
+@10451 = ~Hang it--t'legend also says that dwarves get a blindin' headache if they drink it... ooohhh... t'would be hittin' about now... owwwww... I'll just be havin' a lie down...~
+@10452 = ~Now you've gone an' killed him!~
+@10453 = ~Naw, naw, he's just asleep. You're not doing anything for that stupid "halflings 'r' only thieves" stereotype, ya'know. I thinks I better stop you before you get outter hand-~
+@10454 = ~SAM! Dewny's at it again!~
+@10455 = ~Now now, Dewny, I can't be having with you taking away the good customers' drinks like that. What'll happen to my business?~
+@10456 = ~It'll have enough customers live to come back another day! Really, allowing them to drink until they sweat spirits...~
+@10457 = ~Though it makes a welcome change from their normal body odor, to be sure.~
+@10458 = ~They can handle themselves, lass. And they'll just be back tomorrow night anyhow. Here, don't fret about it. Go talk to Uda and let her know that Samuel says to bake an extra cake for you, eh?~
+@10459 = ~Oooooh! Cake!~
+@10460 = ~Ach! Is there no peace for a busy dwarf? Who are ye? What do ye want? Nay, it'll have to be shark-skin.~
+@10461 = ~I'm <GABBER>. We spoke before.~
+@10462 = ~Cromwell said you need to pay him for the preparation you wanted.~
+@10463 = ~I've got the concoction you wanted from Cromwell. Can I have the whiskey now?~
+@10464 = ~Eh? Whaddya want? Can ye nay see I be workin' at somethin' o' great import? Ach, nay, that'll no' work.~
+@10465 = ~What'll no'--err, what won't work?~
+@10466 = ~Who are you?~
+@10467 = ~Hey dwarf, I'm standing right here.~
+@10468 = ~Blasted fools!~
+@10469 = ~I'll leave you be then.~
+@10470 = ~I cannae put runes on o'er the top o' other runes. The order'll be all skew'd and the bloody thing'll be belchin' fireballs or makin' funny noises. Gonna have to we-do, ach, re-do the lot now. Nearly baffed the whole thing up, I did.~
+@10471 = ~But what is it that you're doing?~
+@10472 = ~Who are you anyway?~
+@10473 = ~It'll need to be three parts steel to... Eh? What am I doin'? I'm thinkin', creatin' and prayin' now and again for inspiration. I be makin' a mighty weapon is what I be doin' and ye're keepin' me from it with the flappin' of yer lips. It'll need weightin' proper-like, or she'll be whippin' about all over the place.~
+@10474 = ~Shouldn't you be at a forge or something?~
+@10475 = ~I'll leave you to it then.~
+@10476 = ~I'll have to sharpen it... What'll I need to... Ach, a whetstone o' course. Are ye still gawkin' there? Ye do nae step right up to a forge with a lump o' metal and start bashin' away like some dung-spawned orc, ye ninny. Takes plannin' to make e'en the humblest weapon. Takes deep thought and great inspiration if ye're gonna make a weapon of this character! Dumathoin's Beard! I cannae leave that out!~
+@10477 = ~How far along are you?~
+@10478 = ~Eh? How far along? Do ye expect me to keep track of every grain o' time that passes? Do ye want me to write ye a little note at every decision I make? Bah! I'm as far along as I am and that's all ye'll get. Ach, paper's nay the thing for writin' runes. Ye can never get them down proper. And I'll be needin' to carve 'em again on the blade, o' course.~
+@10479 = ~Suit yourself.~
+@10480 = ~Mithril's out o' the question, but maybe an alloy'd do the trick aye? Me? I be Robukin, son of Kenukin of the Rockskull clan. I'd ask ye yer name, but I've got things to think on and more than enough to slip me mind.~
+@10481 = ~What is it you're doing?~
+@10482 = ~Mithril's out o' the question, but maybe an alloy'd do the trick aye? Me? I be Robukin, son of Kenukin of the Rockskull clan. I be pleased to meet ye, but I be thinkin' hard and there be much to forget, so ye'll understand if I nay ask yer own worthy name. I'm sure ye'd nay like to disturb a fellow dwarf at his work, aye?~
+@10483 = ~I be needin' diamond tools to cut the... I know ye're standin' there, are ye daft?~
+@10484 = ~Maybe you should show a little more respect.~
+@10485 = ~Fine, I'll leave you alone.~
+@10486 = ~Could be that I need to... Respect? Respect is leavin' an honest dwarf alone when he's workin'. Get ye gone.~
+@10487 = ~Fine, I'll leave you be.~
+@10488 = ~I'll show you respect on the end of my weapon, fool!~
+@10489 = ~Do you have a commission waiting for Robukin Rockskull?~
+@10490 = ~Ye mean fer Big? Aye, I've got his commission somewhere hereabouts. Did ye bring the payment then?~
+@10491 = ~Payment? He didn't say anything about payment!~
+@10492 = ~Ah, so it's me whiskey you be wantin' is it? Well, ye'll not get it, so be off with ye.~
+@10493 = ~It's for a noble cause.~
+@10494 = ~I can pay well.~
+@10495 = ~Hand it over beardy. Now.~
+@10496 = ~Aye, and so's me work. I needs it for meself and not for drinkin' neither. Ye'll not get it, so save yerself the time and be off.~
+@10497 = ~Why do you need it?~
+@10498 = ~Is there no way I can change your mind?~
+@10499 = ~Very well. I'll leave you alone.~
+@10500 = ~If ye must know, I be needin' it to quench the blade o' me weapon to give it the proper finish, or I'll just be wastin' me time with the forging. The good stuff's too rare for me to be givin' it away to passin' grog hounds, whatever the reason.~
+@10501 = ~There must be some way I can get it.~
+@10502 = ~Very well, I'll leave you in peace.~
+@10503 = ~Maybe I need to use a hammer for that... What? Oh, if ye must have it, there do be one way. In the first place I was goin' to cool the blade usin' a concoction made up special like. Problem is, wi' all me plannin', I forgot how to get back to the fine artisan I commission'd it from. Damned longshank cities, never laid out proper. If ye can find the fellow and get the finished blade quencher off o' him, ye can have the whiskey. All I remember 'bout where he lives is that I heard water lappin'. O' course, I can hear water here too but there's no accountin' for where humans'll build their cities. Remember, he's a good artisan, a dwarf, mark ye. That's me last word on the subject now. Go an' find me potion and I'll see ye right.~
+@10504 = ~Aye, I bet ye can. Ye look's the wealthy type. But it is nay the money. I needs me whiskey and not fer drinkin'. Ye'll not get it, so push off.~
+@10505 = ~Well, ye look a mean customer an' no mistake, <RACE>. But mean as ye are, ye'll not get me whisky without a fight. Come on, if ye dare!~
+@10506 = ~Then die, fool!~
+@10507 = ~Aye, good. Peace at last. Now, if I were to...~
+@10508 = ~Aye, that's as may be, but I've got more'n enough on me plate without rememberin' the names of passers by. What is it ye want?~
+@10509 = ~Ach, did I nay give ye the scroll? Ne'er mind, I'll give it ye now. Take that to Cromwell, get me quenchin' oil and ye can have the whiskey. Oi! Don't ye go readin' it, or ye'll let out the magic an' Cromwell'll turn ye away. Go on now.~
+@10510 = ~Ah, there she is! Come 'ere, me beauty. Ach, marvelous. The whiskey's all yours, do what ye like with it. Hmmm, I cannae let that be out there, ruin the whole thing, it will... .~
+@10511 = ~Here you are one cup of Vibrissa, use it wisely now. I am off to perform on a larger stage.~
+@10512 = ~Do you have the beans yet? I'm contracted to perform up north and will have to leave soon, so I wouldn't take too long.~
+@10513 = ~I have the beans, here you go.~
+@10514 = ~I don't have the beans yet.~
+@10515 = ~I am not ready yet, I'll come back later.~
+@10516 = ~Oh, and have you heard about that Kelsey Coltrane? Well, he's so hot! I was playing with him one night and my house caught on fire, and then...~
+@10517 = ~Kind of dull in here isn't it? Perhaps if I sing a song there'll be a better mood? Or, oh, I know, a joke! That always lightens a mood.~
+@10518 = ~Can I help you?~
+@10519 = ~Yes, I am trying to find some Vibrissa. Can you help me?~
+@10520 = ~Yes, I am trying to find some Vibrissa. I am told you may be able to help.~
+@10521 = ~No, thank you.~
+@10522 = ~How are my kids? What kids? Oh, oh yes, the girls. They're doing just fine. At least they were the last time I was home. Um, whenever that was. And can you believe it, one of them is going to make me a grandmother soon. A grandmother! And I'm only 514 years old!~
+
+
+//@10523 = ~Suit yourself.~
+
+
+@10524 = ~Then let's get this show on the road shall we?~
+@10525 = ~Well you best turn on the charm a talk to Haludak then. As I said before, I won't be here forever.~
+@10526 = ~I won't put off leaving for the North for ever. Please hurry up.~
+@10527 = ~Well, he wasn't directly responsible for it. In fact, it wasn't his fault at all. It's just that well... um...~
+@10528 = ~Say, isn't there something you should be doing?~
+@10529 = ~Well, you sure do spin a good yarn.~
+@10530 = ~What kind of story was that? I was told you were supposed to be a bard.~
+@10531 = ~I am trying to find some Vibrissa. Do you know what it is and where I can get some?~
+@10532 = ~The barrister thinks you may know about Vibrissa, I need to find some.~
+@10533 = ~Fred and the barrister think you may know where I could get hold of some Vibrissa.~
+@10534 = ~I need some Vibrissa, Fred thinks you may me able to help me.~
+@10535 = ~Nothing, never mind.~
+@10536 = ~I am a bard after all. I know many a story. Say, have you heard the one about Minsc and the Beanstalk? Once upon a time...~
+@10537 = ~A story! Please, do go on.~
+@10538 = ~I'm sure it's a wonderful tale, but I really don't have time right now. I am trying to find some Vibrissa. Do you know what it is and where I can get some?~
+@10539 = ~I'm sure it's a wonderful tale, but I really don't have time right now. The barrister thinks you may know about Vibrissa, I need to find some.~
+@10540 = ~I'm sure it's a wonderful tale, but I really don't have time right now. Fred and the barrister think you may know where I could get hold of some Vibrissa.~
+@10541 = ~I'm sure it's a wonderful tale, but I really don't have time right now. I need some Vibrissa, Fred thinks you may me able to help me.~
+@10542 = ~Can we please skip the fairy tales? I am trying to find some Vibrissa. Do you know what it is and where I can get some?~
+@10543 = ~Can we please skip the fairy tales? The barrister thinks you may know about Vibrissa, I need to find some.~
+@10544 = ~Can we please skip the fairy tales? Fred and the barrister think you may know where I could get hold of some Vibrissa.~
+@10545 = ~Can we please skip the fairy tales? I need some Vibrissa, Fred thinks you may me able to help me.~
+@10546 = ~Well you made me lose my thread now. What did you want anyway?~
+@10547 = ~Vibrissa? Wow, I'm surprised you've even heard of it. Why would you want some?~
+@10548 = ~Fred says it is the ultimate hangover cure. That seems reason enough to want some to me.~
+@10549 = ~I already gave you a reason, can you help me or not?~
+@10550 = ~I am told it is a vital component of a powerful summoning spell.~
+@10551 = ~It is not important why I need it, just that I need it.~
+@10552 = ~I have been asked to find a selection of drinks, Vibrissa is on the list.~
+@10553 = ~Well, when you get to be 514 years old, we'll just see how sharp you are! That is, if you live past tomorrow. So, was there something you wanted?~
+@10554 = ~Some Vibrissa, I'm told you might know where I could get some.~
+@10555 = ~(Sigh) Nothing, I think I'll come back when I've calmed down.~
+@10556 = ~Oh no! Not *them*?!? Why anyone wants to summon... oh well, in any event, I don't have the drink right now.~
+@10557 = ~Now what am I supposed to do?~
+@10558 = ~Are you saying you could get some?~
+@10559 = ~So what's so special about this drink anyway?~
+@10560 = ~What are you, some kind of errand <GIRLBOY>?~
+@10561 = ~I'm no more an errand <GIRLBOY> than you are an avariel.~
+@10562 = ~Yes, I'm an errand <GIRLBOY>. Today I need to find some Vibrissa.~
+@10563 = ~Please, I need some Vibrissa. Could you just tell me what it is and where I can get some.~
+@10564 = ~Please, I need some Vibrissa. Could you just tell me where I can get some.~
+@10565 = ~(Growl) I think I'll come back when I've calmed down.~
+@10566 = ~Yes, it's true, I'm no wingless avariel, but I am a bard. Perhaps I could interest you in the poem of a young girl and her knight in shining armor?~
+@10567 = ~A poem! Yes, that would be lovely.~
+@10568 = ~Gentle breezes blow
+Two lovers meet in flowers
+Time stands still for them~
+@10569 = ~In heat of passion
+The lovers ignore the world
+Storms rage around them~
+@10570 = ~When leaves turn colors
+Winds announce the coming change
+Will lovers remain~
+@10571 = ~Winds much colder now
+Barren land and swirling drifts
+Two hearts beat as one~
+@10572 = ~Where have you gone now
+You said you'd never leave me
+Tears falling like rain~
+@10573 = ~Ah, beautiful. That always clears my mind. Now, where were we?~
+@10574 = ~Never mind, thank you.~
+@10575 = ~Kind of rude, aren't we? If I were easily offended I'd walk away from this conversation right now. Luckily for you I am a tolerant elf.~
+@10576 = ~Vibrissa is a special concoction that my husband's mother used to fix up for his father when he would celebrate a little too much. Very special Primo java beans were used along with an enchantment. He'd drink it and in an hour or so would be as sober as a judge, as I believe I've heard the humans say.~
+@10577 = ~The ultimate hangover cure. I like it.~
+@10578 = ~I know what it is. I need to find some, can you help?~
+@10579 = ~Do you know how to make it?~
+@10580 = ~Could you make me some please?~
+@10581 = ~Do you know where I could get some?~
+@10582 = ~Yes, well. I can't say I approve of the kind of behavior that puts people in a state where they require Vibrissa. However, these things are out of my control.~
+@10583 = ~The drink can be made easily enough. You get some Primo java beans and bring them to me. I'll work some mojo and, presto, Vibrissa!~
+@10584 = ~Did you hear that, Boo? The nice lady knows a story about Minsc!~
+@10585 = ~Yes, and if you'd stop interrupting you can hear it.~
+@10586 = ~Our apologies, please, do go on.~
+@10587 = ~Fred? I'm sure I've no idea who you're talking about. Oh, wait, yes, I do remember him now. Being as old as I am, I sometimes forget things without a memory jog.~
+@10588 = ~I'm sitting right here!~
+@10589 = ~Yes, yes. I said I remember now, didn't I?~
+@10590 = ~So what was it you wanted?~
+@10591 = ~You really are kind of not aware, aren't you?~
+@10592 = ~Primo java beans? Haludak has plenty of them--it is what he is drinking now. I have tried to persuade him to let me sell it but he refuses to allow "the plebes" access to it.~
+@10593 = ~Look at that, you don't even have to leave the building to get them. Sounds like you'll need to turn on the charm. I'll be waiting here when you have the beans.~
+@10594 = ~Have you seen any java beans anywhere. Gah! Of course you have. I mean *real* java beans, I seem to have misplaced some.~
+@10595 = ~I own this place, treat me with respect!~
+
+@10596 = ~We are told you have some Primo java beans. We'd like to obtain some.~
+@10597 = ~Never mind.~
+@10598 = ~What?~
+@10599 = ~NO! They are mine, MINE!~
+@10600 = ~We would make it worth your while.~
+@10601 = ~We'll take them by force if we have to.~
+@10602 = ~If you won't part with some provide us with the name of your supplier.~
+@10603 = ~Heheh! There you see--I am protected. You can't hurt me now. And you still can't have any beans.~
+@10604 = ~Can't hurt you? Watch me!~
+@10605 = ~*Please* can we buy some of your Primo beans?~
+@10606 = ~Is there something we can do for you, in order to get some Primo beans?~
+@10607 = ~Could you give us the name of your supplier then?~
+@10608 = ~You do not have the means to make it worth my while.~
+@10609 = ~I'll try elsewhere. Barrister! You make his java, you must have a store of beans. I'll buy some from you.~
+@10610 = ~Then, please, give me the name of your supplier.~
+@10611 = ~Ten gold pieces.~
+@10612 = ~Fifty gold pieces.~
+@10613 = ~One hundred gold pieces.~
+@10614 = ~I am reliably informed I have the only store of Primo beans in Athkatla. My supplier, Mujai, imports Primo for a select few people in Amn. To my knowledge he is the only java importer to have found a source willing to sell to humans. However, he has not had a batch delivered in several weeks.~
+@10615 = ~So, you see, it is ME you need to speak to ME! (twitch)~
+@10616 = ~I will speak with this Mujai, where can I find him?~
+@10617 = ~Then I must buy the beans from you.~
+@10618 = ~It appears, then, you are my only hope. You WILL give me the beans.~
+@10619 = ~You can't find him. He's gone. He was confident he'd return before my stores ran out. He said he had to disappear for awhile since his creditors were closing in.~
+@10620 = ~Hah! Ten? Do you know how much this stuff costs an ounce? Ten gold doesn't even cover my costs.~
+@10621 = ~Fifty gold, eh? A small profit. For you, my friend, fifty gold is enough.~
+@10622 = ~Fifty gold, eh? A small profit, just enough to make the risk of running out worthwhile. For you, my friend, fifty gold is enough.~
+@10623 = ~Fifty gold pieces, a tempting offer, I would make a tidy profit. Not enough, however, to make the risk of running out worthwhile.~
+@10624 = ~ONE HUNDRED GOLD PIECES? Here! Take the beans, take them!~
+@10625 = ~ONE HUNDRED GOLD PIECES? Give him the beans Ardek. The gold, however, is mine!~
+@10626 = ~I will not enchant java bought with blood!~
+@10627 = ~Stop! Please! Haludak hand over the beans.~
+@10628 = ~I will not! They're mine.~
+@10629 = ~Don't be ridiculous, these people are willing to kill for want they want.~
+@10630 = ~Alright already! The cost is coming out of your pay though, and yours Ardek.~
+@10631 = ~Mine? Why? What did I do?~
+@10632 = ~You told these lunatics about the beans in the first place. Don't think I don't hear you all plotting against me.~
+@10633 = ~Come on, Haludak.~
+@10634 = ~Okay fine! Here are the beans, work your mojo--or whatever you call it.~
+@10635 = ~Thank you, now lets get this over with.~
+@10636 = ~You could help cure him of his addiction.~
+@10637 = ~I am perfectly happy as I am thank you very much.~
+@10638 = ~Then we will take them by force.~
+@10639 = ~Then we *will* take them by force.~
+@10640 = ~Then I must buy them off you.~
+@10641 = ~Then I will go to your supplier, what is his name?~
+@10642 = ~I don't think you have enough to make it worth my while. It's more than my job's worth to part with those beans~
+@10643 = ~Then I will return my attention back to Haludak~
+@10644 = ~Heh! My tips are worth more.~
+@10645 = ~Well! That is an offer too tempting to refuse.~
+@10646 = ~You cannot sell my Primo beans!.~
+@10647 = ~Watch me. I'll refund you the cost, but I will not turn down the gold. You owe me a raise for running this place as it is.~
+@10648 = ~You are fired if you hand over those beans!~
+@10649 = ~No Haludak, I'm not. You'll never find anyone to replace me, especially not on these wages.~
+@10650 = ~Grrr. We will have words about this later.~
+@10651 = ~I'm sure we will.~
+@10652 = ~Welcome to Haludak's Java House, may I take your order?~
+@10653 = ~I was actually looking for Maheer, I was under the impression that this was his establishment.~
+@10654 = ~Are you Haludak?~
+@10655 = ~I need to obtain a drink known as Vibrissa. I have learned that its main ingredient is java. Do you have any?~
+@10656 = ~Java hey? Let's see what you have.~
+@10657 = ~Nothing right now, thank you.~
+@10658 = ~Hmph! Maheer does manage to give that impression, doesn't he. He is, however, simply a merchant who trades from here in the evenings with Haludak's permission. If he is here, he can usually be found at the table by the north wall. Otherwise, he has a stall just outside, in the promenade.~
+@10659 = ~I see, thank you. I'll go and find him.~
+@10660 = ~Did you say java? What kind of selection do you have?~
+@10661 = ~So this place belongs to Haludak then? Are you he?~
+@10662 = ~I see, thank you. I need to obtain a drink known as Vibrissa. I have learned that its main ingredient is java. Do you have any?~
+@10663 = ~No, I am just the barrister. I say "just" but the fact is I practically run this place now--Haluduk's not really up to the job anymore. He is seated at the end of the bar if you *really* want to talk to him. Be gentle, he is a little paranoid.~
+@10664 = ~What's wrong with him?~
+@10665 = ~I think I'll leave him to it.~
+@10666 = ~I'll try some of that java now, what do you have?~
+@10667 = ~A little too much of his own product, if you take my meaning. Not that it should stop you having some. Did you want to order?~
+@10668 = ~I'll pass for now, thank you.~
+@10669 = ~Sure, what do you have?~
+@10670 = ~A wise choice. Did you want to order?~
+@10671 = ~Maybe later, thank you.~
+@10672 = ~Not right now, I need to obtain a drink known as Vibrissa. I have learned that its main ingredient is java. Do you have any?~
+@10673 = ~Maybe later. What ever happened to Maheer? I was under the impression that this was his establishment.~
+@10674 = ~Why not? What do you have?~
+@10675 = ~Vibrissa, huh? Sorry we don't have any. You should really ask Fred--he is the expert on all things java, he may know where you can get some. He is over the other side of the bar there.~
+@10676 = ~Also, I think it might be an elven drink, so you might try the Lady Bev. She's a bard to boot and they're supposed to be knowledgeable. Be warned though this particular bard has a terrible short term memory problem.~
+@10677 = ~Fred and Lady Bev? Thanks for the help.~
+@10678 = ~Fred and Lady Bev? Thanks for the help. So, are you Haludak?~
+@10679 = ~Fred and Lady Bev? Thanks for the help. What ever happen to Maheer? I was under the impression that this was his establishment.~
+@10680 = ~Fred and Lady Bev? Thanks for the help. Any chance of a drink while I'm here?~
+@10681 = ~Java is wonderful for removing the effects of wine and ale. Just the aroma makes me feel better. Don't have too much though, I'll stop serving you if I see you getting jittery.~
+@10682 = ~Where were we? Ah yes, here are the beans. I'll take that gold now, thank you.~
+@10683 = ~Volo wrote his Guide to Athkatla here, you know? Someday I'll be as well known as he is.~
+@10684 = ~I wonder if Elminster ever has trouble with the conjunctive tense.~
+@10685 = ~Should I write the section in the third person or the first? Volo tends to write in the third person and annotate, but I don't want to copy his style... too much.~
+@10686 = ~The Ardotion java served here is the finest I've ever tasted.~
+@10687 = ~Stay away from that Darelesh caf--eye watering stuff. (shudder)~
+@10688 = ~The nanleaf tisane is very refreshing on a hot afternoon, I find.~
+@10689 = ~I'm not a great fan of Tasani's chai. That writer in the corner is a fan, I believe, but it's just not my cup of tea.~
+@10690 = ~Not tried that new Karlotan coca yet. The barrister says he wants to perfect his preparation before I taste it. He's a good man that one.~
+@10691 = ~Did you want something?~
+@10692 = ~I am trying to find out about Vibrissa, can you help me?~
+@10693 = ~Vibrissa is an enchanted elven drink made from the finest java. The cantrip required to give the drink its special properties is passed down through generations, consequently Vibrissa now has many variations.~
+@10694 = ~That bard a little further down the bar, the one living in her own little world, I bet she knows how to make it.~
+@10695 = ~I thought we'd already covered this. Try to remember it this time.~
+@10696 = ~Well, I know the score. How much does he owe you?~
+@10697 = ~That'd be the way. Robukin'd forget his own legs if the gods had not made sure they were properly bolted on.~
+@10698 = ~Not money if that's what ye're thinking.~
+@10699 = ~Aye, well, he owes me a special payment, a scroll. Ye'll have to get it from him, I'll accept nothing else for the oil I made fer him. Bring me that scroll and the concoction's all yours.~
+@10700 = ~Is there anything else I can help ye with?~
+@10701 = ~I've brought the scroll from Robukin, do you have his oil? ~
+@10702 = ~Aye, I have it here. Take it and I hope this is worth all the leg-work Robukin's put ye through.~
+@10703 = ~I'm looking for some dwarven whiskey, do you have some? ~
+@10704 = ~I only keep dwarven whiskey for one of my regulars. Here, if you favor the dwarven brews, I've got some good grog behind the bar.~
+@10705 = ~No, it's dwarven whiskey I need. Any chance of getting some? ~
+@10706 = ~Maybe later. Do you know anywhere else I can get dwarven whiskey? ~
+@10707 = ~My whiskey is for Robukin, the dwarf there in the corner. You'll need to speak to "Big," as we call him, and see if he'll give you some.~
+@10708 = ~Are you "Big"? I was told you might have something I want.~
+@10709 = ~"Big"? Aye, some o' the too-talls hereabouts call me that. Hmm, may need to nip that in a wee bit... What d' ye think it is I be havin' that you be wantin' eh? Och, I'll be needin' one o' them too. Well?~
+@10710 = ~I was told you had some dwarven whiskey. That's what I need.~
+@10711 = ~The dwarven whiskey. Give it to me.~
+@10712 = ~Avast ye scurvy sea dogs! What's goin' on here?~
+@10713 = ~If it were a present fer me then why have the lot o' ye tapped it an' are swallering it down yer gullet?~
+@10714 = ~Corski's Golden Brew?! Hand me a mug an' let me tip back a few pints wit' ye then.~
+@10715 = ~Watch yer mouth on how ye talk about Laurlana ye barnacle covered cur! Nay lad, not a wench but a true lady fair. Me heart ain't with the sea no more boys, but with Laurlana.~
+@10716 = ~I ain't bad with a blade lad, maybe I can pick up some work as a guard or somethin'. Long as I can come home to Laurlana I think it'll turn out all right. We can have a few whelps of our own and I can larn 'em about the sea an' bein' a deckhand an' all.~
+@10717 = ~Wake up ye squids-fer-brains! Ah, now who'm I gonna drink wit'? Oho! Hey there friend! How ya doin'?~
+@10718 = ~Doing pretty well. Mind if I have a drink with you?~
+@10719 = ~My throat is a little dry if you get my meaning.~
+@10720 = ~Shut up you old drunkard and hand over your keg!~
+@10721 = ~Well friend if ye want a good brew yer welcome to take the whole keg. Me friends seem to have had enough an' I'm in a nice comfortable spot meself.~
+@10722 = ~Don't mind if I do, thanks.~
+@10723 = ~Never let it be said Corradun ever turned away a thirsty <MANWOMAN>. Take the whole keg me friend. I ain't got no more use fer it.~
+@10724 = ~Thanks friend, cheers!~
+@10725 = ~I may be drunk an' seein' two o' ye at once, but that jus' means I'll stab one o' me blades inta each o' ye! Come on lads! At 'em! Ah, dead blame fools are too drunk ta fight! Fine then, take me keg, but I'd watch me backs if I were ye. Never know who might put a blade in it o' when, ye bilge rats!~
+@10726 = ~Just get out of our way you old scallywag!~
+@10727 = ~Yes, my gentle angel. Coming...~
+@10728 = ~Corradun? I should have known you dull ugly drunkard! Get yer arse back to the house ye stinkin' alley cat 'afore I have the watch clap ye in irons. How could ye be out with this filth the night afore our wedding? Why I even agreed to marry ye I'll never know...~
+@10729 = ~Corradun, we all chipped in our gold to bring ye a nice retirement present.~
+@10730 = ~Arghh! Corradun, is it true yer given up the life o' the high seas fer nuthin' more then a wench?~
+@10731 = ~A bard? While trying to get his creative juices flowing, it appears this goose has instead pickled himself in them.~
+@10732 = ~Bah! I doubt any parlor tricks a drunkard like you could summon would compare to even the puniest creature I could conjure. (This one looks like he can barely make his legs stand him up straight, much less control his arms to call a spell.)~
+@10733 = ~Oi! I, ah, heard that! You'd be surprised, a little doubt goes a long way.~
+@10734 = ~And what, pray tell, is *that* supposed to mean? (I cannot even think down to his level.)~
+@10735 = ~I mean, ah... Anyway, that's not the point.~
+@10736 = ~Gibberlings, and particularly scruffy ones at that. As I said before, I did better while in swaddling clothes. (Yes, this slovenly fop is as ineffectual as I thought.)~
+@10737 = ~Great, so one of Salvanas' pals is here too. I think we should try and avoid getting dragged into this conversation, <CHARNAME>.~
+@10738 = ~And who are you? Some black magic woman, come to make a devil out of me?~
+@10739 = ~I would not bother with dirt such as yourself, iblith.~
+@10740 = ~She's not the one you're trying to charm, Drini.~
+@10741 = ~Pouting like that is certainly charming me!~
+@10742 = ~Yoshi here knows me, knows I'm good for a tale or two, eh?~
+@10743 = ~Ah, this is true; though the tales you tell tend to bear as much resemblance to reality as that horrible contraction of my name does to the full thing.~
+@10744 = ~Uh...~
+@10745 = ~That means a lot, right?~
+@10746 = ~Put plainly, no.~
+@10747 = ~You can say that again.~
+@10748 = ~Still, <CHARNAME>, you never can tell. It may be worth hearing him out--and what is there to lose from such a venture?~
+@10749 = ~This Suleci is essentially a decent man, despite what his associations with this rogue might imply.~
+@10750 = ~Hmmph.~
+@10751 = ~If you change your mind, I'll be here.~
+@10752 = ~Should you need anything else, I'll be here.~
+@10753 = ~Good day to you.~
+@10754 = ~For gods sake just leave me in peace! Can't you see I have enough problems in my life without people like *you* pestering me!~
+@10755 = ~Wait. I don't know you, do I?~
+@10756 = ~I'm afraid not, friend. Is something wrong?~
+@10757 = ~Never seen you before in my life, and quite frankly I wish I could go back to that state of affairs...~
+@10758 = ~At a guess, you're the ex-lover of that halfling lass in the corner. Sorry, but its time to die.~
+@10759 = ~So you're the ex-lover of the halfling lady in the corner? I've already heard the story and it sounds like you could both work this out if you talk to each other.~
+@10760 = ~Would you be the thief I've heard so much from that now dead halfling, over there?~
+@10761 = ~Is something wrong? Yes, something's wrong. The only love of my life has run off with some upper-class bastard!~
+@10762 = ~I'm sorry to hear that. Why don't you tell me the whole story?~
+@10763 = ~I'm sorry I don't have time for this...~
+@10764 = ~Then leave me alone...~
+@10765 = ~So she finally sent someone to kill me so she can run off with her lover? I knew it!~
+@10766 = ~Prepare to taste my steel!~
+@10767 = ~Allanya? She's... dead? What happened!?~
+@10768 = ~She tried to hire me to kill you, over ruining her business. She offered me the some of the finest spirit this bar could offer as payment. I thought I'd just be easier just to kill her and take the key off of her corpse.~
+@10769 = ~She got what she deserved. She was trying to have you killed!~
+@10770 = ~So I was right! She *was* going to have me killed, but I... never thought she'd... actually go through with it..~
+@10771 = ~Allanya...~
+@10772 = ~What's wrong? For crying out loud, she was going to have you killed!~
+@10773 = ~Oh boo hoo. She got what she deserved, believe me.~
+@10774 = ~I always thought that was her plan. Kill me and run off with *him*, but... I never thought she'd... actually go through with it..~
+@10775 = ~She... she was the only woman I ever loved... And now she's gone...~
+@10776 = ~Sorry to bother you about this now, but I've got this key to the cellar but I have no idea where the cellar is. Do you think you could help me?~
+@10777 = ~Life's a bitch. Just move on you soppy bastard! Listen up, I've got this key to the cellar but I don't have a clue where this cellar is. I want you to get this 'fine spirit' for me.~
+@10778 = ~Sorry to bother you about this, but Allanya told me that she could get me some of the finest spirit this bar has, and I really need it. Do you have any idea where it would be?~
+@10779 = ~We all have problems. Just move on you soppy bastard! Now, Allanya told me she could get me some of the finest spirit this bar has, and I really need it. Any idea where she stashed it?~
+@10780 = ~Yes, I know where the cellar is.~
+@10781 = ~I'll fetch the drink for you, but after that just leave me alone. Please.~
+@10782 = ~It'll be in the cellar... She had a key, if I recall. It should be somewhere on her... on her body...~
+@10783 = ~Bring if to me and I'll get it for you. But after that just leave me alone. Please!~
+@10784 = ~Back when we met she was the bartender of this cozy little tavern. Damn fine one too. The first time I stepped through those doors, I just couldn't keep my eyes off her. Her beautiful eyes, her gorgeous lips, her fuzzy toes...~
+@10785 = ~Sorry, where was I?~
+@10786 = ~*Ahem* I'm a cloak and dagger chap by trade, and a tavern is a good a place as any to pick up surplus items of a valuable nature. But one day, she caught me in the act. I thought I was a goner for sure, but then I saw something in her eye. Something telling me she didn't want to hand me over to the guards.~
+@10787 = ~So that's when we came up with our business. She'd spike some drinks, I'd remove any items from their pockets, which they really didn't need.~
+@10788 = ~Oh don't look at me like that. If some rich bastard walks in here with a purse the size of Tethyr, then they really don't need all that cash for themselves do they? I just... redistributed it, to those who needed it more.~
+@10789 = ~It was all going so well, but then she found a new man. Some pompous, upper-class snob who could offer her 'a better life' or some other such bullshit. I thought she loved me, I thought what we had was more than just the loot... but I was wrong.~
+@10790 = ~She set me up. She tipped off a guard she knew I was gonna rob. Watered down his ale, so he was perfectly capable of defending his pockets. Caught me red-handed!~
+@10791 = ~All that bitch wanted to do was get me out of the picture so she could take all of *our* hard earned goods and run off with this other bastard!~
+@10792 = ~Well if I can't have her, no-one will! You look like the 'stab first, ask questions later sort'. I've got a job for you.~
+@10793 = ~I understand perfectly. Don't worry, we'll deal with her.~
+@10794 = ~And what might you be willing to offer in return for this task?~
+@10795 = ~Are you sure you've got all the facts right, here? I really think you should talk to her about this.~
+@10796 = ~I can't just kill a woman in cold blood. I'm sorry.~
+@10797 = ~Let me think about it. I'll return later.~
+@10798 = ~Talk to her? Are you insane?! You heard what that backstabbing woman did to me!~
+@10799 = ~The thought of her with someone else is just too painful...~
+@10800 = ~You know this is a bad idea. Please, just talk to her. I'm sure you can work this out.~
+@10801 = ~Think about this. Could you really live with yourself afterwards? It doesn't have to end like this.~
+@10802 = ~Alright, we'll do this for you, but there better be something in it for us at the end.~
+@10803 = ~Please, just hear me out!~
+@10804 = ~Alright, let's hear your tale.~
+@10805 = ~Do I look like I want to hear some 'tale of lost love'? All I want is a drink without some smelly beggar coming up to me and whining about all the problems with his life. Just leave me alone!~
+@10806 = ~Marvelous. Don't worry, you'll be suitably rewarded for this. If you search her once you're finished you'll find a key to the secret cellar. Bring that back to me and I'll get you a bottle of the finest spirit this place has to offer.~
+@10807 = ~She's that fine looking halfling lass in the corner...~
+@10808 = ~I understand.~
+@10809 = ~I'll still be here if you change your mind...~
+@10810 = ~I told you she used to be a bartender, didn't I? She's still got the key to secret cellar on her. Bring that key back to me once you're done and I'll get you a bottle of the finest spirit this place has to offer.~
+@10811 = ~So, will you do it?~
+@10812 = ~Of course. Where is she?~
+@10813 = ~Thank you for doing this. She's that fine looking halfling lass in the corner...~
+@10814 = ~You're right... I don't know how I'd go on if she was dead.~
+@10815 = ~Maybe it was a misunderstanding. Maybe it was all a mistake. I don't know...~
+@10816 = ~I've got to talk to her. Thank you, <PRO_SIRMAAM>.~
+@10817 = ~Here you go. Take your blood money and leave me alone.~
+@10818 = ~So, do you have the key?~
+@10819 = ~Yes, here it is.~
+@10820 = ~No, not yet. I'll be back soon.~
+@10821 = ~Then I'll fetch the drink for you, but after that just leave me alone. Please.~
+@10822 = ~So... it's done is it?~
+@10823 = ~I can't believe you're gone... *sob* You were the only woman I ever loved...~
+@10824 = ~Oh yes, you did as I asked so I'll fetch the damned drink for you, but after that just leave me alone. Please.~
+@10825 = ~Oh yes, you did as I asked so I'll fetch the damned drink for you. Do you have the key?~
+@10826 = ~Errr... no. I forgot to pick it up.~
+@10827 = ~If you bring if to me and I'll get the damned drink for you, but after that just leave me alone. Please.~
+@10828 = ~I'll wait here until you've dealt with her. Then you get your reward.~
+@10829 = ~Understood. I'll be back soon.~
+@10830 = ~I've changed my mind. I can't just kill a woman in cold blood. I'm sorry.~
+@10831 = ~I've been thinking. Are you sure you've got all the facts right, here? I really think you should talk to her about this.~
+@10832 = ~So you're back. Changed your mind have you?~
+@10833 = ~I've thought about it and you're right. Of course I'll help you.~
+@10834 = ~I'm still thinking about it. I'll be back later.~
+@10835 = ~Oh, what do you want? Can't you just leave a poor guy to his misery?~
+@10836 = ~Sorry, I was kinda rude to you before. Is something wrong?~
+@10837 = ~Oh... <PRO_SIRMAAM>, excuse me... Excuse me, but are you perhaps available for a quick chat? I don't mean to impose, but... this is a matter of urgency. And *he'll* surely flag you down, once he sets his eyes on you. You're obviously the adventuring sort. No doubt he knows I don't plan to let this slide, and is probably talking to everyone he sees to turn them against me... Me! The one who had the fair job here! And they believe him, I'm sure. "Oh, but isn't he charming!" "Oh, the sincere fellow!" Bah! Of course he bloody well is, he's a rogue! Hmph. They deserve every swindle he's ever laid over them... If *I'd* had half a suspicion he'd try the same with me, I'd never have wasted my energy on the fool...~
+@10838 = ~Are... you still talking to *me*~
+@10839 = ~You sound as though you're in some trouble.~
+@10840 = ~Yes, that's interesting. Excuse me...~
+@10841 = ~Have you had a fight with someone?~
+@10842 = ~I've spoken with your ex-lover already. And to be honest, it sounds as though you both could work this out if you spoke together.~
+@10843 = ~I've spoken with your ex-lover. He informs me you have a key to the cellar here. I'll be taking that.~
+@10844 = ~Well, of course I'm still talking to you. I'm looking at you, aren't I? And not at that creep across the bar... What, wait, no! Don't look! What are you doing?! Gods, I'm burning... Burning in shame! If he saw, he'll know... Not that he shouldn't... Though... he should. He deserves it! Let him stew in his juices, in his fear of what's coming then! Go on, look all you want! LOOK, I say!~
+@10845 = ~Oooooh, we've a smart one here! Look at this, a true genius in our humble hovel of a bar! You a mage, or that keen sense of yours a natural gift? Yes, I'm in trouble! Or I was. And I don't want to let the one who caused it get away so clean as always. He deserves what's coming to him! That tall fiend won't slink away this time! His charm won't save him, by the gods, I SWEAR it!~
+@10846 = ~What? WHAT?! Here is a poor, sad, weeping, broken halfling lady beseeching your aid, and you turn your back? You're no better than that thieving twit that put me in this spot to begin with! Where are the real heroes in this world?! Where, I ask you? Is there no decency to be found?! I used to give a free pint to the weary soul on occasion, and for what?! What, I ask you?! To be ignored, that's what!~
+@10847 = ~That's brilliant, that is. Of course I've had a fight with someone! Do you think my eyes are this red and puffy naturally? That I sob so all the time? That I'm always this bitter and snappy with strangers?! DO YOU?! You'd best think twice! I haven't always been a nasty little witch! It's his fault! He did this to me, and by the gods, I'll make him pay!~
+@10848 = ~I... Oh my... I'm so sorry. I've just... I've not been myself... You see, I used to work here. Bartend. Was a fine job. And it's always so hard to earn respect as a barkeep that you want to hold onto it when you have it.~
+@10849 = ~Now, I'm sure you're a busy <PRO_MANWOMAN>, being the fancy-looking adventurer that you are, but if you have a moment to hear a poor lady's tale of how she fell victim to a dashing, black-hearted man and his wily ways - whose actual skills do his talk no service, I tell you - then I would make it worth your while.~
+@10850 = ~And just how will you do that?~
+@10851 = ~I am always willing to help a lady in distress.~
+@10852 = ~I can spare a moment to hear you out.~
+@10853 = ~What is it that you want me to do?~
+@10854 = ~No, I don't have time for this.~
+@10855 = ~Oh, worried about the payoff, are you? Fine, fine... I understand. My ex is a thief, after all. It's always about the money, isn't it? Don't worry yourself, I'll get to it. Let me tell you the difficult bit first, and then we can negotiate.~
+@10856 = ~What I have to ask may seem a bit... shocking... . But believe me, you'd be doing this city and places like it a favor, dealing with scum like my former wumpkins. You see... He - my ex, that is - he's a rogue. A scoundrel. Thieving, lying, cheating sort. Charming too. A tongue as silver as they come. Don't let it fool you, though. He's no good!~
+@10857 = ~Do you wrong, did he?~
+@10858 = ~I can see where this is going, and I want no part in it.~
+@10859 = ~By the gods, not another jilted lover whining about heartache...~
+@10860 = ~Um... Would this deal perchance involve a unique type of alcohol? I'm searching for some.~
+@10861 = ~I can kill him for you, if you want.~
+@10862 = ~Hold now, let me fi... You... Ah... You what? Oh, well...~
+@10863 = ~I... Yes, actually. That would... be quite nice. Precisely what I needed. Imagine that.~
+@10864 = ~I'm not the richest lady, as may be plain and obvious, but I do have some resources. For your aid I can provide you with the finest spirit this bar has to offer. I used to work here, you see, before that... that fiend spoiled it for me. It's yours if you, ah... you know. Send him on his way. In a permanent manner of speaking, I mean.~
+@10865 = ~He's the slovenly tall fellow at the other end of the tavern, glaring this way. The one with the stunning smile... eyes to match... hmph. I'll leave you to it then~
+@10866 = ~Hold now, let me finish! You have to understand what you're getting into. I won't be blamed without due cause again!~
+@10867 = ~I used to work here. Manned the place for the owner, you see, and it was as fine a job as I could hope for. Better than playing gopher for holier-than-thou snobbery like my dear mum did, I say.~
+@10868 = ~One day I caught a bigfoot, tall person if you prefer, sticking his hands into the drunkards around my establishment. Well, I can assure you I was livid! Stealing from my patrons! And I would've thrown him out then and there, mind you me, but... it was... He had this damnable enchanting smile... And a charming way, as I said. He saw me ready to pounce and slipped into his fast talk... That was the end of it for me.~
+@10869 = ~Anyway, to be brief, he convinced me it would be a fair idea to relieve some of my more well-endowed patrons of their overstuffed purses. They certainly didn't need so much money, if they could afford to get themselves pink-faced every night. And we could use it for our own plans.~
+@10870 = ~So I agreed, fool that I was. He made it sound so lovely... And wouldn't you guess that the man got himself caught! Tried to pick a fully sober Amnish guard. But it wasn't just his incompetence, no... . He blamed me! ME! He told the guard it was my idea, that I had paid him to do it! I'm sure of it... because that very day the owner fired me. My future... all my hopes, gone, because of that coward of a man!~
+@10871 = ~And what's more, he's planning something worse. He's here every day, glaring like a fiend at me... Probably blames me that his business is ruined, when he's the slipshod twit! He must know I plan to get back at him. And he's right!~
+@10872 = ~I want you to get rid of him for me. Knock him off. Send him on his way, permanently, mind. I know it seems harsh, but he deserves no less! Breaking a trusting lady's heart and pursuing his dastardly ways as he does. If you agree I'll provide you a bottle of the finest spirit this tavern has to offer. I still have the key from when I worked here, you see. It's the only thing I knew I could offer someone and, well... I couldn't do this myself, I'm sure.~
+@10873 = ~So what do you say, kind stranger? Help a girl down on her luck? Due to a no-good, rotten, thieving, lying, slovenly, lazy, crass, tall, dim, slow, spineless, weak, pathe-~
+@10874 = ~Alright, alright! I'll help you. Geez...~
+@10875 = ~If it means you'll shut up, fine! I'll help. Where can I find this man?~
+@10876 = ~By the gods, it's no wonder he cheated you. You talk more than a gnomish child. I pity him for having endured this long enough to carry on a relationship. Goodbye.~
+@10877 = ~Have you spoken to your lover since this incident?~
+@10878 = ~It sounds to me like you have been wronged. I shall aid you.~
+@10879 = ~I'm sorry, but I'm really not interested.~
+@10880 = ~And what's to stop me from killing you and taking that key instead?~
+@10881 = ~Oh, I do thank you for your service, <PRO_SIRMAAM>. And as for where you can find him... he's there. The slovenly tall fellow at the other end of the tavern, glaring this way. With the stunning smile... eyes to match... hmph. I'll leave you to it then.~
+@10882 = ~You... you what? Another swindler, are you?! Well, I'll not take it this time! You won't get this key! Not before I teach you rotten rogues to leave good, honest people alone!~
+@10883 = ~Spoken to him? Well... no. I didn't have to. I can hardly stand to look at him! I don't care how lovely his eyes are anymore! I mean it, too.~
+@10884 = ~Come on... You want to talk to him. You're smiling even thinking about it.~
+@10885 = ~You know you miss him. This doesn't have to end in bloodshed.~
+@10886 = ~This all sounds like a misunderstanding. Speak with him, and find out for yourself.~
+@10887 = ~He may be a useless thief, but you obviously still care about him. Go and speak to him.~
+@10888 = ~Suits me fine, then. Where can I find him?~
+@10889 = ~I... Oh... It's just... I suppose I could... I never did get to tell him what a rotten beast he was to his face! Yes... Yes, I owe the fool that! Hmph. Thank you, <PRO_SIRMAAM>. Let me have a last talk with him and... and see. See if he has a good excuse. Well, of course, he always has a good excuse. Let's see if he can make me believe it this time!~
+@10890 = ~Oh my, I... What? WHAT?! Speak to him?! Do you know what that fool did to me? He lost me my job! He blamed me for his own incompetence! I trusted him with my future, and he destroyed it! No doubt he's filled you with all sorts of fancy tales. He's good at that. Well, that's the last of it. He swindled me, and he deserves what's coming to him!~
+@10891 = ~Will you do a lady a favor and take care of him for me? What I mean is, you know... to get rid of him. I... I know, it's a terrible thing to ask. But if you only knew! He's a fiend who preys on people! A heart-breaker! A no-good, rotten, thieving, lying, slovenly, lazy, crass, tall, dim, slow, spineless, weak, pathe-~
+@10892 = ~Oh. Goodness. Well, I won't press you. I understand, it's not the most pleasant thing to be dealing with. Murder never is. Not that the man doesn't deserve it. ... Well, don't stand and stare! I don't work here anymore, I'm not going to serve you!~
+@10893 = ~So... is... is it...~
+@10894 = ~I mean... Did you...~
+@10895 = ~The thief is dead. I would like my reward and to be done with this affair, now.~
+@10896 = ~. Your ex-lover is dead, as you wished.~
+@10897 = ~Oh. ... ... Well, of course he... I did... I did ask...~
+@10898 = ~My darling... How could... I... I can't believe... *sob* Take... take your reward. I ran to get it while... you... I'm just... just a foolish woman. Go. I need to be alone..~
+@10899 = ~I'll be waiting here for you to finish the job. The drink is yours when you do.~
+@10900 = ~Alright. I'll return soon.~
+@10901 = ~I've decided I want no part in this. Deal with your own issues.~
+@10902 = ~Have you even spoken with this man since this happened?~
+@10903 = ~How about I just kill you here and take the drink for myself?~
+@10904 = ~I see you're back. Have you reconsidered my offer? I can still give you a whole bottle of fine drink if you take care of that man for me.~
+@10905 = ~I have. Point me to the thief and I'll get rid of him for you.~
+@10906 = ~I have. I decided I want that drink after all, but I won't be doing your dirty work.~
+@10907 = ~I wanted to ask, have you spoken with your lover since this happened?~
+@10908 = ~Hmph.~
+@10909 = ~So... Allanya...~
+@10910 = ~Kalen.~
+@10911 = ~I didn't expect to see you again.~
+@10912 = ~I'd hoped not to see you again. Things don't always work out as we plan, though, don't they?~
+@10913 = ~As *we* plan? As I recall *dear*, *I* didn't have much choice in our last parting. It was you... you and *him*!~
+@10914 = ~What are you talking about, you overgrown twit?! You know full and well we parted because you screwed up! And blamed me for it, no less! If you think I'll put up with that from anyone, much less you, you've got another thi--what? Him? Which him?~
+@10915 = ~You know exactly who I'm talking about Allanya. You think I'm that stupid? I'm talking about your new boy toy. Did you think I wouldn't notice?~
+@10916 = ~What? WHAT? What on earth are you going on about?! You must take me for a fool! You got yourself caught, then you blame me and get me fired, and now you're concocting some ridiculous story about a... a... boy toy?! Honestly! Kalen, I suspect you have hit the bottom, you poor fool.~
+@10917 = ~I saw you together! Last week, just after your shift some fancy looking halfling walks in and starts smooth talking you. Oh, are you gonna claim he was just a friend? *Friends* don't part the way you two did!~
+@10918 = ~I... I...~
+@10919 = ~You mean the fellow with the mop of curly dark hair?~
+@10920 = ~Oh, *now* you remember. That's right, and you smiled and giggled for him like you were his lost puppy. And *then* you let him put his hands all over you.~
+@10921 = ~You saw that?~
+@10922 = ~*Did* I? I don't doubt for a second that you meant for me to see it. And I don't doubt either that you did it as I was working near that guard. Or that you intended for me to be so jealous that I would slip up and get caught! So yes, I pointed the finger at you. I couldn't let you break my heart and get away with it.~
+@10923 = ~Kalen... you...~
+@10924 = ~Let's just drop it, Allanya. You don't want me, and I lost you your job. I was still angry, but... talking to you again... Just go.~
+@10925 = ~Kalen... you... you...~
+@10926 = ~You are the greatest fool I've ever come across! You twit! You silly, silly man! Have you no sense?! That man was my brother!~
+@10927 = ~What? He was your brother?~
+@10928 = ~Of course he was! A halfling, with a dark curly head of hair, just like mine?! And even if I did plan on leaving you, don't you think I would have left by now? Instead, I've been moping around this tavern! For goodness' sake! Not to mention that the mere idea that I would EVER leave my wumpkins for any other, especially another halfling - you know I've always preferred larger men - well, honestly, Kalen, that's just silly! How could you even think that?!~
+@10929 = ~I, well... I don't know. It just seemed... You were hugging him so tightly, and... I assumed...~
+@10930 = ~I can't believe you were so upset that you didn't even notice that guard was bright-eyed and sober!~
+@10931 = ~And my hands were shaking... I would have been caught even if I was picking an unconscious man's pocket.~
+@10932 = ~Oh... Oh, my... Kalen, I didn't realize!~
+@10933 = ~No, Allanya, it's my fault. I should have had more faith in you.~
+@10934 = ~I thought you were trying to frame me, to get rid of me! But you were only acting out of love. My poor darling! To think you would be so desperate because of me!~
+@10935 = ~Of course I would. You're the only woman I've ever loved.~
+@10936 = ~Oh, my cuddly wumpkins. I should have known.~
+@10937 = ~Can you forgive me?~
+@10938 = ~*sniff* I already have. Let's find a new town to start over in, darling. There are too many bad memories here.~
+@10939 = ~Yes, and too many guards looking over their shoulders at me...~
+@10940 = ~Well, that's nice. You two made up. See? All you needed was a good talk.~
+@10941 = ~Yes, yes, all's well that ends well. Can I have my reward now?~
+@10942 = ~Oh, yes, pardon me! Kalen, we need to get the best drink this bar has to offer for what this <PRO_MANWOMAN> has done to bring us back together.~
+@10943 = ~Certainly, my fuzzy wuzzy. I'll run and get it.~
+@10944 = ~Thank you so much. You've brought me back to my dashing rogue. I've worked long enough in these kinds of places to know not everyone would care as you have, truly. I wish you the best on your journey.~
+@10945 = ~Yes, thank you so much.~
+@10946 = ~Thank you, <PRO_SIRMAAM>. It's because of you my darling and I have made up. Allanya, I think we should give <PRO_HIMHER> a gift for helping us. Do you still have the key to the cellar here?~
+@10947 = ~Yes, I do. The best drink in the house for anyone who would care enough to bring me back to my dashing rogue!~
+@10948 = ~Thank you again. Working in the dodgy outfits I have, I've seen the worst of people. Not everyone would do as you have. We owe our future happiness to you. Good luck in your travels.~
+@10949 = ~Alright there guv'ner, what can I do for you?~
+@10950 = ~'ello again.~
+@10951 = ~Sir Keldorn's friend! What can the Sir do for you today?~
+@10952 = ~Drini sent me, he said Sir Suleci could help me.~
+@10953 = ~I need to find a selection of beverages, I am told Suleci is the person to speak to.~
+@10954 = ~He has been called upon to repay his debt. I am here to collect.~
+@10955 = ~Are you Sir Suleci?~
+@10956 = ~Nothing right now, I'll come back later.~
+@10957 = ~I prefer the Den myself, but the Sir refuses to enter the place.~
+@10958 = ~Not exactly the liveliest place in town, is it?~
+@10959 = ~One thing about the Mithrest--best pint of Dragon's I ever tasted, even the Sir approves.~
+@10960 = ~Not me, you want my boss. Now, what do you want with the Sir?~
+@10961 = ~None of your business! I will speak to him directly.~
+@10962 = ~I have been sent by Drini. I was told he could help me.~
+@10963 = ~Fine by me guv'ner. Looks like we'll be here for a while.~
+@10964 = ~Alright guv'ner, what do you want with the Sir?~
+@10965 = ~He wouldn't be Sir Suleci by any chance?~
+@10966 = ~Nothing I guess.~
+@10967 = ~Aye, that's him. Now, what do you want with him?~
+@10968 = ~I have been sent by Drini. I was told Sir Suleci could help me locate some drinks.~
+@10969 = ~Actually, it is and you won't. I am Sir Suleci's squire. If you want to talk to him, you talk to me.~
+@10970 = ~I need to find a selection of beverages for a bard named Drini, I am told Suleci is the person to speak to.~
+@10971 = ~He has been called upon to repay his debt to Drini. He is to help me find some drinks.~
+@10972 = ~I'd hop it guv'ner, and sharpish.~
+@10973 = ~Heh. Drini, huh? Well alrighty then. Boss, your past has caught up with you!~
+@10974 = ~Laughing? You may just be in luck. You thinking what I'm thinking?~
+@10975 = ~Crazy? That sounds like someone we may know.~
+@10976 = ~That doesn't sound like your regular pickpocket. Fella I have in mind isn't what you'd call regular, though.~
+@10977 = ~He can usually be found in the docks at the Bridge district.~
+@10978 = ~His name was Scam? That simplifies matters a great deal.~
+@10979 = ~Why Sir Keldorn, hello. I haven't seen you in many a year. Still fighting the good fight?~
+@10980 = ~Ah, you've returned. What can I help you with now?~
+@10981 = ~But you are not here to hear us paladins prattle on, are you? What may I help you with?~
+@10982 = ~And so you shall remain, as it is a private matter. We will, of course, help. What beverages are on this list?~
+@10983 = ~Don't talk to me! Kebodi! Deal with this ragamuffin.~
+@10984 = ~I am Sir Suleci. I am not sure why Drini has sent you to me, but I am in his debt and wish to repay it.~
+@10985 = ~What is the nature of this debt?~
+@10986 = ~Drini has commissioned us to locate some components for a summoning spell.~
+@10987 = ~He is preparing a powerful summoning spell for a client.~
+@10988 = ~The nature of the debt is a private affair between myself and Drini, and none of your concern. Now, shall we get on with the business at hand?~
+@10989 = ~As I already told Keldorn, the nature of the debt is a private affair between myself and Drini, and none of your concern. Now, shall we get on with the business at hand?~
+@10990 = ~What are you looking for?~
+@10991 = ~We need some Vibrissa.~
+@10992 = ~Arabellan Dry is on the list.~
+@10993 = ~Know where we can get Dwarven Whisky?~
+@10994 = ~We found a dwarf with some Dwarven Whiskey, but he is looking for a dwarven artisan in the city. Any ideas?~
+@10995 = ~We need a keg of sailor's ale.~
+@10996 = ~He's requested Dalin's White Grappa.~
+@10997 = ~He has a listing for something new and alcoholic that he's never tried before.~
+@10998 = ~We finally found something new for Drini, but we were pickpocketed leaving the tavern!~
+@10999 = ~Where did you say Scam was again?~
+@11000 = ~There's nothing you can help with at the moment.~
+@11001 = ~The 'great' Scam? More than likely.~
+@11002 = ~Bah. Thieves are a dime a dozen in Athkatla.~
+@11003 = ~Aye, the Order wages a constant struggle against the common street criminals.~
+@11004 = ~That's likely the last you'll see of it.~
+@11005 = ~The thief made a big show of it, laughing as he did it.~
+@11006 = ~He called himself the great 'Scam.' Ring a bell?~
+@11007 = ~The thief was a few coppers short of a gold piece, if you know what I mean.~
+@11008 = ~That snickering bastard. If I ever lay my hands on him...~
+@11009 = ~He seemed to pay little regard to the attention he drew.~
+@11010 = ~Scam is local talent, and completely off his rocker.~
+@11011 = ~He usually works the bridge district. Try taking a look near the docks under the bridge itself.~
+@11012 = ~A summoning spell? Why would he send you to me?~
+@11013 = ~Gotta be "spell components," boss. Remember this is Drini we're talking about.~
+@11014 = ~Yes, of course. That would explain why he sent you here as well.~
+@11015 = ~Aye, that's right Suleci. What about you, still touring the taverns of Faerun?~
+@11016 = ~That's not fair Keldorn. "Touring the taverns of Faerun" is not my main occupation, and you know it.~
+@11017 = ~Everyone in the order respects your part in the fight against evil. This does not mean we approve of your other activities.~
+@11018 = ~That squire of yours is a case in point.~
+@11019 = ~Hey! I'm reformed.~
+@11020 = ~Go easy on him Keldorn, I do not regret saving him. He has more than proved his worth since.~
+@11021 = ~I still think you'll regret your decision.~
+@11022 = ~Don't mind the Sir. He is just grumpy because there are no inns in Athkatla to match the splendor of the Helm and Cloak in Baldur's Gate.~
+@11023 = ~Indeed!~
+@11024 = ~I'd stay away from the Sir until he has had a couple more goblets of Alurlyath wine, if I were you.~
+@11025 = ~Kebodi! That's quite enough insolence out of you!~
+@11026 = ~No matter, m' <PRO_LADYLORD> has been commissioned to find some beverages. We were informed you could help, and I agree with the assessment.~
+@11027 = ~Certainly I'll help, may I ask who these beverages are for?~
+@11028 = ~A reprobate bard named Drini.~
+@11029 = ~Drini? Hah! Looks like your past is catching up with you boss.~
+@11030 = ~I admit I am curious as to the nature of the debt.~
+@11031 = ~Yes, I am sure you do. Well, it has been nice talking to you Keldorn.~
+@11032 = ~And you.~
+@11033 = ~Would you know where I could find Sir Suleci? I was told he was here.~
+@11034 = ~Certainly, he is at the table nearest the stage with his squire, Kebodi.~
+@11035 = ~Is there any else I can help you with?~
+@11036 = ~He claimed to be a thief of renown, by the name of 'Scam.' I am not familiar with him, though.~
+@11037 = ~Dwarven artisan, eh? First one that leaps to mind is Cromwell, down by the docks.~
+@11038 = ~Dalin's White Grappa is an easy one--the barkeep next door at the Den of the Seven Vales has some. Ask Patricia behind the bar.~
+@11039 = ~I told you, it's right next door. Go talk to Patricia at the Den.~
+@11040 = ~Ha! That's rich.~
+@11041 = ~A drink Drini's never had? That's a right bugger.~
+@11042 = ~Sorry friend, this one may be beyond our abilities to fulfill.~
+@11043 = ~Can you suggest anything at all?~
+@11044 = ~How am I supposed to complete the list then?~
+@11045 = ~I guess I'll just have to keep my eyes open.~
+@11046 = ~The only place that may have something new for Drini is the Five Flagons.~
+@11047 = ~I wouldn't count on it, Sir. Drini's been known to toss a few back at Thunderburp's.~
+@11048 = ~Have you tried the Five Flagons? I'm out of ideas for this one.~
+@11049 = ~Well, more than a few, actually.~
+@11050 = ~Only one place to get that swill, and that's the docks.~
+@11051 = ~The sailors only break it out for something special. The Thumb should have some on tap.~
+@11052 = ~For a sailor's drink, try a sailor's bar--the Sea's Bounty.~
+@11053 = ~Greetings! I am Jacobus P. Sanderick, wizard, master alchemist and unofficial court poet of the royal house of Amn. What can I do for you?~
+@11054 = ~We were told that you could help us. Can you remove the poison from this wine?~
+@11055 = ~I thought there was no royal house of Amn.~
+@11056 = ~Why do you assume that we need help? Don't people ever talk to you without having an errand?~
+@11057 = ~Back already? I do not believe the stipulated amount of time has passed yet. Please return later.~
+@11058 = ~You cannot initiate dialogue, I am busy.~
+@11059 = ~Oh, is it time already? Umm... I'll just... I mean... I'm afraid that I have run into some unexpected... no, wait, I said that already.~
+@11060 = ~What's this all about? Are you trying to tell me that you're not finished?~
+@11061 = ~I'm tired of waiting. Where's the antidote?~
+@11062 = ~I really should have seen this coming. You haven't even started, have you?~
+@11063 = ~Ah, you have returned. I'm afraid that I have run into some unexpected... complications, and I have therefore not been able to finish the task at hand just yet. Umm... I expect to be finished shortly, though. Could you return later?~
+@11064 = ~I guess I have no choice... When will you be ready?~
+@11065 = ~What seems to be the problem? Is there some way I can help?~
+@11066 = ~This does not look good. Is there someone else who can do this quicker?~
+@11067 = ~It shouldn't take long. I just need to consult my tomes of knowledge in order to find the right antidote, and then I will probably have to send someone to get the proper substance for me, but after that, it should be a simple affair. If you return in an hour or two, I should have everything ready for you.~
+@11068 = ~Hello again. How fare you?~
+@11069 = ~It won't take long. Shall we say another hour?~
+@11070 = ~I'll be back in an hour, then.~
+@11071 = ~All right, but you had better deliver this time.~
+@11072 = ~Eh, what?~
+@11073 = ~You were saying 'I ran into some unexpected complications'. You said that last time we spoke, and you were about to say it again just after I returned this time.~
+@11074 = ~Oh. That's right. How about 'some unexpected complications were run into'?~
+@11075 = ~That's the same thing with different word order...~
+@11076 = ~Right. 'Some complications, which I was not expecting, were encountered'? Will that work?~
+@11077 = ~Nope. Look, you haven't even started, have you?~
+@11078 = ~Well, that's not the way I would put it. It would be closer to the truth to say that I have not yet had the opportunity to look into your problem.~
+@11079 = ~Because you ran into some unexpected complications, right?~
+@11080 = ~Well, I suggest that you start right now. I have no time for this.~
+@11081 = ~You'd better start now, or you'll regret it.~
+@11082 = ~Precisely! With some training, you'd make an excellent alchemist.~
+@11083 = ~Well, I don't see any complications around here, so I suggest that you start working now while they're leaving you alone.~
+@11084 = ~Start. Working. Now.~
+@11085 = ~Now, there's no need to be rude. Alchemy is a complicated business, and what appears simple to the uninitiated might in fact be an unexpectedly complicated process, full of unexpected complications.~
+@11086 = ~Wait--I think I said that already.~
+@11087 = ~Well, I said that I was unofficial. You know, un-official. As in 'not a court official'. Because there's no court. Umm... did you have an errand?~
+@11088 = ~Yes, I have a bottle of poisoned wine, and I was told that you had an antidote.~
+@11089 = ~Umm... of course people talk to me without having a quest... err... errand. Why, only last week I talked to a town crier, and the week before that... Well, let's just say most people around here have an annoying tendency to only speak when being spoken to.~
+@11090 = ~A veritable font of conversation, indeed.~
+@11091 = ~But you do have an errand, don't you?~
+@11092 = ~Yes, I was told that you could help me. I have a bottle of poisoned wine, and I was told you could help me remove the poison.~
+@11093 = ~Poison, you say? Let me take a look at that. I have never yet encountered a poison that I was not able to counter.~
+@11094 = ~That's... that's wonderful news!~
+@11095 = ~Well, there was this time in Sembia when a local noble got tired of waiting for my carefully prepared antidote and drank the poisoned brew anyway. He claimed that the suffering was shorter that way.~
+@11096 = ~(I am beginning to see why myself.)~
+@11097 = ~But I take no responsibility for *that* unfortunate incident. Now, if you would just let me look at that bottle.~
+@11098 = ~All is well, thank you. Good day.~
+@11099 = ~Ah, I see. Strangleweed. Or was that stranglevine? In any case: a colorless, odorless poison without any discernable taste. A most potent toxin, but fear not, I have the means to deal with it!~
+@11100 = ~What do you mean, colorless? It has colored the entire bottle green, hasn't it?~
+@11101 = ~How long will it take to remove it?~
+@11102 = ~Ah, but you do not have my experience with this most devious poison, do you? When I say that it's colorless, I mean, as any knowledgeable person could tell you, that it has no discernable color apart from this vivid shade of green, which could also be the sign of a number of other poisons.~
+@11103 = ~Ooh, such a man of clever words! Minsc could never have thought of this! I am glad we have found you, right, Boo?~
+@11104 = ~By calling a substance 'colorless', we in the business usually mean that it cannot be identified solely based on its color, and that we will have to use other criteria, such as smell, or, in extreme cases, taste, to identify the toxin.~
+@11105 = ~But you just said it was odorless and had no discernible taste.~
+@11106 = ~Never mind. How long will it take to remove the poison?~
+@11107 = ~Umm... Yes, but... hold on... Er... What I meant to say was...~
+@11108 = ~Ah, that...~
+@11109 = ~That it is a secret of the trade, and not something that should be talked about lightly. So there. Suffice to say that this is a most devious poison, but yes, I have the means to remove it from this bottle.~
+@11110 = ~Umm... all right, then. How long will it take?~
+@11111 = ~Thank you for your offer, but no. This requires a degree of skill far beyond that of even a relatively well-informed layman. I shall have to do it alone.~
+@11112 = ~Sure, that'd be great. Um, what were we talking about?~
+@11113 = ~No, I am afraid I'm the only person who can do this. It has taken me a lifetime of devoted study to reach this stage, and it would probably take you a lifetime to find someone as highly qualified for this task.~
+@11114 = ~I fear it will take a lifetime to wait for you to get round to it, too.~
+@11115 = ~Yer lifetime's going to be shortened itself if ye don't get moving soon, mageling!~
+@11116 = ~Now now, no need for threats. These things just take time. It's not *my* fault...~
+@11117 = ~Oh, and speaking of, there he is now...~
+@11118 = ~Right. Just let me open the bottle.~
+@11119 = ~Finally!~
+@11120 = ~And then the antidote. Just a small piece of carbon should do.~
+@11121 = ~There you go! Ready to drink again.~
+@11122 = ~Wait a minute. Are you trying to tell me that I've waited all this time just to see you drop a piece of coal into the bottle? I could have done that myself!~
+@11123 = ~Thank you. I hope I will not have to deal with you again.~
+@11124 = ~Is that all? I haven't paid you anything and I still want my money back.~
+@11125 = ~Well, you see... I was going to start working on your beverage... brew... umm... let me check...~
+@11126 = ~I knew it.~
+@11127 = ~Ah, a bottle of wine! Yes, as I was saying; I was just about to start examining your bottle, when I ran into some unexpected complications...~
+@11128 = ~You said that already!~
+@11129 = ~Are you trying to tell me that you haven't even started?~
+@11130 = ~Fare thee well.~
+@11131 = ~Do you know of a drink that even he's likely never had before?~
+@11132 = ~Now that's a tough one. I'd wager that he's not tried the brew our resident ray of sunshine just created.~
+@11133 = ~Anything else I can help you with?~
+@11134 = ~Just having a little cash flow problem, is all! It was Salvanas' turn to pay, see, but he's gone somewhere...~
+@11135 = ~That won't wash with me. You pay, or you pay. It's that simple.~
+@11136 = ~If you don't give me some money now for these drinks, Drini, you'll be having a chat with the bouncers.~
+@11137 = ~Do you have any Chwisgi?~ 
+@11138 = ~We're doing just fine with the keg, thanks.~
+@11139 = ~Mind if I have a drink with you?~
+
+
+//@11140 = ~Do you have any Chwisgi?~
+
+
+@11141 = ~Aye, but I ain't selling it while Corrie and the boys are having their fun.~
+@11142 = ~It's his last day, see, and I don't want him wantin' for nothin'. Can I help ya with anything else?~
+@11143 = ~The party is over--can I have the Chwisgi now?~
+@11144 = ~Aye, now that the boys have had their fun, you can have it fer 50 golders.~
+@11145 = ~Sure, I gots it but I didn't want to sell it away while the boys were having their fun. 50 golders.~
+@11146 = ~I told ya--not while the boys is having their fun. Anything else, then?~
+@11147 = ~50 gold pieces for a simple bottle?~
+@11148 = ~Aye, here you go.~
+@11149 = ~No, not right now.~
+@11150 = ~It's an import, and not something we normally have. How about it?~
+@11151 = ~Here you are, and a good day to ye. Anything else I can help with?~
+@11152 = ~If you don't want to buy any, why're ya asking for it?~
+@11153 = ~From married to the sea to married to a woman--I know which I'd choose.~
+@11154 = ~I'll miss that Corradun, I will. Say, fancy a drink?~
+@11155 = ~Ooh, my head. Best cure the throbbing with another ale, haha!~
+@11156 = ~We couldn't wait on ye matey. This here be Corski's Golden Brew!~
+@11157 = ~And how much did this LADY cost ye, Corradun? HA HA HA!~
+@11158 = ~But how ye gonna get by, Corradun? Ye been out to sea since yer tenth winter?~
+@11159 = ~Hey, thish shtuff sgots sabituva bite.~
+@11160 = ~Ye ain't jusht bumpin' yer gums neither.~
+@11161 = ~Sshilly shea pupsh can' even -hic- hold down their brew. It'sh dishgustin'.~
+@11162 = ~Oh, lovely. Yet another member of the male species come t' drink himself into a stupor, no doubt, and vomit upon me perfectly clean floors. Hmph. What be it, exactly, that ye want?~
+@11163 = ~I need your help, I'm looking for a specific and quite rare drink...~
+@11164 = ~I require your assistance with an important matter. I need some Dallin's White Grappa, and was told you may have it here.~
+@11165 = ~Hullo, miss. It's about time some other women came into me inn. All I seem t' get, lately, are stupid males... loud, brash and disgusting. Bah!~
+@11166 = ~I'm sorry dearie, but I've not the time tae deal with difficult requests now that I'm all short-staffed. I had t' fire my barmaid, Allyana, fer that layabout over there Kalen messin' her about. Use t' be such a nice gel.~
+@11167 = ~Anyway, she might be able to help, if you go over and cheer her up. Knew our cellars well, she did. Shame t' have t' let her go... . I'd stay away from that Kalen though. He's a nasty man, mark my words!~
+@11168 = ~'Specific' drink? My, yer smart fer a male! I got needs of me own... Get out of me' face, an' go talk tae t' layabout over there Kalen or something instead. He's been a right bad influence over me old barmaid Allyana. I'd tell ye to talk to her, but doubtless ye'd only make it worse...~
+@11169 = ~What, ye're still here? Shoo! Shoo!~
+@11170 = ~I ain't got t'time for listenin' tae yer male gibberish. I got needs of me own... Get out of me' face, an' go talk tae t'layabout over there Kalen or something instead. He's been a right bad influence over me old barmaid Allyana. I'd tell ye to talk to her, but doubtless ye'd only make it worse...~
+@11171 = ~I've found some Arabellan Wine for you, but it's an odd color.~
+@11172 = ~I can't use this--this is poisoned!~
+@11173 = ~Go and find another. Or talk to Suleci, he may know how to deal with this.~
+@11174 = ~Yes, everything appears to be in order--wait a minute, what this? Arabellan Dry isn't green!~
+@11175 = ~This is poisoned. Go and speak to Suleci about obtaining another bottle.~
+@11176 = ~It's an import, and not something we normally have. For you, though, how about 40 golders then?~
+@11177 = ~I don't have time to talk now.~
+@11178 = ~Then good day to you.~
+@11179 = ~Actually, we do not.~
+@11180 = ~I haven't the time for this. Good day.~
+@11181 = ~Sir!~
+@11182 = ~I'm looking for a local thief that ran off with a keg.~
+@11183 = ~Around here? You'll need to be a bit more specific, dearie.~
+@11184 = ~The bloody thief got me as I left the Five Flagons.~
+@11185 = ~Ah, never mind.~
+@11186 = ~He was laughing and made a big show of bravado.~
+@11187 = ~Why don't you clear off then? I have more valuable things to do with my time.~
+@11188 = ~Sounds like Scam. Works the district, he does, but he's not quite right, if you catch my meaning.~
+@11189 = ~I've spotted 'em down by the water before, but that's about all I know.~
+
+
+//@11190 = ~Where did you say Scam was again?~
+
+
+@11191 = ~I told you dearie, down by the water here in the district.~
+@11192 = ~Can you tell me anything of the thieves in this area?~
+@11193 = ~There's a number that work the district. Had my fair share of run-ins with 'em until I paid off the Guild.~
+@11194 = ~Why do you ask?~
+@11195 = ~I was just robbed of a keg right outside the Five Flagons.~
+@11196 = ~Some local loony picked my pocket.~
+@11197 = ~I have a blade for the thief that took my stuff. I'll teach him to laugh!~
+@11198 = ~Never mind, it's none of your business.~
+@11199 = ~Sounds like it might be Scam. He likes to catch drunks stumbling out of the Flagon as it were.~
+@11200 = ~Pulling a trick like that right outside the Five Flagons is a specialty of one of the locals. Go check down by the water.~
+@11201 = ~Heh, sounds like one in particular.~
+@11202 = ~Down by the water, you'll find a rogue named Scam. It fits his usual style.~
+@11203 = ~No harm intended, mind.~
+@11204 = ~Where was Scam the thief again?~
+@11205 = ~Check down by the water.~
+@11206 = ~See, I wasn't running away so much as, uh, redistributing my location. That's it.~
+@11207 = ~Miserable wretch! Drunkard! Vagabond!~
+@11208 = ~Sounds like someone is getting an earful, and deservedly so.~
+@11209 = ~It's, uh, a battle tactic. See, they can't attack me if they don't know where I am, can they?~
+@11210 = ~Oaf! Coward! Knave! Rascal!~
+@11211 = ~I was about to come in and help you honest! But then--~
+@11212 = ~Clutching at the proverbial straws, it would seem.~
+@11213 = ~Oh, there they are. See? It turned out, ah, fine!~
+@11214 = ~Good-for-nothing-layabout!~
+@11215 = ~Well *that's* a little harsh...~
+@11216 = ~In my estimations, it is perfectly accurate.~
+@11217 = ~If I *ever* see you again then you'll--~
+@11218 = ~Oh, hello. Wait there, Drini.~
+@11219 = ~Uh, okay.~
+@11220 = ~Flee Drini, flee! I fear you've got quite a tongue-lashing remaining for you if you remain.~
+@11221 = ~Thanks for the work back there, <SIRMAAM>. I'd like for you to have these items as a way of saying thank you. This was acquired by my husband, though he doesn't need it any more.~
+@11222 = ~Now where was I? Oh, yes. Idiot! Cad and a bounder! Ratcatcher!~
+@11223 = ~I--I--~
+@11224 = ~Stinking son of a gibberling! Foul pile of gnoll-dung!~
+@11225 = ~Funny you should use that particular turn of phrase. Now, last time I saw my Uncle Scratchy's second cousin Barko--and this was a while ago, I'll admit--he was telling me about his new job as a farmhand on Lantan. Apparently they're quite fond of new innovations in agriculture over there, so anyway, he found himself in the unenviable position of having to use gnoll dung as a fertilizer.~
+@11226 = ~Now, I know what you're thinking, that must have reeked! I know that's what I thought, in any case. But Barko was very insistent that after only a few minutes the smell became inoffensive, nay, almost pleasant! Though, truth be told, that side of the family always were a tad unusual.~
+@11227 = ~Hey, look! It's, uh, a distraction! Later!~
+@11228 = ~We're looking for some Dwarven Whisky. Do you know where some may be?~
+@11229 = ~Aye, I've got some right here. But it be mine and I'm not in th' mood fer sharin'. Be like other folk and go ask the barkeep.~
+@11230 = ~Are you "Big"? I must ask you again about your Dwarven Whiskey.~
+@11231 = ~Alright, I'm going.~
+@11232 = ~Oh Kelsey, wanna come up to my room? I understand you do a fabulous massage and there are things we can, um... talk about, yeah that's it.~
+@11233 = ~I'd... rather have dinner first.~
+@11234 = ~Dradeel, captured again? All he wanted to do was go home, only to be caged up. I know I shouldn't feel to sorry for him. I mean, he managed to survive on his own between two warring packs, but usually he just wanted to be left alone.~
+@11235 = ~Save your sympathies for someone who gives a damn. Dradeel killed my husband and that's the end of it.~
+@11236 = ~I am sorry about your mate, if there is anything--~
+@11237 = ~Nothing, not unless you know if Dradeel left something behind; something that was part of the Gibberlings Twelve.~
+@11238 = ~Not to my recollection. Dradeel's den was rather sparse.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// journal strings                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@19984 = ~Some bloke I met down the pub...~
+@19985 = ~Getting out while the getting's good
+
+The whole affair with Drini is over. We acquired his drinks and met his employer--none other than the wife of Golodon the Unmanned. However, we declined her offer for continued employment--if our involvement with Drini was any indication of what was ahead, we made the right choice.~
+@19986 = ~He stole my pint, Guv'ner!
+
+Only moments after I procured the one alcoholic drink that Drini has not yet consumed, a nimble-fingered but slow-witted thief stole it from me! Sir Suleci may have more information on the whereabouts of the ruffian.~
+@19987 = ~Drink'll be the death of me...
+
+We managed to obtain the Arabellan wine from Monique, but the ever - melodramatic woman had poisoned it to use in a suicide. Since I don't think it'll be much use as a spell component like this, we'd better go see Sir Suleci and Kebodi and ask their advice.~
+@19988 = ~We're off to see the wizard... .
+
+Since the Arabellan wine we procured is poisoned, we will have to get it removed before returning it to Drini. Suleci has directed us to an alchemist named Jacobus in the Government District, who apparently has some experience with these things.~
+@19989 = ~Some bloke I met down the pub...
+
+Today we met a half - elf called Drini, who we are helping in his quest. In exchange for paying off his bar tab, he's let us in on what he promises to be one of the most intriguing and personally fulfilling adventures ever. We are to fetch a selection of beverages which will act as spell components in an incantation to summon allies in the defense of Drini's nameless employer against a cabal of evil wizards. Thrilling stuff! He has bid us go find men by the names of Sir Suleci and Kebodi in the Mithrest Inn in the Promenade to begin our quest. Meanwhile, he will remain at the Copper Coronet.~
+@19990 = ~Some bloke I met down the pub...
+
+Today we met a half-elf called Drini at the Copper Coronet. An obvious drunkard, he tried to scam some money off us to pay his bar tab, and when we refused he bolted from the place. I don't think he'll show his face around that neck of the woods in a long while.~
+@19991 = ~The Gibberlings Three - a tale of Adventure, Intrigue, and Beer...
+
+Well, that was certainly an interesting outcome. Drini's requests turned out to be largely just alcoholic drinks for him to sample, rather than spell components! The one exception was the Vibrissa (oddly enough, the only non-alcoholic one), which in his inebriated state he used to summon a trio of Gibberlings to defend his employer (who turned out to be the wife of the late Golodon the Unmanned)! It transpired the evil cabal was none other than the feared Gibbering Twelve, who, after summarily dispatching the Gibberlings Three, attacked us. Thankfully we prevailed, although Drini vanished at the first sign of trouble.~
+@19992 = ~Scam artist
+
+This "Scam" person is quickly becoming a nuisance. Kebodi seems to think that he might be lurking about the docks below the Bridge District.~
+@19993 = ~Dalin's White Grappa is right next door
+
+Dalin's White Grappa is apparently right under our noses. Well, almost. Sir Suleci says that it can be found right next door at the Den of the Seven Vales.~
+@19994 = ~The Dwarves of Delosar
+
+Sir Suleci has given us the name of a local dwarven artisan, Cromwell, as the person to who "Big" referred. His shop is somewhere in the Docks.~
+@19995 = ~The Dwarves of Delosar
+
+Let's hope Sir Suleci is correct and that Delosar's Inn in the Bridge District has the dwarven patrons that we seek.~
+@19996 = ~On the trail of Arabellan Dry
+
+Arabellan Dry hopefully isn't too scarce. We've been directed to the Crooked Crane, Sea's Bounty, or the Five Flagons in the hopes of procuring a bit.~
+@19997 = ~A Promenade java house?
+
+A java house on the Promenade? We must have overlooked it before. Seems like the most logical place to find Vibrissa.~
+@19998 = ~Exotic drinks at the Five Flagons
+
+Drini did not make our task an easy one. Sir Suleci has suggested the Five Flagons for its selection of more exotic brews.~
+@19999 = ~Off to the Docks
+
+On the search for a drink to satiate a sailor, Sir Suleci has suggested checking out the Sea's Bounty.~

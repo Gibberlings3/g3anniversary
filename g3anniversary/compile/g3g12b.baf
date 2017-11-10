@@ -1,0 +1,155 @@
+IF
+  Global("G3StartTimers","GLOBAL",1)
+  !DifficultyGT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("G3StartTimers","GLOBAL",2)
+    TriggerActivation("TranG3G12A",FALSE)
+    ForceSpell("G3G1208",DRYAD_TELEPORT)
+    SetGlobalTimer("G3G1206Timer","G3G12B",8)
+    SetGlobalTimer("G3G1205Timer","G3G12B",13)
+    SetGlobalTimer("G3G1210Timer","G3G12B",14)
+    SetGlobalTimer("G3G1202Timer","G3G12B",18)
+    SetGlobalTimer("G3G1212Timer","G3G12B",22)
+    SetGlobalTimer("G3G1209Timer","G3G12B",24)
+    SetGlobalTimer("G3G1204Timer","G3G12B",29)
+    SetGlobalTimer("G3G1208Timer","G3G12B",30)
+END
+
+IF
+  Global("G3StartTimers","GLOBAL",1)
+  DifficultyGT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("G3StartTimers","GLOBAL",2)
+    TriggerActivation("TranG3G12A",FALSE)
+    ForceSpell("G3G1208",DRYAD_TELEPORT)
+    SetGlobalTimer("G3G1206Timer","G3G12B",4)
+    SetGlobalTimer("G3G1205Timer","G3G12B",6)
+    SetGlobalTimer("G3G1210Timer","G3G12B",7)
+    SetGlobalTimer("G3G1202Timer","G3G12B",9)
+    SetGlobalTimer("G3G1212Timer","G3G12B",11)
+    SetGlobalTimer("G3G1209Timer","G3G12B",12)
+    SetGlobalTimer("G3G1204Timer","G3G12B",14)
+    SetGlobalTimer("G3G1208Timer","G3G12B",15)
+END
+
+IF
+  GlobalTimerExpired("G3G1206Timer","G3G12B")
+  Global("G3G1206Spawn","G3G12B",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3G1206Spawn","G3G12B",1)
+    CreateCreatureDoor("G3G1206",[516.370],15)
+END
+
+IF
+  GlobalTimerExpired("G3G1205Timer","G3G12B")
+  Global("G3G1205Spawn","G3G12B",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3G1205Spawn","G3G12B",1)
+    CreateCreatureDoor("G3G1205",[780.716],10)
+END
+
+IF
+  GlobalTimerExpired("G3G1210Timer","G3G12B")
+  Global("G3G1210Spawn","G3G12B",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3G1210Spawn","G3G12B",1)
+    CreateCreatureDoor("G3G1210",[876.643],6)
+END
+
+IF
+  GlobalTimerExpired("G3G1202Timer","G3G12B")
+  Global("G3G1202Spawn","G3G12B",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3G1202Spawn","G3G12B",1)
+    CreateCreatureDoor("G3G1202",[374.543],12)
+END
+
+IF
+  GlobalTimerExpired("G3G1212Timer","G3G12B")
+  Global("G3G1212Spawn","G3G12B",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3G1212Spawn","G3G12B",1)
+    CreateCreatureDoor("G3G1212",[648.343],0)
+END
+
+IF
+  GlobalTimerExpired("G3G1209Timer","G3G12B")
+  Global("G3G1209Spawn","G3G12B",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3G1209Spawn","G3G12B",1)
+    CreateCreatureDoor("G3G1209",[876.443],3)
+END
+
+IF
+  GlobalTimerExpired("G3G1204Timer","G3G12B")
+  Global("G3G1204Spawn","G3G12B",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3G1204Spawn","G3G12B",1)
+    CreateCreatureDoor("G3G1204",[912.543],4)
+END
+
+IF
+  GlobalTimerExpired("G3G1208Timer","G3G12B")
+  Global("G3G1208Spawn","G3G12B",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3G1208Spawn","G3G12B",1)
+    CreateCreatureDoor("G3G1208",[648.743],8)
+    ActionOverride("G3G1208",Enemy())
+END
+
+IF
+  Global("G3G1208Spawn","G3G12B",1) // last of the timed spawns; ensures all mages were spawned
+  Global("G3BattleOver","G3G12B",0)
+  // make sure all 12 are dead or have fled
+  OR(2)
+    !Exists("G3G1201")
+    Dead("G3G1201")
+  OR(2)
+    !Exists("G3G1202")
+    Dead("G3G1202")
+  OR(2)
+    !Exists("G3G1203")
+    Dead("G3G1203")
+  OR(2)
+    !Exists("G3G1204")
+    Dead("G3G1204")
+  OR(2)
+    !Exists("G3G1205")
+    Dead("G3G1205")
+  OR(2)
+    !Exists("G3G1206")
+    Dead("G3G1206")
+  OR(2)
+    !Exists("G3G1207")
+    Dead("G3G1207")
+  OR(2)
+    !Exists("G3G1208")
+    Dead("G3G1208")
+  OR(2)
+    !Exists("G3G1209")
+    Dead("G3G1209")
+  OR(2)
+    !Exists("G3G1210")
+    Dead("G3G1210")
+  OR(2)
+    !Exists("G3G1211")
+    Dead("G3G1211")
+  OR(2)
+    !Exists("G3G1212")
+    Dead("G3G1212")
+THEN
+  RESPONSE #100
+    SetGlobal("G3BattleOver","G3G12B",1)
+    TriggerActivation("TranG3G12A",TRUE)
+END
+

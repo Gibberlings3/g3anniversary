@@ -1,0 +1,9 @@
+IF
+  Global("G3JavaMojo","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("G3JavaMojo","GLOBAL",2)
+    ForceSpellRES("G3JAVA2",Myself)
+    Wait(2)
+    Dialogue([PC])
+END

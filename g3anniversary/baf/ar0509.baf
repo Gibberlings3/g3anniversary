@@ -1,0 +1,29 @@
+IF
+  Global("G3DewnyExists","GLOBAL",0)
+  Global("G3DewnyExistsLocal","MYAREA",0)
+THEN 
+  RESPONSE #100
+    SetGlobal("G3DewnyExists","GLOBAL",1)
+    SetGlobal("G3DewnyExistsLocal","MYAREA",1)
+    CreateCreature("G3DEWN",[505.295],2)
+    CreateCreature("G3FFCUS1",[571.478],5)
+    CreateCreature("G3FFCUS2",[465.544],1)
+END
+
+IF
+  Global("G3FFCUST08Comment","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("G3FFCUST08Comment","GLOBAL",2)
+    ActionOverride("jerry",StartDialogueNoSet("G3DEWN"))
+END
+
+IF
+  GlobalTimerExpired("G3DrunkDwarfWakeUp","GLOBAL")
+  Global("G3WakeUpDwarf","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("G3WakeUpDwarf","GLOBAL",1)
+    ApplySpell("ffcust07",FORCE_DISPEL_MAGIC)
+END
+

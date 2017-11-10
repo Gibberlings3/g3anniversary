@@ -1,0 +1,11 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("G3Grim")
+		Wait(1)
+		MoveToObject("G3Fitz")
+		Wait(1)
+		EndCutSceneMode()
+		ActionOverride("G3Fitz",Dialogue("G3Grim"))
+END
