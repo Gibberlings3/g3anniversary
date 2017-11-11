@@ -1382,8 +1382,8 @@ IF ~~ THEN BEGIN G3SummonAlready SAY @10068 = @10069
 END
 
 IF ~~ THEN BEGIN G3SummonAlreadyCont SAY @10070
-  IF ~GlobalLT("Chapter","GLOBAL",4)~ THEN REPLY @10071 DO ~SetGlobal("G3NoClueDradeel","LOCALS",1)~ GOTO G3NoClueDradeel
-  IF ~GlobalGT("Chapter","GLOBAL",3)~ THEN REPLY @10072 DO ~SetGlobal("G3MetDradeel","LOCALS",1)~ GOTO G3MetDradeelSH
+  IF ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)~ THEN REPLY @10071 DO ~SetGlobal("G3NoClueDradeel","LOCALS",1)~ GOTO G3NoClueDradeel
+  IF ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%)~ THEN REPLY @10072 DO ~SetGlobal("G3MetDradeel","LOCALS",1)~ GOTO G3MetDradeelSH
   IF ~~ THEN REPLY @10073 DO ~SetGlobal("G3MetDradeel","LOCALS",1)~ GOTO G3MetDradeelTotSC
   IF ~~ THEN REPLY @10074 GOTO G3HowToHelp
   IF ~~ THEN REPLY @10075 DO ~SetGlobal("G3RewardPlzKThxBye","LOCALS",1)~ GOTO G3RewardPlzKThxBye
@@ -1391,7 +1391,7 @@ IF ~~ THEN BEGIN G3SummonAlreadyCont SAY @10070
 END
 
 IF ~~ THEN BEGIN G3NoClueDradeel SAY @10077 = @10078
-  IF ~GlobalGT("Chapter","GLOBAL",3)
+  IF ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%)
       Global("G3MetDradeel","LOCALS",0)~ THEN REPLY @10072 DO ~SetGlobal("G3MetDradeel","LOCALS",1)~ GOTO G3MetDradeelSH
   IF ~Global("G3MetDradeel","LOCALS",0)~ THEN REPLY @10073 DO ~SetGlobal("G3MetDradeel","LOCALS",1)~ GOTO G3MetDradeelTotSC
   IF ~~ THEN REPLY @10074 GOTO G3HowToHelp
@@ -1420,9 +1420,9 @@ IF ~~ THEN BEGIN G3RewardPlzKThxBye SAY @10088
 END
 
 IF ~~ THEN BEGIN G3WhoAreG12 SAY @10090 = @10091
-  IF ~GlobalLT("Chapter","GLOBAL",4)
+  IF ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)
       Global("G3NoClueDradeel","LOCALS",0)~ THEN REPLY @10071 DO ~SetGlobal("G3NoClueDradeel","LOCALS",1)~ GOTO G3NoClueDradeel
-  IF ~GlobalGT("Chapter","GLOBAL",3)
+  IF ~GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%)
       Global("G3MetDradeel","LOCALS",0)~ THEN REPLY @10072 DO ~SetGlobal("G3MetDradeel","LOCALS",1)~ GOTO G3MetDradeelSH
   IF ~Global("G3MetDradeel","LOCALS",0)~ THEN REPLY @10073 DO ~SetGlobal("G3MetDradeel","LOCALS",1)~ GOTO G3MetDradeelTotSC
   IF ~~ THEN REPLY @10074 GOTO G3HowToHelp
@@ -3072,7 +3072,7 @@ IF ~~ Bubbly2 SAY @11132 = @11133
       Global("MurdersSolved","GLOBAL",0)~ THEN REPLY #25630 /* ~What do you know about the murders in the area?~ */ GOTO 2
   IF ~~ THEN REPLY #25631 /* ~I'll be going, now.~ */ GOTO 4
   IF ~InPartySlot(LastTalkedToBy,0)
-      GlobalLT("chapter","GLOBAL",4)~ THEN REPLY #45792 /* ~You must hear things... a friend of mine has been taken captive by the Cowled Wizards.  Do you know where they keep their prisoners?~ */ GOTO 11
+      GlobalLT("chapter","GLOBAL",%bg2_chapter_4%)~ THEN REPLY #45792 /* ~You must hear things... a friend of mine has been taken captive by the Cowled Wizards.  Do you know where they keep their prisoners?~ */ GOTO 11
 END
 END
 

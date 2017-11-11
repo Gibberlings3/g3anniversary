@@ -8,5 +8,4 @@ END
 CHAIN ~G3BEV~ LadyBevKelseyExchange @11117 = @11232
 == ~J#KLSYJ~ @11233
 == ~G3BEV~ @11112
-END
   COPY_TRANS G3BEV KelseyNotAtFault
