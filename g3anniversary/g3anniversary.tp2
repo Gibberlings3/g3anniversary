@@ -1,9 +1,31 @@
 BACKUP ~G3Anniversary/backup~
-AUTHOR ~The Gibberlings Three - webmaster@gibberlings3.net~
+//AUTHOR ~The Gibberlings Three - webmaster@gibberlings3.net~
+SUPPORT ~http://gibberlings3.net/forums/index.php?showforum=61~
 
-VERSION v9
+VERSION ~9.1~
 
 README ~g3anniversary/readme-g3anniversary.html~
+
+ALWAYS
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET wmp_xCoord_SoA = 0
+    OUTER_SET wmp_yCoord_SoA = 2283
+  END ELSE BEGIN
+    OUTER_SET wmp_xCoord_SoA = 0
+    OUTER_SET wmp_yCoord_SoA = 0
+  END
+END
 
 LANGUAGE ~English~ ~English~ ~G3Anniversary/english/setup.tra~ // language menu
 
@@ -17,7 +39,7 @@ LANGUAGE ~English~ ~English~ ~G3Anniversary/english/setup.tra~ // language menu
 
 BEGIN @100 // component 0
 
-ACTION_IF GAME_IS ~BG2EE~ BEGIN
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 
   LOAD_TRA ~G3Anniversary/%LANGUAGE%/setup_ee.tra~
 
@@ -40,68 +62,50 @@ END
 
 APPEND ~mastarea.2da~ ~G3G12B  value~
 
+LAF sc#addWmpAre
+  INT_VAR
+  mapIcon = 27
+  xCoord = 221 + wmp_xCoord_SoA
+  yCoord = 322 + wmp_yCoord_SoA
+  STR_VAR
+  areName = ~G3G12B~
+  strName = ""
+  strDesc = ""
+  worldmap = "worldmap"
+END
+
 COPY_EXISTING ~worldmap.wmp~ ~override~
-  READ_LONG  0x30 "area_num"
-  READ_LONG  0x34 "area_off"
-  READ_LONG  0x38 "link_off"
-  READ_LONG  0x3c "link_num"
-  WRITE_LONG 0x30 ("%area_num%" + 1)
-  WRITE_LONG 0x38 ("%link_off%" + 0xf0)
-  WRITE_LONG 0x3c ("%link_num%" + 4)
-  READ_LONG ("%area_off%" + 0x128) "coord_x" // x coordinate of area 1 file, the slums
-  READ_LONG ("%area_off%" + 0x12c) "coord_y" // y coordinate of area 1 file, the slums
-  FOR (index = 0 ; index < 4 ; index = index + 1) BEGIN
-    INSERT_BYTES  ("%link_off%"        + (0xd8 * "%link_num%")) 0xd8     // inserting new link
-      WRITE_LONG  ("%link_off%"        + (0xd8 * "%link_num%")) 1        // target slums
-      WRITE_ASCII ("%link_off%" + 0x04 + (0xd8 * "%link_num%")) ~ExitSE~ // slums entry point
-      WRITE_LONG  ("%link_off%" + 0x28 + (0xd8 * "%link_num%")) 4        // unknown value--matching other links just in case
+  PATCH_FOR_EACH src_nwse IN north west south east BEGIN
+    LPF ADD_WORLDMAP_LINKS
+      INT_VAR
+      default_entry = 4
+      STR_VAR
+      from_area = ~G3G12B~
+      from_node = EVAL ~%src_nwse%~
+      to_area = ~AR0400~
+      entry = ~ExitSE~
+    END
   END
-  INSERT_BYTES ("%area_off%" + (0xf0 * "%area_num%")) 0xf0 // inserting new area to wmp
-    WRITE_ASCII ("%area_off%" +        (0xf0 * "%area_num%")) ~G3G12B~
-    WRITE_ASCII ("%area_off%" + 0x08 + (0xf0 * "%area_num%")) ~G3G12B~
-    WRITE_ASCII ("%area_off%" + 0x10 + (0xf0 * "%area_num%")) ~G3G12B~
-    WRITE_LONG  ("%area_off%" + 0x34 + (0xf0 * "%area_num%")) 27                 // mapicon number--set to invalid (no icon)
-    WRITE_LONG  ("%area_off%" + 0x38 + (0xf0 * "%area_num%")) ("%coord_x%" - 50) // coordinates set to be roughly midway
-    WRITE_LONG  ("%area_off%" + 0x3C + (0xf0 * "%area_num%")) ("%coord_y%" + 15) // between slums and promenade
-    WRITE_LONG  ("%area_off%" + 0x50 + (0xf0 * "%area_num%")) ("%link_num%")     // N link index
-    WRITE_LONG  ("%area_off%" + 0x54 + (0xf0 * "%area_num%")) 1                  // one link N
-    WRITE_LONG  ("%area_off%" + 0x58 + (0xf0 * "%area_num%")) ("%link_num%" + 3) // W link index
-    WRITE_LONG  ("%area_off%" + 0x5c + (0xf0 * "%area_num%")) 1                  // one link W
-    WRITE_LONG  ("%area_off%" + 0x60 + (0xf0 * "%area_num%")) ("%link_num%" + 2) // S link index
-    WRITE_LONG  ("%area_off%" + 0x64 + (0xf0 * "%area_num%")) 1                  // one link S
-    WRITE_LONG  ("%area_off%" + 0x68 + (0xf0 * "%area_num%")) ("%link_num%" + 1) // E link index
-    WRITE_LONG  ("%area_off%" + 0x6c + (0xf0 * "%area_num%")) 1                  // one link E
+BUT_ONLY
 
 COPY ~G3Anniversary/copy~ ~override~
 
-ACTION_IF FILE_EXISTS_IN_GAME ~j#klsyj.dlg~ THEN BEGIN
-
+ACTION_IF FILE_EXISTS_IN_GAME ~j#klsyj.dlg~ THEN BEGIN // crossmod uses text state labels so must be compiled with dialog.d in compile/
   ACTION_IF FILE_EXISTS_IN_GAME ~cddelaij.dlg~ THEN BEGIN
-
-    COMPILE ~G3Anniversary/compile~
+    COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
             ~G3Anniversary/dlg/kelsey.d~
             ~G3Anniversary/dlg/delainy.d~ // kelsey and delainy installed
-
   END ELSE BEGIN
-
-    COMPILE ~G3Anniversary/compile~
+    COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
             ~G3Anniversary/dlg/kelsey.d~ // just kelsey installed
-
   END
-
 END ELSE BEGIN
-
   ACTION_IF FILE_EXISTS_IN_GAME ~cddelaij.dlg~ THEN BEGIN
-
-    COMPILE ~G3Anniversary/compile~
+    COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
             ~G3Anniversary/dlg/delainy.d~ // just delainy installed
-
   END ELSE BEGIN
-
-    COMPILE ~G3Anniversary/compile~ // neither kelsey nor delainy installed
-
+    COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~ // neither kelsey nor delainy installed
   END
-
 END
 
 COPY_EXISTING ~ar0700.are~ ~override~ // Promenade Map Note
@@ -331,7 +335,7 @@ COPY ~G3Anniversary/cre/g3g1205.cre~ ~override~
   SAY NAME1 @105
   SAY NAME2 @105
 
-ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN BEGIN// if ToB is installed
+ACTION_IF GAME_INCLUDES ~tob~ THEN BEGIN // if ToB is installed
 
   COPY ~G3Anniversary/cre/g3g1206w.cre~ ~override/g3g1206.cre~ //wild mage
     SAY NAME1 @106

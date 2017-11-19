@@ -6,7 +6,7 @@ THEN
     SetInterrupt(FALSE)
     Face(0)
     Wait(1)
-    Face("G3Drini")
+    FaceObject("G3Drini")
     DisplayStringHead(Myself,@188)
     MoveToPoint([475.944])
     DestroySelf()
