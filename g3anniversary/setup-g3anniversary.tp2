@@ -1,8 +1,7 @@
 BACKUP ~G3Anniversary/backup~
-//AUTHOR ~The Gibberlings Three - webmaster@gibberlings3.net~
 SUPPORT ~http://gibberlings3.net/forums/index.php?showforum=61~
 
-VERSION ~9.1~
+VERSION ~v10~
 
 README ~g3anniversary/readme-g3anniversary.html~
 
@@ -93,16 +92,16 @@ COPY ~G3Anniversary/copy~ ~override~
 ACTION_IF FILE_EXISTS_IN_GAME ~j#klsyj.dlg~ THEN BEGIN // crossmod uses text state labels so must be compiled with dialog.d in compile/
   ACTION_IF FILE_EXISTS_IN_GAME ~cddelaij.dlg~ THEN BEGIN
     COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
-            ~G3Anniversary/dlg/kelsey.d~
-            ~G3Anniversary/dlg/delainy.d~ // kelsey and delainy installed
+                            ~G3Anniversary/dlg/kelsey.d~
+                            ~G3Anniversary/dlg/delainy.d~ // kelsey and delainy installed
   END ELSE BEGIN
     COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
-            ~G3Anniversary/dlg/kelsey.d~ // just kelsey installed
+                            ~G3Anniversary/dlg/kelsey.d~ // just kelsey installed
   END
 END ELSE BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~cddelaij.dlg~ THEN BEGIN
     COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
-            ~G3Anniversary/dlg/delainy.d~ // just delainy installed
+                            ~G3Anniversary/dlg/delainy.d~ // just delainy installed
   END ELSE BEGIN
     COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~ // neither kelsey nor delainy installed
   END

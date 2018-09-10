@@ -11,17 +11,6 @@ THEN
 END
 
 IF
-  GlobalTimerExpired("G3ClearOutTheDrunks","AR0314")
-  Global("G3CorrStuff","AR0314",7)
-THEN
-  RESPONSE #100
-    ActionOverride("G3SAILR1",DestroySelf())
-    ActionOverride("G3SAILR2",DestroySelf())
-    ActionOverride("G3SAILR3",DestroySelf())
-    SetGlobal("G3CorrStuff","AR0314",8)
-END
-
-IF
   Global("G3CorrStuff","AR0314",2)
 THEN
   RESPONSE #100

@@ -554,6 +554,21 @@ END
 ///// CORRADUN                                         \\\\\
 /////                                                  \\\\\
 
+/* 
+global G3CORRADUN
+0 > 1 asked celuci
+1 > 2 received drink
+
+ar0314 g3corrstuff
+0 > 1 spawn corradun, sailors
+1 > 2 speaking to corradun
+2 > 3 trip first cutscene, two sailors pass out
+3 > 4 third sailor speaks
+4 > 5 second cutscene, third sailor passes out
+5 > 6 speaking to corradun againm get drink
+6 > 7 trip third cutscene, laurlana and corradun leave
+*/
+
 BEGIN G3SAILR1
 IF ~True()~ THEN BEGIN Sailr1Chat SAY @11153
   IF ~~ THEN EXIT
