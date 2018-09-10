@@ -3,12 +3,9 @@ IF
 THEN
   RESPONSE #100
     CutSceneId(Player1)
-    Wait(1)
-    ActionOverride("G3SAILR3",MoveToPoint([146.521]))
-    Wait(1)
+    Wait(2)
     ApplySpellRES("G3DRUNK","G3SAILR3")
     Wait(2)
-    SetGlobalTimer("G3ClearOutTheDrunks","AR0314",7200)
     ActionOverride("G3Corr",StartDialogueNoSet(Player1))
     EndCutSceneMode()
 END

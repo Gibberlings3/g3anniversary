@@ -1,0 +1,21 @@
+IF
+  OnCreation()
+  Global("G3CorrStuff","AR0314",7)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END	
+
+IF
+  StateCheck(Myself,STATE_SLEEPING)
+THEN
+  RESPONSE #100
+    NoAction()
+END	
+
+IF
+  !Range("g3corr",8)
+THEN
+  RESPONSE #100
+    MoveToObject("g3corr")
+END	

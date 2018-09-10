@@ -561,10 +561,7 @@ END
 
 BEGIN G3SAILR2
 IF ~~ THEN BEGIN CorrCut1 SAY @11160
-  IF ~~ THEN DO ~SetGlobal("G3CorrStuff","AR0314",2)
-                 ClearAllActions()
-                 StartCutSceneMode()
-                 StartCutScene("G3Cut004")~ EXIT
+  IF ~~ THEN EXIT
 END
 
 IF ~True()~ THEN BEGIN Sailr2Chat SAY @11154
@@ -572,11 +569,8 @@ IF ~True()~ THEN BEGIN Sailr2Chat SAY @11154
 END
 
 BEGIN G3SAILR3
-IF ~Global("G3CorrStuff","AR0314",2)~ THEN BEGIN CorrCut2 SAY @11161
-  IF ~~ THEN DO ~SetGlobal("G3CorrStuff","AR0314",3)
-                 ClearAllActions()
-                 StartCutSceneMode()
-                 StartCutScene("G3Cut005")~ EXIT
+IF ~Global("G3CorrStuff","AR0314",3)~ THEN BEGIN CorrCut2 SAY @11161
+  IF ~~ THEN DO ~SetGlobal("G3CorrStuff","AR0314",4)~ EXIT
 END
 
 IF ~True()~ THEN BEGIN Sailr3Chat SAY @11155
@@ -586,51 +580,35 @@ END
 BEGIN G3LAUR
 BEGIN G3CORR
 
-IF ~Global("G3CorrStuff","AR0314",3)~ THEN BEGIN CorrCut3 SAY @10717
-  IF ~~ THEN REPLY @10718 EXTERN G3CORR CorrOpt1
-  IF ~~ THEN REPLY @10719 EXTERN G3CORR CorrOpt2
-  IF ~~ THEN REPLY @10720 EXTERN G3CORR CorrOpt3
+IF ~Global("G3CorrStuff","AR0314",1)~ THEN BEGIN CorrInitial1 SAY @10712
+  IF ~~ THEN DO ~SetGlobal("G3CorrStuff","AR0314",2)~ EXTERN G3SAILR1 CorrInitial2
+END
+
+IF ~Global("G3CorrStuff","AR0314",5)~ THEN BEGIN CorrCut3 SAY @10717
+  IF ~~ THEN REPLY @10718 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0) SetGlobal("G3CorrStuff","AR0314",6)~ EXTERN G3CORR CorrOpt1
+  IF ~~ THEN REPLY @10719 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0) SetGlobal("G3CorrStuff","AR0314",6)~ EXTERN G3CORR CorrOpt2
+  IF ~~ THEN REPLY @10720 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0) SetGlobal("G3CorrStuff","AR0314",6)~ EXTERN G3CORR CorrOpt3
   IF ~~ THEN REPLY @11137 EXTERN G3CORR CorrChwisgi
 END
 
 IF ~~ THEN BEGIN CorrOpt1 SAY @10721
-  IF ~~ THEN REPLY @10722 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0)
-                            SetGlobal("G3CorrStuff","AR0314",4)
-                            ClearAllActions()
-                            StartCutSceneMode()
-                            StartCutScene("G3Cut006")~ EXIT
-  IF ~~ THEN REPLY @10724 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0)
-                            SetGlobal("G3CorrStuff","AR0314",4)
-                            ClearAllActions()
-                            StartCutSceneMode()
-                            StartCutScene("G3Cut006")~ EXIT
+  IF ~~ THEN REPLY @10722 EXIT
+  IF ~~ THEN REPLY @10724 EXIT
 END
 
 IF ~~ THEN BEGIN CorrOpt2 SAY @10723
-  IF ~~ THEN REPLY @10722 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0)
-                            SetGlobal("G3CorrStuff","AR0314",4)
-                            ClearAllActions()
-                            StartCutSceneMode()
-                            StartCutScene("G3Cut006")~ EXIT
-  IF ~~ THEN REPLY @10724 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0)
-                            SetGlobal("G3CorrStuff","AR0314",4)
-                            ClearAllActions()
-                            StartCutSceneMode()
-                            StartCutScene("G3Cut006")~ EXIT
+  IF ~~ THEN REPLY @10722 EXIT
+  IF ~~ THEN REPLY @10724 EXIT
 END
 
 IF ~~ THEN BEGIN CorrOpt3 SAY @10725
-  IF ~~ THEN REPLY @10726 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0)
-                            SetGlobal("G3CorrStuff","AR0314",4)
-                            ClearAllActions()
-                            StartCutSceneMode()
-                            StartCutScene("G3Cut006")~ EXIT
+  IF ~~ THEN REPLY @10726 EXIT
 END
 
 IF ~~ THEN BEGIN CorrChwisgi SAY @11138
-  IF ~~ THEN REPLY @11139 GOTO CorrOpt1
-  IF ~~ THEN REPLY @10719 GOTO CorrOpt2
-  IF ~~ THEN REPLY @10720 GOTO CorrOpt3
+  IF ~~ THEN REPLY @11139 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0) SetGlobal("G3CorrStuff","AR0314",6)~ GOTO CorrOpt1
+  IF ~~ THEN REPLY @10719 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0) SetGlobal("G3CorrStuff","AR0314",6)~ GOTO CorrOpt2
+  IF ~~ THEN REPLY @10720 DO ~GiveItemCreate("G3DRINK6",LastTalkedToBy,1,0,0) SetGlobal("G3CorrStuff","AR0314",6)~ GOTO CorrOpt3
 END
 
 /////                                                  \\\\\
@@ -2784,8 +2762,7 @@ CHAIN ~G3JAVA02~ 50Gold @10645
 END
   IF ~~ EXTERN ~G3JAVA02~ Do50Gold
 
-CHAIN IF ~Global("G3CorrStuff","AR0314",1)~ THEN G3CORR CorrInitial @10712
-== G3SAILR1 @10729
+CHAIN G3SAILR1 CorrInitial2 @10729
 == G3CORR  @10713
 == G3SAILR2 @11156
 == G3CORR @10714
