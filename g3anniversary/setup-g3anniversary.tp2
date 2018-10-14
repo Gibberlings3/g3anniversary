@@ -1,11 +1,14 @@
 BACKUP ~G3Anniversary/backup~
 SUPPORT ~http://gibberlings3.net/forums/index.php?showforum=61~
 
-VERSION ~v10~
+VERSION ~v11~
 
 README ~g3anniversary/readme-g3anniversary.html~
 
 ALWAYS
+  ACTION_DEFINE_ARRAY cdreload BEGIN setup END
+  LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = ~g3anniversary~ reload_array = cdreload END
+  
   ACTION_IF GAME_IS ~eet~ BEGIN
     OUTER_SET bg2_chapter = 12
   END ELSE BEGIN
