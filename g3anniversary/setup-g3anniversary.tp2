@@ -44,11 +44,16 @@ BEGIN @100 // component 0
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 
   LOAD_TRA ~G3Anniversary/%LANGUAGE%/setup_ee.tra~
+  
+  COPY ~g3anniversary/graphics~ ~override~ // new area tilesets/pvrz
 
   // these don't execute on non-EE, but since I've already got an EE-only block, let's drop them here
   ADD_JOURNAL TITLE (@19984) @19985 @19986 @19987 @19988 @19989 @19990 @19991 @19992 @19993 @19994 @19995 @19996 @19997 @19998 @19999
 
 END ELSE BEGIN
+
+  INCLUDE ~g3anniversary/lib/a7_tools.tpa~ // tile2ee
+  LAF HANDLE_TILE2EE INT_VAR quality_v1 = 9 STR_VAR input_path = ~g3anniversary/graphics~ END
 
   APPEND ~state.ids~ // adds custom IsValidForPartyDialogue state
     ~0x80101FEF CD_STATE_NOTVALID~
@@ -480,5 +485,3 @@ END
 /////                                                  \\\\\
 
 LAF HANDLE_AUDIO STR_VAR audio_path = ~g3anniversary/audio~ oggdec_path = ~g3anniversary/audio~ sox_path = ~g3anniversary/audio~ END // this replaces all the junk below
-
-LAF HANDLE_TILESETS STR_VAR tiz_path = ~g3anniversary/tiz~ tizunpack_path = ~g3anniversary/tiz~ END
