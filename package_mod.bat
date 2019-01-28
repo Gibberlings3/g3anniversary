@@ -22,7 +22,7 @@ REM /* the mod_readme link should point to the online readme and work fine as-is
 set ico_folder=%mod_folder%\style
 set audio_folder=%mod_folder%\audio
 set tispack_folder=%mod_folder%\tiz
-REM set tile2ee_folder=%mod_folder%\tools\tile2ee
+set tile2ee_folder=%mod_folder%\tools\tile2ee
 set iconv_folder=%mod_folder%\iconv
 set mod_readme=http://www.gibberlings3.net/readmes/readme-%mod_folder%.html
 
