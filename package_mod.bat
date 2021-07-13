@@ -6,7 +6,7 @@ call "%~dp0..\ModPackaging\utilities\ie_games.bat"
 
 REM /* MODIFY: set the values of the 3 variables below to reflect the current mod version */
 set "mod_name=The Gibberlings Three Anniversary Mod"
-set mod_version=v12_wip
+set mod_version=v12
 set mod_folder=g3anniversary
 
 REM /* MODIFY: list here which IE games the mod is compatible with, from this list of possibilities: */
