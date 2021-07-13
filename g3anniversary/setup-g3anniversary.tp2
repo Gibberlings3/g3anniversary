@@ -1,7 +1,7 @@
-BACKUP ~G3Anniversary/backup~
-SUPPORT ~http://gibberlings3.net/forums/index.php?showforum=61~
+BACKUP ~g3anniversary/backup~
+SUPPORT ~https://www.gibberlings3.net/forum/61-the-gibberlings-three-anniversary-mod/~
 
-VERSION ~v11~
+VERSION ~v12~
 
 README ~g3anniversary/readme-g3anniversary.html~
 
@@ -46,10 +46,11 @@ LANGUAGE ~Russian~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 BEGIN @100 // component 0
+LABEL ~cd_g3anniversary~
 
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 
-  LOAD_TRA ~G3Anniversary/%LANGUAGE%/setup_ee.tra~
+  LOAD_TRA ~g3anniversary/%LANGUAGE%/setup_ee.tra~
   
   COPY ~g3anniversary/graphics~ ~override~ // new area tilesets/pvrz
 
@@ -66,7 +67,7 @@ END ELSE BEGIN
     UNLESS ~CD_STATE_NOTVALID~
 
   // adds ToB scripting commands if SoA-only install
-  INCLUDE ~G3Anniversary/lib/tob2soa.tpa~
+  INCLUDE ~g3anniversary/lib/tob2soa.tpa~
 
   // force WeiDU to reload altered IDS files
   CLEAR_IDS_MAP
@@ -101,23 +102,23 @@ COPY_EXISTING ~worldmap.wmp~ ~override~
   END
 BUT_ONLY
 
-COPY ~G3Anniversary/copy~ ~override~
+COPY ~g3anniversary/copy~ ~override~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~j#klsyj.dlg~ THEN BEGIN // crossmod uses text state labels so must be compiled with dialog.d in compile/
   ACTION_IF FILE_EXISTS_IN_GAME ~cddelaij.dlg~ THEN BEGIN
-    COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
-                            ~G3Anniversary/dlg/kelsey.d~
-                            ~G3Anniversary/dlg/delainy.d~ // kelsey and delainy installed
+    COMPILE EVALUATE_BUFFER ~g3anniversary/compile~
+                            ~g3anniversary/dlg/kelsey.d~
+                            ~g3anniversary/dlg/delainy.d~ // kelsey and delainy installed
   END ELSE BEGIN
-    COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
-                            ~G3Anniversary/dlg/kelsey.d~ // just kelsey installed
+    COMPILE EVALUATE_BUFFER ~g3anniversary/compile~
+                            ~g3anniversary/dlg/kelsey.d~ // just kelsey installed
   END
 END ELSE BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~cddelaij.dlg~ THEN BEGIN
-    COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~
-                            ~G3Anniversary/dlg/delainy.d~ // just delainy installed
+    COMPILE EVALUATE_BUFFER ~g3anniversary/compile~
+                            ~g3anniversary/dlg/delainy.d~ // just delainy installed
   END ELSE BEGIN
-    COMPILE EVALUATE_BUFFER ~G3Anniversary/compile~ // neither kelsey nor delainy installed
+    COMPILE EVALUATE_BUFFER ~g3anniversary/compile~ // neither kelsey nor delainy installed
   END
 END
 
@@ -128,19 +129,19 @@ COPY_EXISTING ~ar0700.are~ ~override~ // Promenade Map Note
 ///// scripting                                        \\\\\
 /////                                                  \\\\\
 
-EXTEND_BOTTOM ~ar0022.bcs~   ~G3Anniversary/baf/ar0022.baf~   // Moniq coding
-EXTEND_BOTTOM ~ar0300.bcs~   ~G3Anniversary/baf/ar0300.baf~   // spawns Ari
-EXTEND_BOTTOM ~ar0314.bcs~   ~G3Anniversary/baf/ar0314.baf~   // spawns corradun and friends
-EXTEND_BOTTOM ~ar0406.bcs~   ~G3Anniversary/baf/ar0406.baf~   // spawns Drini
-EXTEND_BOTTOM ~ar0500.bcs~   ~G3Anniversary/baf/ar0500.baf~   // adds scripting for Scam
-EXTEND_BOTTOM ~ar0509.bcs~   ~G3Anniversary/baf/ar0509.baf~   // spawns Dewny & co
-EXTEND_BOTTOM ~ar0513.bcs~   ~G3Anniversary/baf/ar0513.baf~   // spawns Robukin
-EXTEND_BOTTOM ~ar0522.bcs~   ~G3Anniversary/baf/ar0509.baf~   // spawns Dewny & co, post-bard stronghold
-EXTEND_BOTTOM ~ar0522.bcs~   ~G3Anniversary/baf/ar0522.baf~   // additional dewny spawn scripting for bard stronghold area change
-EXTEND_BOTTOM ~ar0704.bcs~   ~G3Anniversary/baf/ar0704.baf~   // spawns Ice & Ido
-EXTEND_BOTTOM ~ar0709.bcs~   ~G3Anniversary/baf/ar0709.baf~   // spawns Grim & Fitz
-EXTEND_BOTTOM ~ar0713.bcs~   ~G3Anniversary/baf/ar0713.baf~   // java house
-EXTEND_BOTTOM ~ar1000.bcs~   ~G3Anniversary/baf/ar1000.baf~   // spawns jps
+EXTEND_BOTTOM ~ar0022.bcs~   ~g3anniversary/baf/ar0022.baf~   // Moniq coding
+EXTEND_BOTTOM ~ar0300.bcs~   ~g3anniversary/baf/ar0300.baf~   // spawns Ari
+EXTEND_BOTTOM ~ar0314.bcs~   ~g3anniversary/baf/ar0314.baf~   // spawns corradun and friends
+EXTEND_BOTTOM ~ar0406.bcs~   ~g3anniversary/baf/ar0406.baf~   // spawns Drini
+EXTEND_BOTTOM ~ar0500.bcs~   ~g3anniversary/baf/ar0500.baf~   // adds scripting for Scam
+EXTEND_BOTTOM ~ar0509.bcs~   ~g3anniversary/baf/ar0509.baf~   // spawns Dewny & co
+EXTEND_BOTTOM ~ar0513.bcs~   ~g3anniversary/baf/ar0513.baf~   // spawns Robukin
+EXTEND_BOTTOM ~ar0522.bcs~   ~g3anniversary/baf/ar0509.baf~   // spawns Dewny & co, post-bard stronghold
+EXTEND_BOTTOM ~ar0522.bcs~   ~g3anniversary/baf/ar0522.baf~   // additional dewny spawn scripting for bard stronghold area change
+EXTEND_BOTTOM ~ar0704.bcs~   ~g3anniversary/baf/ar0704.baf~   // spawns Ice & Ido
+EXTEND_BOTTOM ~ar0709.bcs~   ~g3anniversary/baf/ar0709.baf~   // spawns Grim & Fitz
+EXTEND_BOTTOM ~ar0713.bcs~   ~g3anniversary/baf/ar0713.baf~   // java house
+EXTEND_BOTTOM ~ar1000.bcs~   ~g3anniversary/baf/ar1000.baf~   // spawns jps
 
 COPY_EXISTING ~ar0509.are~ ~override~ // assigns area script to Five Flagons
               ~ar0713.are~ ~override~ // assigns area script to Promenade shop
@@ -151,7 +152,7 @@ COPY_EXISTING ~ar0509.are~ ~override~ // assigns area script to Five Flagons
 ///// store                                            \\\\\
 /////                                                  \\\\\
 
-COPY ~G3Anniversary/sto/g3java.sto~   ~override~
+COPY ~g3anniversary/sto/g3java.sto~   ~override~
   SAY NAME2 @160
   SAY 0xa4 @161
   SAY 0xb8 @162
@@ -184,43 +185,43 @@ COPY_EXISTING ~misc7o.itm~ ~override/g3brscrl.itm~
   SAY UNIDENTIFIED_DESC @156
   SAY DESC @156
 
-COPY ~G3Anniversary/itm/g3drink1.itm~ ~override~
+COPY ~g3anniversary/itm/g3drink1.itm~ ~override~
   SAY NAME1 @130
   SAY NAME2 @130
   SAY UNIDENTIFIED_DESC @131
   SAY DESC @131
 
-COPY ~G3Anniversary/itm/g3drink2.itm~ ~override~
+COPY ~g3anniversary/itm/g3drink2.itm~ ~override~
   SAY NAME1 @121
   SAY NAME2 @121
   SAY UNIDENTIFIED_DESC @122
   SAY DESC @122
 
-COPY ~G3Anniversary/itm/g3drink3.itm~ ~override~
+COPY ~g3anniversary/itm/g3drink3.itm~ ~override~
   SAY NAME1 @126
   SAY NAME2 @126
   SAY UNIDENTIFIED_DESC @127
   SAY DESC @127
 
-COPY ~G3Anniversary/itm/g3drink4.itm~ ~override~
+COPY ~g3anniversary/itm/g3drink4.itm~ ~override~
   SAY NAME1 @169
   SAY NAME2 @169
   SAY UNIDENTIFIED_DESC @170
   SAY DESC @170
 
-COPY ~G3Anniversary/itm/g3drink5.itm~ ~override~
+COPY ~g3anniversary/itm/g3drink5.itm~ ~override~
   SAY NAME1 @149
   SAY NAME2 @149
   SAY UNIDENTIFIED_DESC @150
   SAY DESC @150
 
-COPY ~G3Anniversary/itm/g3drink6.itm~ ~override~
+COPY ~g3anniversary/itm/g3drink6.itm~ ~override~
   SAY NAME1 @173
   SAY NAME2 @173
   SAY UNIDENTIFIED_DESC @174
   SAY DESC @174
 
-COPY ~G3Anniversary/itm/g3drink7.itm~ ~override~
+COPY ~g3anniversary/itm/g3drink7.itm~ ~override~
   SAY NAME1 @178
   SAY NAME2 @178
   SAY UNIDENTIFIED_DESC @179
@@ -231,13 +232,13 @@ COPY_EXISTING ~misc4n.itm~ ~override/g3java1.itm~
   SAY NAME2 @136
   SAY UNIDENTIFIED_DESC @137
 
-COPY ~G3Anniversary/itm/g3java2.itm~  ~override~
+COPY ~g3anniversary/itm/g3java2.itm~  ~override~
   SAY NAME1 @144
   SAY NAME2 @144
   SAY UNIDENTIFIED_DESC @145
   SAY DESC @145
 
-COPY ~G3Anniversary/itm/g3key1.itm~ ~override~
+COPY ~g3anniversary/itm/g3key1.itm~ ~override~
   SAY NAME1 @171
   SAY NAME2 @171
   SAY UNIDENTIFIED_DESC @172
@@ -249,39 +250,39 @@ COPY_EXISTING ~misc8i.itm~ ~override/g3list.itm~
   SAY UNIDENTIFIED_DESC @125
   SAY DESC @125
 
-COPY ~G3Anniversary/itm/g3oil.itm~ ~override~
+COPY ~g3anniversary/itm/g3oil.itm~ ~override~
   SAY NAME1 @152
   SAY NAME2 @152
   SAY UNIDENTIFIED_DESC @153
   SAY DESC @153
 
-COPY ~G3Anniversary/itm/cdmgboot.itm~ ~override~
+COPY ~g3anniversary/itm/cdmgboot.itm~ ~override~
   SAY NAME1 #6339
   SAY NAME2 @181
   SAY UNIDENTIFIED_DESC #6824
   SAY DESC @182
 
-COPY ~G3Anniversary/spl/cdmgboot.spl~ ~override~
+COPY ~g3anniversary/spl/cdmgboot.spl~ ~override~
   SAY NAME1 #0
   SAY NAME2 #0
   SAY UNIDENTIFIED_DESC #0
   SAY DESC #0
   SAY 0xCE @187
 
-COPY ~G3Anniversary/itm/cdioun1.itm~ ~override~  // Deep Purple Ioun Stone
+COPY ~g3anniversary/itm/cdioun1.itm~ ~override~  // Deep Purple Ioun Stone
   SAY NAME1 #8181
   SAY NAME2 @183
   SAY IDENTIFIED_DESC @184
   SAY UNIDENTIFIED_DESC #5770
 
-COPY ~G3Anniversary/itm/cdioun2.itm~ ~override~ // Flickering White Ioun Stone
+COPY ~g3anniversary/itm/cdioun2.itm~ ~override~ // Flickering White Ioun Stone
   SAY NAME1 #8181
   SAY NAME2 @185
   SAY IDENTIFIED_DESC @186
   SAY UNIDENTIFIED_DESC #5770
 
-COPY ~G3Anniversary/itm/g3wrtom1.itm~ ~override~ // tome of arcane recall
-     ~G3Anniversary/itm/g3wrtom2.itm~ ~override~ // tome of arcane recall
+COPY ~g3anniversary/itm/g3wrtom1.itm~ ~override~ // tome of arcane recall
+     ~g3anniversary/itm/g3wrtom2.itm~ ~override~ // tome of arcane recall
   SAY NAME2 @189
   SAY IDENTIFIED_DESC @190
 
@@ -289,144 +290,144 @@ COPY ~G3Anniversary/itm/g3wrtom1.itm~ ~override~ // tome of arcane recall
 ///// creature files                                   \\\\\
 /////                                                  \\\\\
 
-COPY ~G3Anniversary/cre/g3ari.cre~ ~override~
+COPY ~g3anniversary/cre/g3ari.cre~ ~override~
   SAY NAME1 @120
   SAY NAME2 @120
 
-COPY ~G3Anniversary/cre/g3bev.cre~ ~override~
+COPY ~g3anniversary/cre/g3bev.cre~ ~override~
   SAY NAME1 @147
   SAY NAME2 @147
 
-COPY ~G3Anniversary/cre/g3bigrob.cre~ ~override~
+COPY ~g3anniversary/cre/g3bigrob.cre~ ~override~
   SAY NAME1 @134
   SAY NAME2 @134
 
-COPY ~G3Anniversary/cre/g3corr.cre~ ~override~
+COPY ~g3anniversary/cre/g3corr.cre~ ~override~
   SAY NAME1 @159
   SAY NAME2 @159
 
-COPY ~G3Anniversary/cre/g3dewn.cre~ ~override~
+COPY ~g3anniversary/cre/g3dewn.cre~ ~override~
   SAY NAME1 @129
   SAY NAME2 @129
 
-COPY ~G3Anniversary/cre/g3drini.cre~ ~override~
+COPY ~g3anniversary/cre/g3drini.cre~ ~override~
   SAY NAME1 @118
   SAY NAME2 @118
 
-COPY ~G3Anniversary/cre/g3ffcus1.cre~ ~override~
+COPY ~g3anniversary/cre/g3ffcus1.cre~ ~override~
   SAY NAME1 @132
   SAY NAME2 @132
 
-COPY ~G3Anniversary/cre/g3ffcus2.cre~ ~override~
+COPY ~g3anniversary/cre/g3ffcus2.cre~ ~override~
   SAY NAME1 @133
   SAY NAME2 @133
 
 COPY_EXISTING ~ffcust07.cre~ ~override~
   WRITE_ASCII ~0x280~ ~ffcust07~ #32
 
-COPY ~G3Anniversary/cre/g3fitz.cre~ ~override~
+COPY ~g3anniversary/cre/g3fitz.cre~ ~override~
   SAY NAME1 @167
   SAY NAME2 @167
 
-COPY ~G3Anniversary/cre/g3g1201.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1201.cre~ ~override~
   SAY NAME1 @101
   SAY NAME2 @101
 
-COPY ~G3Anniversary/cre/g3g1202.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1202.cre~ ~override~
   SAY NAME1 @102
   SAY NAME2 @102
 
-COPY ~G3Anniversary/cre/g3g1203.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1203.cre~ ~override~
   SAY NAME1 @103
   SAY NAME2 @103
 
-COPY ~G3Anniversary/cre/g3g1204.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1204.cre~ ~override~
   SAY NAME1 @104
   SAY NAME2 @104
 
-COPY ~G3Anniversary/cre/g3g1205.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1205.cre~ ~override~
   SAY NAME1 @105
   SAY NAME2 @105
 
 ACTION_IF GAME_INCLUDES ~tob~ THEN BEGIN // if ToB is installed
 
-  COPY ~G3Anniversary/cre/g3g1206w.cre~ ~override/g3g1206.cre~ //wild mage
+  COPY ~g3anniversary/cre/g3g1206w.cre~ ~override/g3g1206.cre~ //wild mage
     SAY NAME1 @106
     SAY NAME2 @106
 
 END ELSE BEGIN
 
-  COPY ~G3Anniversary/cre/g3g1206.cre~ ~override~ //transmuter
+  COPY ~g3anniversary/cre/g3g1206.cre~ ~override~ //transmuter
     SAY NAME1 @106
     SAY NAME2 @106
 
 END
 
-COPY ~G3Anniversary/cre/g3g1207.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1207.cre~ ~override~
   SAY NAME1 @107
   SAY NAME2 @107
 
-COPY ~G3Anniversary/cre/g3g1208.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1208.cre~ ~override~
   SAY NAME1 @108
   SAY NAME2 @108
 
-COPY ~G3Anniversary/cre/g3g1209.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1209.cre~ ~override~
   SAY NAME1 @109
   SAY NAME2 @109
 
-COPY ~G3Anniversary/cre/g3g1210.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1210.cre~ ~override~
   SAY NAME1 @110
   SAY NAME2 @110
 
-COPY ~G3Anniversary/cre/g3g1211.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1211.cre~ ~override~
   SAY NAME1 @111
   SAY NAME2 @111
 
-COPY ~G3Anniversary/cre/g3g1212.cre~ ~override~
+COPY ~g3anniversary/cre/g3g1212.cre~ ~override~
   SAY NAME1 @112
   SAY NAME2 @112
 
-COPY ~G3Anniversary/cre/g3grim.cre~ ~override~
+COPY ~g3anniversary/cre/g3grim.cre~ ~override~
   SAY NAME1 @166
   SAY NAME2 @166
 
-COPY ~G3Anniversary/cre/g3java01.cre~ ~override~
+COPY ~g3anniversary/cre/g3java01.cre~ ~override~
   SAY NAME1 @148
   SAY NAME2 @148
 
-COPY ~G3Anniversary/cre/g3java02.cre~ ~override~
+COPY ~g3anniversary/cre/g3java02.cre~ ~override~
   SAY NAME1 @151
   SAY NAME2 @151
 
-COPY ~G3Anniversary/cre/g3java03.cre~ ~override~
+COPY ~g3anniversary/cre/g3java03.cre~ ~override~
   SAY NAME1 @154
   SAY NAME2 @154
 
-COPY ~G3Anniversary/cre/g3java04.cre~ ~override~
+COPY ~g3anniversary/cre/g3java04.cre~ ~override~
   SAY NAME1 @157
   SAY NAME2 @157
 
-COPY ~G3Anniversary/cre/g3jps.cre~ ~override~
+COPY ~g3anniversary/cre/g3jps.cre~ ~override~
   SAY NAME1 @168
   SAY NAME2 @168
 
-COPY ~G3Anniversary/cre/g3kebodi.cre~ ~override~
+COPY ~g3anniversary/cre/g3kebodi.cre~ ~override~
   SAY NAME1 @176
   SAY NAME2 @176
 
-COPY ~G3Anniversary/cre/g3laur.cre~ ~override~
+COPY ~g3anniversary/cre/g3laur.cre~ ~override~
   SAY NAME1 @180
   SAY NAME2 @180
 
-COPY ~G3Anniversary/cre/g3maid.cre~ ~override~
+COPY ~g3anniversary/cre/g3maid.cre~ ~override~
   SAY NAME1 @123
   SAY NAME2 @123
 
-COPY ~G3Anniversary/cre/g3moniq.cre~ ~override~
+COPY ~g3anniversary/cre/g3moniq.cre~ ~override~
   SAY NAME1 @128
   SAY NAME2 @128
 
-COPY ~G3Anniversary/cre/g3mrsgtu.cre~ ~override~
+COPY ~g3anniversary/cre/g3mrsgtu.cre~ ~override~
   SAY NAME1 @117
   SAY NAME2 @117
 
@@ -437,11 +438,11 @@ COPY_EXISTING ~barsail1.cre~ ~override/g3sailr1.cre~
   WRITE_EVALUATED_ASCII 0x280 ~%DEST_RES%~ #32 // dv
   WRITE_EVALUATED_ASCII 0x2CC ~%DEST_RES%~ #8  // dialogue
 
-COPY ~G3Anniversary/cre/g3scam.cre~ ~override~
+COPY ~g3anniversary/cre/g3scam.cre~ ~override~
   SAY NAME1 @113
   SAY NAME2 @113
 
-COPY ~G3Anniversary/cre/g3scamdg.cre~ ~override~
+COPY ~g3anniversary/cre/g3scamdg.cre~ ~override~
   SAY NAME1 @116
   SAY NAME2 @116
 
@@ -452,7 +453,7 @@ COPY_EXISTING ~shop03.cre~ ~override~
   SAY NAME2 @135
   BUT_ONLY_IF_IT_CHANGES
 
-COPY ~G3Anniversary/cre/g3suleci.cre~ ~override~
+COPY ~g3anniversary/cre/g3suleci.cre~ ~override~
   SAY NAME1 @175
   SAY NAME2 @175
 
@@ -465,24 +466,24 @@ PRINT @2
 ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
 
   COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
-    APPEND_FILE ~G3Anniversary/Worldmap/areas.tbl~
+    APPEND_FILE ~g3anniversary/Worldmap/areas.tbl~
 
   COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
-    APPEND_FILE ~G3Anniversary/Worldmap/links.tbl~
+    APPEND_FILE ~g3anniversary/Worldmap/links.tbl~
 
   //preliminary step - making LANGUAGE temporary file until the new WeiDU
-  //COPY - ~G3Anniversary/Worldmap/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
+  //COPY - ~g3anniversary/Worldmap/%LANGUAGE%/worldmap.tra~  ~tmp_worldmap.tra~
 
   COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
-    APPEND_FILE ~G3Anniversary/Worldmap/%LANGUAGE%/worldmap.tra~
+    APPEND_FILE ~g3anniversary/Worldmap/%LANGUAGE%/worldmap.tra~
     //APPEND_FILE ~tmp_worldmap.tra~
 
 END ELSE BEGIN
 
   MKDIR ~Worldmap~
-  COPY ~G3Anniversary/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
-  COPY ~G3Anniversary/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
-  COPY ~G3Anniversary/Worldmap/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
+  COPY ~g3anniversary/Worldmap/areas.tbl~ ~Worldmap/map_mods_areas.tbl~
+  COPY ~g3anniversary/Worldmap/links.tbl~ ~Worldmap/map_mods_links.tbl~
+  COPY ~g3anniversary/Worldmap/%LANGUAGE%/worldmap.tra~ ~Worldmap/map_mods_trans.tra~
 
 END
 
