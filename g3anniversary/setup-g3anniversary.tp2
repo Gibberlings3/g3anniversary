@@ -29,7 +29,13 @@ ALWAYS
   END
 END
 
-LANGUAGE ~English~ ~English~ ~G3Anniversary/english/setup.tra~ // language menu
+// language menu
+LANGUAGE ~English~ 
+         ~english~ 
+         ~g3anniversary/english/setup.tra~
+LANGUAGE ~Russian~ 
+         ~russian~ 
+         ~g3anniversary/russian/setup.tra~  
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
