@@ -273,29 +273,37 @@ COPY ~g3anniversary/itm/g3oil.itm~ ~override~
   SAY DESC @153
 
 COPY ~g3anniversary/itm/cdmgboot.itm~ ~override~
-  SAY NAME1 #6339
   SAY NAME2 @181
-  SAY UNIDENTIFIED_DESC #6824
   SAY DESC @182
 
+OUTER_SET boot_string = RESOLVE_STR_REF(@187)
 COPY ~g3anniversary/spl/cdmgboot.spl~ ~override~
-  SAY NAME1 #0
-  SAY NAME2 #0
-  SAY UNIDENTIFIED_DESC #0
-  SAY DESC #0
-  SAY 0xCE @187
-
-COPY ~g3anniversary/itm/cdioun1.itm~ ~override~  // Deep Purple Ioun Stone
-  SAY NAME1 #8181
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = boot_string END
+  PATCH_IF GAME_IS ~bg2ee eet~ BEGIN 
+    LPF CLONE_EFFECT  INT_VAR match_opcode = 206 opcode = 321 duration = 0 STR_VAR insert = first END // change to ee-style stacking proteciton
+    LPF DELETE_EFFECT INT_VAR match_opcode = 206 END                                                  // delete original-style stacking protection
+    LPF ALTER_EFFECT  INT_VAR match_opcode = 142 parameter2 = 195 END // use 'increased movement speed' icon instead of 'haste'
+  END  
+  
+COPY_EXISTING ~helm18.itm~ ~override/cdioun1.itm~ // create ioun stones from existing stone
+              ~helm18.itm~ ~override/cdioun2.itm~
+  WRITE_ASCIIE 0x3a ~i%DEST_RES%~ #8 // icon, inventory
+  WRITE_ASCII  0x58 ~ccdioun1~    #8 // icon, description
+  WRITE_LONG   0x4c 2                // weight  
+  LPF DELETE_EFFECT END // delete all effects
+  
+COPY_EXISTING ~cdioun1.itm~ ~override~  // Deep Purple Ioun Stone
   SAY NAME2 @183
   SAY IDENTIFIED_DESC @184
-  SAY UNIDENTIFIED_DESC #5770
-
-COPY ~g3anniversary/itm/cdioun2.itm~ ~override~ // Flickering White Ioun Stone
-  SAY NAME1 #8181
+  WRITE_LONG 0x34 600 // price
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 63 target = 1 timing = 2 END // add infravision
+  
+COPY_EXISTING ~cdioun2.itm~ ~override~  // Flickering White Ioun Stone
   SAY NAME2 @185
   SAY IDENTIFIED_DESC @186
-  SAY UNIDENTIFIED_DESC #5770
+  WRITE_LONG 0x34 1200 // price
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode =  28 target = 1 parameter1 = 10 timing = 2 END // add cold resistance
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 142 target = 1 parameter2 = 25 timing = 2 END // add cold resistance portrait icon
 
 COPY ~g3anniversary/itm/g3wrtom1.itm~ ~override~ // tome of arcane recall
      ~g3anniversary/itm/g3wrtom2.itm~ ~override~ // tome of arcane recall
