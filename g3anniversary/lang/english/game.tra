@@ -3,24 +3,11 @@
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////                                                  \\\\\
-///// setup/info strings                               \\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-
-//@1    = ~Setup must decompress areas and audio files. Do not close this window until this is complete.~
-
-@2    = ~Worldmap for BP-BGT-Worldmap v6.3~
-
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
 ///// creature/item strings                            \\\\\
 /////                                                  \\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-@100  = ~The Gibberlings Three Anniversary Mod~
 @101  = ~Number One~
 @102  = ~Number Two~
 @103  = ~Number Three~
@@ -97,21 +84,21 @@ This community is ruled by the Keeper of the Tomes, assisted by the First Reader
 
 Except in rare cases no visitor can remain in Candlekeep for more than 10 days at a time, or enter the monastery less than a month after leaving it. Order in the Keep is kept by the Gatewarden's five underofficers: four Watchers and the Keeper of the Portal, all five of whom have a force of armed monks as assistants.
 
-The Seekers are the lowest monks. They research and fetch and carry. Above them are the Scribes, who copy out works or compile books to sell from various sources in the library – the chief source of income for the community. Above the Scribes are the Chanter and the Readers. The current Keeper of the Tomes is Ulraunt, a proud and haughty minor mage. The current First Reader, Tethtoril, is often mistaken by visitors for the Keeper because of his intelligent, regal, and sensitive demeanour.
+The Seekers are the lowest monks. They research and fetch and carry. Above them are the Scribes, who copy out works or compile books to sell from various sources in the library â€“ the chief source of income for the community. Above the Scribes are the Chanter and the Readers. The current Keeper of the Tomes is Ulraunt, a proud and haughty minor mage. The current First Reader, Tethtoril, is often mistaken by visitors for the Keeper because of his intelligent, regal, and sensitive demeanour.
 
 Candlekeep has but one absolute rule: "Those who destroy knowledge, with ink, fire, or sword, are themselves destroyed." Here, books are more valuable than people.~
 @140  = ~Volo's Guide to Baldur's Gate~
 @141  = ~Volo's Guide to Baldur's Gate
 
-This port city is shelter and lifeline for the folk of the Coast. It offers the discerning shopper a wide selection of goods – there are a total of six major inns, six main taverns, seven general stores, six primary temples, and a full-service magic store, along with hundreds of lesser buildings. Baldur's Gate is a tolerant but well-policed city of merchants, and quiet trade and business are the general order of each day. The Flaming Fist Mercenary Company, over a thousand strong, is based in the city. Every tenth person or so is a member of the Fist or a watch agent (well, spy), skilled in battle and within a breath or two of numerous armed allies. The visitor can freely stroll and shop. The city has a system of magical lamps that provide light to its inhabitants in the evening and the night hours, which is one reason why the crime rate is so low (keeping the merchants and storekeepers happy!)
+This port city is shelter and lifeline for the folk of the Coast. It offers the discerning shopper a wide selection of goods â€“ there are a total of six major inns, six main taverns, seven general stores, six primary temples, and a full-service magic store, along with hundreds of lesser buildings. Baldur's Gate is a tolerant but well-policed city of merchants, and quiet trade and business are the general order of each day. The Flaming Fist Mercenary Company, over a thousand strong, is based in the city. Every tenth person or so is a member of the Fist or a watch agent (well, spy), skilled in battle and within a breath or two of numerous armed allies. The visitor can freely stroll and shop. The city has a system of magical lamps that provide light to its inhabitants in the evening and the night hours, which is one reason why the crime rate is so low (keeping the merchants and storekeepers happy!)
 
-The city is named for the legendary sea faring explorer Balduran, who long ago sailed past the elven homeland Evermeet in search of the rich, fabled isles of Anchoromé (pronounced "Ang-kor-OH-may"). Balduran returned with tales of strange, vast lands across the seas. He also brought back great wealth, and scattered it about his sparsely-settled home harbour, commanding that some of it be spent on a wall to protect against tribal orc and barbarian raids (still a problem in the area, in those long-ago days). Then he set sail again for the wondrous lands he had found. Balduran never returned.
+The city is named for the legendary sea faring explorer Balduran, who long ago sailed past the elven homeland Evermeet in search of the rich, fabled isles of AnchoromÃ© (pronounced "Ang-kor-OH-may"). Balduran returned with tales of strange, vast lands across the seas. He also brought back great wealth, and scattered it about his sparsely-settled home harbour, commanding that some of it be spent on a wall to protect against tribal orc and barbarian raids (still a problem in the area, in those long-ago days). Then he set sail again for the wondrous lands he had found. Balduran never returned.
 
 Whatever Balduran's true fate, his money was spent on a splendid city wall. Within its protection, building went on at a great pace, soon expanding beyond its confines. The wall was built by farmers who put it around their own holdings, excluding the actual harbour from its protection. This allowed them to tax all carts coming up from the docks to the protection of the walled city. The colleagues of Balduran, sea captains to whom the harbour was home, angrily insisted that the gate by which southern trade and the harbour traffic entered the city was "Baldur's Gate," and they refused to pay for entering. The strife ended in the overthrow of the enriched farmers and the seizure of the city (which came to be called Baldur's Gate) by the sea captains.
 
 The four oldest captains, their days at sea drawing to a close, turned over their ships to younger sailors, who in turn supported their installation as rulers of the fledgling city. The four called themselves "dukes" as a joke, but the titles proved useful when dealing with other rulers, and they were later glorified by the appellation "grand." Now called the Council of Four, elected by the populace for life (or until resignation), the present grand dukes are Entar Silvershield (a high level fighter), Liia Jannath (a powerful wizard), the adventurer known only as Belt (a strong fighter), and Eltan (the commander of the Flaming Fist mercenary company).
 
-Buildings in Baldur's Gate tend to be tall and narrow, with slit windows located high and covered with shutters to block out winter winds and nesting seabirds. Tall among them rises the grandlyspired ducal palace of the four ruling grand dukes, known as the High Hall – a place for feasts, court hearings, and administrative business. Not far from the palace stands the High House of Wonders, consecrated to the deity Gond. It is the by far the largest of the Gate's three temples. Its spreading eastern wings face the Hall of Wonders, also on Windspell Street, where the more successful of Gond's inventions are displayed to the public. Not far from the Hall of Wonders, near the Black Dragon Gate, is the Wide. This huge open space is the Gate's market. It bustles day and night, and is usually "open space" only in the sense that there are no buildings. Temporary stalls, bins, sale tables, and shoppers thronging to them usually crowd shoulder to shoulder. Outside the Wide, Baldur's Gate lacks colourful landmarks. The ever-present damp discourages the use of banners, open shops, and the like.
+Buildings in Baldur's Gate tend to be tall and narrow, with slit windows located high and covered with shutters to block out winter winds and nesting seabirds. Tall among them rises the grandlyspired ducal palace of the four ruling grand dukes, known as the High Hall â€“ a place for feasts, court hearings, and administrative business. Not far from the palace stands the High House of Wonders, consecrated to the deity Gond. It is the by far the largest of the Gate's three temples. Its spreading eastern wings face the Hall of Wonders, also on Windspell Street, where the more successful of Gond's inventions are displayed to the public. Not far from the Hall of Wonders, near the Black Dragon Gate, is the Wide. This huge open space is the Gate's market. It bustles day and night, and is usually "open space" only in the sense that there are no buildings. Temporary stalls, bins, sale tables, and shoppers thronging to them usually crowd shoulder to shoulder. Outside the Wide, Baldur's Gate lacks colourful landmarks. The ever-present damp discourages the use of banners, open shops, and the like.
 
 Those wishing to overindulge in drink and in the company of the opposite sex are directed to the Undercellar, a little-known, damp, dark warren of linked cellars entered just off the Wide.~
 @142  = ~Volo's Guide to Beregost~
@@ -119,7 +106,7 @@ Those wishing to overindulge in drink and in the company of the opposite sex are
 
 Tired travelers on the Coast Way between Baldur's Gate and Amn often stop in Beregost. Beregost is located just off the road about a day's travel south of where the Way of the Lion branches off from the Coast Way. This town, while much smaller than Baldur's Gate, boasts three inns, two stores, a magic shop, a temple, and a decent tavern. It's within reach of the northern borders of Amn. Merchants of that land often use it as a rendezvous for caravan assembly before attempting the perilous overland runs north to Waterdeep or east to the Sea of Fallen Stars. As a result, this small town gets very crowded at unpredictable intervals.
 
-Begun as a farming village under the protection of a school of wizardry, Beregost is now dominated by the Song of the Morning, a major temple to Lathander. The other point of interest near Beregost is the ruin of Ulcaster's school. The mage Ulcaster, a conjurer of note, founded his school over 300 years ago – but grew too successful, attracting would-be wizards from all over the Sword Coast. Calishite mages came to fear the school's power and destroyed it in spell battle, though Ulcaster himself disappeared during the fray and was never found.
+Begun as a farming village under the protection of a school of wizardry, Beregost is now dominated by the Song of the Morning, a major temple to Lathander. The other point of interest near Beregost is the ruin of Ulcaster's school. The mage Ulcaster, a conjurer of note, founded his school over 300 years ago â€“ but grew too successful, attracting would-be wizards from all over the Sword Coast. Calishite mages came to fear the school's power and destroyed it in spell battle, though Ulcaster himself disappeared during the fray and was never found.
 
 The school burned to an empty shell, which still stands on a hill east of the town. Local fear of the ruin, which is said to be haunted by spell-casting phantoms, has caused Beregost to expand to the west of the Coast Way road, leaving the hills east to the sheep. On a related note, Beregost has only one tavern, called the Burning Wizard (of course!).
 
@@ -573,12 +560,12 @@ Usable by:
 @10329 = ~If you wish to die today, so be it.~
 @10330 = ~The first time I was in love, I was but a slip of a girl and he was a famous hero. So I told myself to earn his love I will put my life into adventure!~
 @10331 = ~Three years later, fame trailing after me like a mantle, I came to see him--and found him married to a girl who could not have killed a fly if it assailed her, but made the best cherry pie in the whole of Cormyr.~
-@10332 = ~"Luck is always on the side of the romantic." What fool said that? Ah, that elven rogue, just before he dumped me for a girl that robbed him blind…~
+@10332 = ~"Luck is always on the side of the romantic." What fool said that? Ah, that elven rogue, just before he dumped me for a girl that robbed him blindâ€¦~
 @10333 = ~I was wed once to a man of my dreams. Well, not really married, it was just a farce. It was near perfect, except for him reminding me at every opportunity that it was all pretence and apologizing for having to kiss me or hold my hand in public. All I could do is to smile, pat him on the back and assure that it will soon end and we will be free.~
-@10334 = ~My heart was first smashed, then broken into finer pieces, then crumbled, then ground into thin dust. I let it run through my fingers and thought – finally, I have no heart. How I was mistaken!~
+@10334 = ~My heart was first smashed, then broken into finer pieces, then crumbled, then ground into thin dust. I let it run through my fingers and thought â€“ finally, I have no heart. How I was mistaken!~
 @10335 = ~We were scouts together in Moonshaes. My job was to penetrate the besieged city to bring the tidings of the coming reinforcements, and that they would be ready to make a sortie to distract the enemy at the appointed time. His assignment was to guide the coming army.~
 @10336 = ~My chance of success was small, so I told him that I loved him before I went. He embraced me and said, "Watch for me. I shall be the first to enter the city, with you waiting for me there."~
-@10337 = ~And so he was, almost. The trapped enemy elite made their last stand by the gate. A stray fireball got him as he was cutting his way through--I saw him burn from the walls… ~
+@10337 = ~And so he was, almost. The trapped enemy elite made their last stand by the gate. A stray fireball got him as he was cutting his way through--I saw him burn from the wallsâ€¦ ~
 @10338 = ~I am decided now.~
 @10339 = ~For the loved ones!~
 @10340 = ~By the Twelve Winds! It's just disappeared! (Sighs) Back to adventuring, I guess.~

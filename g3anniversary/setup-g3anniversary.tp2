@@ -1,41 +1,57 @@
-BACKUP ~g3anniversary/backup~
+BACKUP ~weidu_external/g3anniversary/backup~
 SUPPORT ~https://www.gibberlings3.net/forum/61-the-gibberlings-three-anniversary-mod/~
 
-VERSION ~v12~
+VERSION ~v13~
 
 README ~g3anniversary/readme-g3anniversary.html~
 
 ALWAYS
-  ACTION_DEFINE_ARRAY cdreload BEGIN setup END
-  LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = ~g3anniversary~ reload_array = cdreload END
+
+  OUTER_SET bg2_chapter    = 0 // default values; overridden for eet games in GAME_IS check, below
+  OUTER_SET wmp_xCoord_SoA = 0
+  OUTER_SET wmp_yCoord_SoA = 0
   
-  ACTION_IF GAME_IS ~eet~ BEGIN
-    OUTER_SET bg2_chapter = 12
-  END ELSE BEGIN
-    OUTER_SET bg2_chapter = 0
+  ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+  
+    OUTER_SPRINT ~tra_location~ ~g3anniversary/lang~ // not actually used, but set anyway
+    
+    ACTION_IF GAME_IS ~eet~ BEGIN
+      OUTER_SET bg2_chapter = 12
+      OUTER_SET wmp_xCoord_SoA = 0
+      OUTER_SET wmp_yCoord_SoA = 2283
+    END  
+    
+  END ELSE BEGIN  
+  
+    OUTER_SPRINT ~tra_location~ ~weidu_external/g3anniversary/lang~ // not actually used, but set anyway
+
+    // convert strings from UTF-8 for originals  
+    ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu game_ee END
+    ACTION_DEFINE_ARRAY cdreload BEGIN game END
+    LAF HANDLE_CHARSETS INT_VAR from_utf8 = 1 infer_charsets = 1 
+                        STR_VAR default_language = ~english~ tra_path = ~g3anniversary/lang~ out_path = ~weidu_external/g3anniversary/lang~ noconvert_array = cdnoconvert reload_array = cdreload END
+                      
   END
-  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+  
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN // set bg_chapter ariables (seeded above)
     OUTER_SET bg2_chapter = bg2_chapter + 1
     OUTER_SPRINT name_source ~bg2_chapter_%i%~
     OUTER_SET EVAL ~%name_source%~ = bg2_chapter
   END
-
-  ACTION_IF GAME_IS ~eet~ BEGIN
-    OUTER_SET wmp_xCoord_SoA = 0
-    OUTER_SET wmp_yCoord_SoA = 2283
-  END ELSE BEGIN
-    OUTER_SET wmp_xCoord_SoA = 0
-    OUTER_SET wmp_yCoord_SoA = 0
-  END
+  
 END
 
 // language menu
 LANGUAGE ~English~ 
          ~english~ 
-         ~g3anniversary/english/setup.tra~
+         ~g3anniversary/lang/english/game.tra~
+         ~g3anniversary/lang/english/weidu.tra~
 LANGUAGE ~Russian~ 
          ~russian~ 
-         ~g3anniversary/russian/setup.tra~  
+         ~g3anniversary/lang/english/game.tra~
+         ~g3anniversary/lang/english/weidu.tra~
+         ~g3anniversary/lang/russian/game.tra~
+         ~g3anniversary/lang/russian/weidu.tra~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -50,7 +66,7 @@ LABEL ~cd_g3anniversary~
 
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 
-  LOAD_TRA ~g3anniversary/%LANGUAGE%/setup_ee.tra~
+  LOAD_TRA ~g3anniversary/lang/%LANGUAGE%/game_ee.tra~
   
   COPY ~g3anniversary/graphics~ ~override~ // new area tilesets/pvrz
 
